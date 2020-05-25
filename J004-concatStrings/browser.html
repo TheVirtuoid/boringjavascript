@@ -1,0 +1,76 @@
+<!doctype>
+<html>
+	<head>
+		<title>Concat Testing - BoringJavascript</title>
+		<style>
+			table thead {
+				background-color: darkslategray;
+				color: white;
+			}
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+				font-size: 2rem;
+			}
+			table tbody {
+				background-color: aquamarine;
+			}
+			table td, table th {
+				padding: 1rem 2rem;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Testing speed of concat/assignment/template</h1>
+		<table>
+			<thead>
+				<tr><th>Competitor</th><th>Result</th></tr>
+			</thead>
+			<tbody>
+				<tr><th>Assignment</th><th id="assignment"></th></tr>
+				<tr><th>Concat</th><th id="concat"></th></tr>
+				<tr><th>Template</th><th id="template"></th></tr>
+				</tr>
+			</tbody>
+		</table>
+		<script>
+			runTest();
+
+			function runTest() {
+				return new Promise( (resolve, reject) => {
+					function assignmentOperators(text, index) {
+						return text + '_' + index;
+					}
+
+					function concatStatement(text, index) {
+						return text.concat('_').concat(index);
+					}
+
+					function templateStatement(text, index) {
+						return `${text}_${index}`;
+					}
+
+					const loopSize = 10000000;
+
+					let one = Date.now();
+					for (let i = 0; i < loopSize; i++) {
+						assignmentOperators("I am Fast!", i);
+					}
+					let two = Date.now();
+					for (let i = 0; i < loopSize; i++) {
+						concatStatement("I am Fast!", i);
+					}
+					let three = Date.now();
+					for (let i = 0; i < loopSize; i++) {
+						templateStatement("I am Fast!", i);
+					}
+					let four = Date.now();
+					document.getElementById('assignment').textContent = (two - one) + " ms";
+					document.getElementById('concat').textContent = (three - two) + " ms";
+					document.getElementById('template').textContent = (four - three) + " ms";
+					resolve(true);
+				});
+			}
+		</script>
+	</body>
+</html>
