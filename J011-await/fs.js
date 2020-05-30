@@ -1,7 +1,7 @@
 const fs = require('fs').promises;
 const path = require('path');
 
-let getCoyoteStats = false;
+let getCoyoteStats = true;
 lookUpAnimals(getCoyoteStats)
 
 async function lookUpAnimals(getCoyoteStats) {
