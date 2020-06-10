@@ -11,5 +11,5 @@ uh...I don't have one yet.
 
 ## Episodes
 
-[J000: for - forEach](https://duckduckgo.com)
+[J000: for - forEach](https://www.youtube.com/watch?v=ydjZZ6XaVbc)
 
