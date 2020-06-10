@@ -3,6 +3,9 @@ const animals = [
 ];
 
 let numAnimals = animals.length;
+
 for (let animalIndex = 0; animalIndex < numAnimals; animalIndex++ ) {
-	console.log(`Animal Number ${animalIndex} is ${animals[animalIndex]}`);
+	const animal = animals[animalIndex];
+	console.log(`Animal Number ${animalIndex} is ${animal}`);
 }
+0
