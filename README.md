@@ -14,3 +14,5 @@ uh...I don't have one yet.
 [J000: for - forEach](https://www.youtu.be/ydjZZ6XaVbc)
 
 [J001: Array:some](https://www.youtu.be/jExH05zUxsE)
+
+[J002: Array:sort](https://www.youtu.be/5ZyEX_uK508)
