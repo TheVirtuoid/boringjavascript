@@ -10,30 +10,14 @@ const animals = [
 	{ type: "Lizard", name: "Larry" }
 ];
 
-
 animals.sort( function (firstValue, secondValue) {
-	return firstValue.name < secondValue.name ? -1 : firstValue.name > secondValue.name ? 1 : 0;
+	if (firstValue.name < secondValue.name) {
+		return -1;
+	} else if (firstValue.name > secondValue.name) {
+		return 1;
+	} else {
+		return 0;
+	}
 });
+console.log(`\nA listing of my animals in ASCENDING order:`);
 animals.forEach( animal => console.log(animal.name));
-
-
-
-
-
-
-
-
-
-/*
-function sortBy (field) {
-	animals.sort( function (firstValue, secondValue) {
-		return firstValue[field] < secondValue[field] ? -1 : firstValue[field] > secondValue[field] ? 1 : 0;
-	});
-	animals.forEach( animal => console.log(animal[field]));
-}
-
-console.log('\n\n----------BY TYPE-----------');
-sortBy('type');
-console.log('\n\n----------BY NAME-----------');
-sortBy('name');
-*/

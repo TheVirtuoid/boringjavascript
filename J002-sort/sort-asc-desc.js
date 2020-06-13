@@ -14,9 +14,9 @@ function sorter(arrayData, sortType) {
 let animals = [
 	"Cat", "Dog", "Horse", "Cow", "Coyote", "Road Runner", "Dolphin", "Whale", "Lizard"
 ];
-console.log('Sort ASCENDING order');
+console.log(`\nA listing of my animals in ASCENDING order:`);
 console.log(sorter(animals, "asc"));
 
-console.log('Sort DESCENDING order');
+console.log(`\nA listing of my animals in DESCENDING order:`);
 console.log(sorter(animals, "desc"));
 

@@ -11,4 +11,5 @@ animals.sort( function (firstValue, secondValue) {
 		return 0;
 	}
 });
+console.log(`\nA listing of my animals:`);
 animals.forEach( animal => console.log(animal));
