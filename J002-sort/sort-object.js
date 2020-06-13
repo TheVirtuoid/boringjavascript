@@ -17,6 +17,13 @@ animals.sort( function (firstValue, secondValue) {
 animals.forEach( animal => console.log(animal.name));
 
 
+
+
+
+
+
+
+
 /*
 function sortBy (field) {
 	animals.sort( function (firstValue, secondValue) {
