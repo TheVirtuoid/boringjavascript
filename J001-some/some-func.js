@@ -17,3 +17,6 @@ console.log(`\nMy animal, the Cow, is${!isMyAnimalThere ? ' NOT' : ''} there.\n`
 sdfsdfkdsos
 sdofpsfkpdsfsf
 sdfsdfdsfdskopo)_ksfjfslkjdksjfklsfdjdsf
+asdjaosdjosa
+asjdiadjs
+jiajdiadjaso
