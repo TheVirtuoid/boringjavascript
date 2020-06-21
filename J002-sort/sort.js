@@ -2,10 +2,10 @@ const animals = [
 	"Cat", "Dog", "Horse", "Cow", "Coyote", "Road Runner", "Dolphin", "Whale", "Lizard"
 ];
 
-animals.sort( function (firstElement, secondELement) {
-	if (firstElement < secondELement) {
+animals.sort( function (firstElement, secondElement) {
+	if (firstElement < secondElement) {
 		return -1;
-	} else if (firstElement > secondELement) {
+	} else if (firstElement > secondElement) {
 		return 1;
 	} else {
 		return 0;

@@ -15,4 +15,4 @@ uh...I don't have one yet.
 
 [J001: Array:some](https://www.youtu.be/JmlyEDJWs5o)
 
-[J002: Array:sort](https://www.youtu.be/5ZyEX_uK508)
+[J002: Array:sort](https://www.youtu.be/OEM_dSrHAT4)
