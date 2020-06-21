@@ -13,8 +13,8 @@ console.log(`\nMy animal, the ${myAnimal}, is${!isMyAnimalThere ? ' NOT' : ''} t
 
 myAnimal = "Salamander";
 
-let isMyAnimalThere = animals.some( function (animal) {
-return animal === myAnimal;
+isMyAnimalThere = animals.some( function (animal) {
+	return animal === myAnimal;
 });
 
 console.log(`\nMy animal, the ${myAnimal}, is${!isMyAnimalThere ? ' NOT' : ''} there.\n`);
