@@ -14,9 +14,3 @@ console.log(`\nMy animal, the Salamander, is${!isMyAnimalThere ? ' NOT' : ''} th
 
 isMyAnimalThere = animals.includes("Cow");
 console.log(`\nMy animal, the Cow, is${!isMyAnimalThere ? ' NOT' : ''} there.\n`);
-sdfsdfkdsos
-sdofpsfkpdsfsf
-sdfsdfdsfdskopo)_ksfjfslkjdksjfklsfdjdsf
-asdjaosdjosa
-asjdiadjs
-jiajdiadjaso

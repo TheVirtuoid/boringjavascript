@@ -1,8 +1,8 @@
 function sorter(arrayData, sortType) {
-	arrayData.sort( function (firstValue, secondValue) {
-		if (firstValue < secondValue) {
+	arrayData.sort( function (firstElement, secondElement) {
+		if (firstElement < secondElement) {
 			return sortType === "asc" ? -1 : 1;
-		} else if (firstValue > secondValue) {
+		} else if (firstElement > secondElement) {
 			return sortType === "asc" ? 1 : -1;
 		} else {
 			return 0;

@@ -10,10 +10,10 @@ const animals = [
 	{ type: "Lizard", name: "Larry" }
 ];
 
-animals.sort( function (firstValue, secondValue) {
-	if (firstValue.name < secondValue.name) {
+animals.sort( function (firstElement, secondElement) {
+	if (firstElement.name < secondElement.name) {
 		return -1;
-	} else if (firstValue.name > secondValue.name) {
+	} else if (firstElement.name > secondElement.name) {
 		return 1;
 	} else {
 		return 0;
