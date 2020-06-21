@@ -13,6 +13,7 @@ let text = "";
 animals.forEach( animal => {
 	switch (animal.size) {
 		case "tiny":
+			text = "super tiny";
 		case "small":
 			text = "smaller than average";
 			break;

@@ -19,3 +19,4 @@ isMyAnimalThere = animals.some( function (animal) {
 
 console.log(`\nMy animal, the ${myAnimal}, is${!isMyAnimalThere ? ' NOT' : ''} there.\n`);
 
+

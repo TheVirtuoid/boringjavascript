@@ -10,21 +10,6 @@ const animals = [
 	{ type: "Lizard", name: "Larry" }
 ];
 
-let isMyAnimalThere = animals.includes("Cow");
-console.log(`\nMy animal, the Cow, is${!isMyAnimalThere ? ' NOT' : ''} there.\n`);
-
-
-
-
-
-
-
-
-
-
-
-
-/*
 function checkForMyAnimal(theAnimalToCheck) {
 	return animals.some( function (animal) {
 		return theAnimalToCheck === animal.type;
@@ -36,4 +21,4 @@ console.log(`\nMy animal, the Coyote, is${!isMyAnimalThere ? ' NOT' : ''} there.
 
 isMyAnimalThere = checkForMyAnimal("Salamander");
 console.log(`\nMy animal, the Salamander, is${!isMyAnimalThere ? ' NOT' : ''} there.\n`);
-*/
+

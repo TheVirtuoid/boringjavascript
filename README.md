@@ -11,8 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
-[J000: for - forEach](https://www.youtu.be/ydjZZ6XaVbc)
+[J000: for - forEach](https://www.youtu.be/WxYAoJY27n8)
 
-[J001: Array:some](https://www.youtu.be/jExH05zUxsE)
+[J001: Array:some](https://www.youtu.be/JmlyEDJWs5o)
 
 [J002: Array:sort](https://www.youtu.be/5ZyEX_uK508)
