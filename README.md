@@ -16,3 +16,5 @@ uh...I don't have one yet.
 [J001: Array:some](https://www.youtu.be/JmlyEDJWs5o)
 
 [J002: Array:sort](https://www.youtu.be/OEM_dSrHAT4)
+
+[J003: switch - case](https://www.youtu.be/4cIR58-svZ4)
