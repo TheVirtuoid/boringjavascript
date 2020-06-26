@@ -1,6 +1,11 @@
-const animalOne = "cat";
-const animalTwo = "dog";
+const animals = [
+	"Cat", "Dog", "Horse", "Cow", "Coyote", "Road Runner", "Dolphin", "Whale", "Lizard"
+];
 
-const hybridAnimal = animalOne + animalTwo;
+let animalList = "Here is a list of the animals I have:";
 
-console.log(`I have both a ${animalOne} and a ${animalTwo}`);
+animals.forEach( function (animal, animalIndex) {
+	animalList = `${animalList}\n\t${animal}`;
+});
+
+console.log(animalList);

@@ -5,7 +5,7 @@ const animals = [
 let animalList = "Here is a list of the animals I have:";
 
 animals.forEach( function (animal, animalIndex) {
-	animalList = animalList + `\n\t${animal}`;
+	animalList = animalList + "\n\t" + animal;
 });
 
 console.log(animalList);
