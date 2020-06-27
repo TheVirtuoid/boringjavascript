@@ -3,28 +3,7 @@ const animals = [
 ];
 
 animals.forEach( (animal) => {
-	if (animal.startsWith("C")) {
-		console.log(`My "C" animal is a ${animal}`);
+	if (animal.endsWith("e")) {
+		console.log(`My "e" animal is a ${animal}`);
 	}
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// case sensitve
-// regex = /C.?w/
