@@ -22,15 +22,25 @@ animalsMap.set("Whale", "Moby Dick");
 animalsMap.set("Lizard", "Larry");
 
 
+
+
+
+
+
+
+
+
+
+
 /* ------------------------------------------------------- */
 
-const myCatObject = animals["Cat"];
+/*const myCatObject = animals["Cat"];
 const myCatMap = animalsMap.get("Cat");
 
 console.log(myCatObject);
-console.log(myCatMap);
+console.log(myCatMap);*/
 
-const haveCatObject = !!animals["Cat"];
+const haveCatObject = animals["Cat"] !== undefined;
 const haveCatMap = animalsMap.has("Cat");
 const havePonyObject = !!animals["Pony"];
 const havePonyMap = animalsMap.has("Pony");

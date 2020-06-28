@@ -14,15 +14,10 @@ let animalsMap = new Map();
 
 animals.forEach( (animal) => animalsMap.set(animal.type, animal.name));
 
-/* ------------------------------------------------------- */
+const haveCat = animalsMap.has("Cat");
+const havePony = animalsMap.has("Pony");
+const myCatName = animalsMap.get("Cat");
 
-// console.log(animalsMap);
-
-// let myCat = animalsMap.get('Cat');
-// console.log(myCat);
-
-const haveCat = animalsMap.has('Cat');
-const havePony = animalsMap.has('Pony');
-
-console.log(`Do I have a cat?  ${haveCat ? 'Yes': 'No'}`);
-console.log(`Do I have a pony? ${havePony ? 'Yes': 'No'}`);
+console.log(`Do I have a cat?  ${haveCat ? "Yes": "No"}`);
+console.log(`Do I have a pony? ${havePony ? "Yes": "No"}`);
+console.log(`My cat's name is ${myCatName}`);

@@ -11,7 +11,6 @@ const animals = [
 ];
 
 let newAnimals = animals.map( function (animal, animalIndex) {
-	// return {index: animalIndex, name: animal.name};
 	return animal.name;
 });
 
