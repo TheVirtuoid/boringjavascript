@@ -21,4 +21,7 @@ uh...I don't have one yet.
 
 [J004: String:concat()](https://www.youtu.be/luZz-4RsjUI)
 
+[J005: Array.map()](https://www.youtu.be/pUMAOgbPWvg)
+
+
 
