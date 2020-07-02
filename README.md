@@ -23,5 +23,6 @@ uh...I don't have one yet.
 
 [J005: Array.map()](https://www.youtu.be/pUMAOgbPWvg)
 
+[J006: Map object](https://www.youtu.be/kB1vG3jB7qk)
 
 
