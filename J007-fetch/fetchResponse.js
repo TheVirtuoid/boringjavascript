@@ -3,7 +3,7 @@
 	button.addEventListener('click', getTheList);
 
 	function getTheList (event) {
-		fetch('/animals.json')
+		fetch('/animalsBAD.json')
 			.then(fetchResponse)
 			.then(display)
 			.catch(whoops);
