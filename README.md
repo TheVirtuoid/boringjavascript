@@ -25,4 +25,5 @@ uh...I don't have one yet.
 
 [J006: Map object](https://www.youtu.be/kB1vG3jB7qk)
 
+[J007: Fetch object](https://www.youtu.be/niOtnfa1l_E)
 
