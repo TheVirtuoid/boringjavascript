@@ -28,3 +28,5 @@ uh...I don't have one yet.
 [J007: Fetch object](https://www.youtu.be/xrIF0EVY8dE)
 
 [J008: Array.includes(), String.includes()](https://www.youtu.be/en9wsW9DbVY)
+
+[J008: Array: Last Element](https://www.youtu.be/DoyYvRvlvm4)
