@@ -29,4 +29,4 @@ uh...I don't have one yet.
 
 [J008: Array.includes(), String.includes()](https://www.youtu.be/en9wsW9DbVY)
 
-[J008: Array: Last Element](https://www.youtu.be/DoyYvRvlvm4)
+[J009: Array: Last Element](https://www.youtu.be/DoyYvRvlvm4)

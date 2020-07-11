@@ -5,5 +5,28 @@ console.log(`-${animal}-`);
 let trimAnimal = animal.trimStart();
 console.log(`(trimStart) -${trimAnimal}-`);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 trimAnimal = animal.trimLeft();
 console.log(`(trimLeft)  -${trimAnimal}-`);
+*/
