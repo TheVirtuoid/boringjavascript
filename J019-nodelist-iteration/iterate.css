@@ -1,0 +1,33 @@
+ul {
+	list-style-type: none;
+	margin: 1rem 0 0 1rem;
+}
+ul li {
+	margin: 0 0 .5rem 0;
+}
+ul li span {
+	font-weight: bold;
+}
+.hide {
+	display: none
+}
+#results {
+	font-weight:bold;
+	background-color: green;
+	color: white;
+	margin: 1rem 0;
+	border-radius: 1rem;
+	padding: .25rem .5rem;
+}
+#results p {
+	margin: 0 0 .5rem 1rem;
+}
+button {
+	background-color: green;
+	color: white;
+	font-weight: bold;
+	padding: .25rem 1rem;
+	border-radius: .5rem;
+	border: 2px solid black;
+	cursor: pointer;
+}

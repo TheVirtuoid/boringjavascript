@@ -20,6 +20,17 @@ var myVar = 1;
 
 console.log(`global myVar = ${myVar}`);
 
+
+
+
+
+
+
+
+
+
+
+
 /*
 var myVar = "Cat";
 console.log(`global myVar (2) = ${myVar}`);

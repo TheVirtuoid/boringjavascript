@@ -18,6 +18,17 @@ let myVar = 1;
 
 console.log(`global myVar = ${myVar}`);
 
+
+
+
+
+
+
+
+
+
+
+
 /*
 let myVar = "Cat";
 console.log(`global myVar (2) = ${myVar}`);
