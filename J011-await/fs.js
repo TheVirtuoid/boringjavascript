@@ -1,8 +1,8 @@
 const fs = require('fs').promises;
 const path = require('path');
 
-let getCoyoteStats = true;
-lookUpAnimals(getCoyoteStats)
+let whichAnimal = "Coyote"
+lookUpAnimals(whichAnimal)
 	.catch( (err) => {
 		console.log('------ERROR: Below is the error:');
 		console.log(err);
@@ -33,18 +33,35 @@ lookUpAnimals(getCoyoteStats)
 
 
 
-async function lookUpAnimals(getCoyoteStats) {
-	let animalDataPath = path.join(process.cwd(), "./animals.json");
-	let animalData = await fs.readFile(animalDataPath);
-	let animals = JSON.parse(animalData.toString());
+async function lookUpAnimals(whichAnimal) {
+	let animalsDataPath = path.join(process.cwd(), "./animals1.json");
+	let animalsData = await fs.readFile(animalsDataPath);
+	let animals = JSON.parse(animalsData.toString());
 	printAnimals(animals);
-	if (getCoyoteStats) {
-		let coyoteDataPath = path.join(process.cwd(), "./coyote.json");
-		let coyoteStats = await fs.readFile(coyoteDataPath);
-		let coyote = JSON.parse(coyoteStats.toString());
-		printAnimal("Coyote", coyote);
+	if (animals.includes(whichAnimal)) {
+		let animalDataPath = path.join(process.cwd(), `./${whichAnimal.toLowerCase()}.json`);
+		let animalStats = await fs.readFile(animalDataPath);
+		let animal = JSON.parse(animalStats.toString());
+		printAnimal(whichAnimal, animal);
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function printAnimals (animals) {
 	const maxLength = animals.reduce( (accumulate, animal) => Math.max(accumulate, animal.length), 0);
