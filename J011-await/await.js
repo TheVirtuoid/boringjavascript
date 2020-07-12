@@ -3,17 +3,15 @@ const animals = [
 ];
 
 let params = {animals: animals, fullCount: 0, cCount: 0, sixLetterCount: 0};
-doAsyncFunction(params);
+doAsyncFunction(params)
+	.catch(whoopsies);
+console.log('---Assigned doAsyncFunction');
 
 async function doAsyncFunction(params) {
-	try {
-		params = await getFullCount(params);
-		params = await getCCount(params);
-		params = await getSixLetterCount(params);
-		console.log(params);
-	} catch (err) {
-		whoopsies(err);
-	}
+	params = await getFullCount(params);
+	params = await getCCount(params);
+	params = await getSixLetterCount(params);
+	console.log(params);
 }
 
 function getFullCount(params) {

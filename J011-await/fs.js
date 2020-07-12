@@ -3,22 +3,46 @@ const path = require('path');
 
 let getCoyoteStats = true;
 lookUpAnimals(getCoyoteStats)
+	.catch( (err) => {
+		console.log('------ERROR: Below is the error:');
+		console.log(err);
+	})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 async function lookUpAnimals(getCoyoteStats) {
-	try {
-		let animalDataPath = path.join(process.cwd(), "./animals.json");
-		let animalData = await fs.readFile(animalDataPath);
-		let animals = JSON.parse(animalData.toString());
-		printAnimals(animals);
-		if (getCoyoteStats) {
-			let coyoteDataPath = path.join(process.cwd(), "./coyote.json");
-			let coyoteStats = await fs.readFile(coyoteDataPath);
-			let coyote = JSON.parse(coyoteStats.toString());
-			printAnimal("Coyote", coyote);
-		}
-	} catch (err) {
-		console.log('-----ERROR');
-		console.log(err);
+	let animalDataPath = path.join(process.cwd(), "./animals.json");
+	let animalData = await fs.readFile(animalDataPath);
+	let animals = JSON.parse(animalData.toString());
+	printAnimals(animals);
+	if (getCoyoteStats) {
+		let coyoteDataPath = path.join(process.cwd(), "./coyote.json");
+		let coyoteStats = await fs.readFile(coyoteDataPath);
+		let coyote = JSON.parse(coyoteStats.toString());
+		printAnimal("Coyote", coyote);
 	}
 }
 

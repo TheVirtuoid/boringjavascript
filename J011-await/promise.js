@@ -9,6 +9,7 @@ getFullCount(params)
 	.then(getSixLetterCount)
 	.then( params => console.log(params))
 	.catch(whoopsies);
+console.log('---Assigned all promises');
 
 function getFullCount(params) {
 	return new Promise( (resolve, reject) => {
@@ -51,3 +52,11 @@ function whoopsies (err) {
 	console.log('----------GOT ERROR');
 	console.log(err);
 }
+
+
+
+
+
+
+
+

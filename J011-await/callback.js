@@ -12,10 +12,11 @@ setTimeout (function () {
 			params = getSixLetterCount(params);
 			setTimeout( function () {
 				console.log(params);
-			});
+			}, 500);
 		}, 500);
 	}, 500);
 }, 500);
+console.log('---Assigned all timeouts');
 
 function getFullCount(params) {
 	params.fullCount = params.animals.length;
