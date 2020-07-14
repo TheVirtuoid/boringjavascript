@@ -30,3 +30,5 @@ uh...I don't have one yet.
 [J008: Array.includes(), String.includes()](https://www.youtu.be/en9wsW9DbVY)
 
 [J009: Array: Last Element](https://www.youtu.be/DoyYvRvlvm4)
+
+[J010: String.trim()](https://www.youtu.be/pBaVBkdWsUs)
