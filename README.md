@@ -32,3 +32,5 @@ uh...I don't have one yet.
 [J009: Array: Last Element](https://www.youtu.be/DoyYvRvlvm4)
 
 [J010: String.trim()](https://www.youtu.be/pBaVBkdWsUs)
+
+[J011: Await](https://www.youtu.be/bdiWZJoqnA8)
