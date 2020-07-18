@@ -1,0 +1,46 @@
+{
+  "type": "Coyote",
+  "name": "Wile E.",
+  "stats": {
+    "height": "0.67 m",
+    "weight": "20.86 kg",
+    "speed": "64.37 kmh",
+    "intelligence": "Super Genius"
+  },
+  "habitat": {
+    "location": "North America - South West",
+    "zone": {
+      "A1": {
+        "temperature": {
+          "low": 12.2,
+          "high": 32.6
+        },
+        "rainfall": {
+          "low": 0.4,
+          "high": 5.6
+        },
+        "elevations": {
+          "subterra": -4,
+          "low": 5.4,
+          "medium": 9.2,
+          "high": 15.1
+        }
+      },
+      "A2": {
+        "temperature": {
+          "low": 10.2,
+          "high": 30.6
+        },
+        "rainfall": {
+          "low": 0.0,
+          "high": 6.0
+        },
+        "elevations": {
+          "low": 0.4,
+          "medium": 3.2,
+          "high": 8.1
+        }
+      }
+    }
+  }
+}
