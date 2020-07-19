@@ -1,11 +1,11 @@
-let myVar = 1;
+myVar = 1;
 console.log(`START: global myVar = ${myVar}`);
 firstFunction();
 secondFunction();
 console.log(`END: global myVar = ${myVar}`);
 
 function firstFunction() {
-	let myVar = 2;
+	myVar = 2;
 	console.log(`---firstFunction start myVar = ${myVar}`);
 	innerFunction();
 	console.log(`---firstFunction end myVar = ${myVar}`);
@@ -18,7 +18,7 @@ function secondFunction() {
 	}
 }
 function innerFunction() {
-	let myVar = 3;
+	myVar = 3;
 	console.log(`------innerFunction start myVar = ${myVar}`);
 	if (myVar === 3) {
 		myVar = 4;

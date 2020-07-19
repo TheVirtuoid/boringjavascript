@@ -1,29 +1,18 @@
+/*
 const myVar = 1;
 const myVar = 2;
+*/
+
+/*
+const myVar = 1;
+myVar = 2;
+*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*
+const myVar = 1;
+myVar = "Cat";
+*/
 
 
 
@@ -46,19 +35,18 @@ console.log(myVar);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-/*
 const myVar = { Cat: "Meow", Dog: "Bark", Lizard: "???" };
 myVar.Lizard = "I don't know";
 console.log(myVar);
-*/
+
+
+
+
+
+
+
+
+
+
+
+
