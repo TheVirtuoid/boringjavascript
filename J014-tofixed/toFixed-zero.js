@@ -1,5 +1,6 @@
 function prettyPrint(num) {
-	console.log(`My original was "${num.toString()}", and toFixed(2) turn it into: ${num.toFixed(0)}`);
+	let fixedNumber = num.toFixed(0);
+	console.log(`My original was ${num}, and toFixed(0) turn it into: ${fixedNumber}`);
 }
 
 prettyPrint(1.1);

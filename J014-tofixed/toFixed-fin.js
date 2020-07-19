@@ -1,3 +1,17 @@
+const data = [
+	{name: "Amalgamated Steel", amount: 5677.45},
+	{name: "Acme Products, Inc.", amount: 8122.19},
+	{name: "Zuzu's Florist Corp.", amount: 7221.87},
+	{name: "Industrial Basket Weavers", amount: 3998.11},
+	{name: "GHT, Ltd.", amount: 11072.12}
+]
+printTable(data);
+
+
+
+
+
+
 function printTable (data) {
 	let nameLength = 0;
 	let amountLength = 0;
@@ -37,12 +51,4 @@ function currency (num) {
 	return `$ ${value.substring(0, oldIndex)}${oldIndex === value.length ? "" : ","}${returnValue}`;
 }
 
-const data = [
-	{name: "Amalgamated Steel", amount: 5677.45},
-	{name: "Acme Products, Inc.", amount: 8122.19},
-	{name: "Zuzu's Florist Corp.", amount: 7221.87},
-	{name: "Industrial Basket Weavers", amount: 3998.11},
-	{name: "GHT, Ltd.", amount: 11072.12}
-]
 
-printTable(data);
