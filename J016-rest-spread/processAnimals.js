@@ -1,5 +1,5 @@
 module.exports = function processAnimals() {
-	const animals = [].slice.call(arguments);
+	const animals = [...arguments];
 	let selectedAnimal = "";
 	animals.forEach( (animal) => {
 		if (animal.length > selectedAnimal.length) {
