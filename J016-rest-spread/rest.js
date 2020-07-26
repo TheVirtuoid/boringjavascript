@@ -1,9 +1,25 @@
-const animals = [
-	"Cat", "Dog", "Horse", "Cow", "Coyote", "Road Runner", "Dolphin", "Whale", "Lizard"
-];
 
-let mostLetters = processTwoAnimals("Cat", "Horse", "Coyote", "Dolphin", "Whale", "Lizard");
+let mostLetters = processTwoAnimals("Cat", "Horse");
 console.log(`\nThe animal with the most letters is "${mostLetters}".`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function processTwoAnimals(animalOne, animalTwo, ...otherAnimals) {
 	if (animalTwo === undefined) {
