@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J014: Number.toFixed()](https://www.youtu.be/VmdnWkJ95z4) - July 28, 2020
+
 [J013: String.split()](https://www.youtu.be/fmwaNgcHT7k) - July 23, 2020
 
 [J012: var, let, const](https://www.youtu.be/xVnif1lBLc8) - July 21, 2020
