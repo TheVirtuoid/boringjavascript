@@ -3,7 +3,7 @@ const animals = [
 ];
 
 animals.forEach( (animal) => {
-	if (animal.endsWith("e")) {
-		console.log(`My "e" animal is a ${animal}`);
+	if (animal.endsWith("d")) {
+		console.log(`My "d" animal is a ${animal}`);
 	}
 });

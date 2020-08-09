@@ -7,24 +7,3 @@ animals.forEach( (animal) => {
 		console.log(`My "C" animal is a ${animal}`);
 	}
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// case sensitve
-// regex = /C.?w/
