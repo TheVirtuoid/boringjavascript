@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J015: String.toUpperCase(), String.toLowerCase()](https://www.youtu.be/97Z1jvON3yE) - August 4, 2020
+
 [J014: Number.toFixed()](https://www.youtu.be/VmdnWkJ95z4) - July 28, 2020
 
 [J013: String.split()](https://www.youtu.be/fmwaNgcHT7k) - July 23, 2020
