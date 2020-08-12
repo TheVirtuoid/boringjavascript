@@ -3,7 +3,7 @@ const animals = [
 ];
 
 animals.forEach( (animal) => {
-	if (animal.startsWith("C")) {
+	if (animal.startsWith("c")) {
 		console.log(`My "C" animal is a ${animal}`);
 	}
 });

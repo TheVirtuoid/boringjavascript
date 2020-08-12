@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J016: Spread / Rest Operators](https://www.youtu.be/T-S0ItmlKcY) - August 11, 2020
+
 [J015: String.toUpperCase(), String.toLowerCase()](https://www.youtu.be/97Z1jvON3yE) - August 4, 2020
 
 [J014: Number.toFixed()](https://www.youtu.be/VmdnWkJ95z4) - July 28, 2020
