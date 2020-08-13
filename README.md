@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J017: String.startsWith(), String.endsWith()](https://youtu.be/kmAmaiI9vd0) - August 13, 2020
+
 [J016: Spread / Rest Operators](https://www.youtu.be/T-S0ItmlKcY) - August 11, 2020
 
 [J015: String.toUpperCase(), String.toLowerCase()](https://www.youtu.be/97Z1jvON3yE) - August 4, 2020
