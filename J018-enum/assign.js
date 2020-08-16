@@ -5,6 +5,7 @@ class Enum {
 				get: function() { return exp.value; }
 			});
 		}, this);
+		Object.freeze(this);
 	}
 }
 
