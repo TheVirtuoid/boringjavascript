@@ -21,6 +21,7 @@ ul li span {
 }
 #results p {
 	margin: 0 0 .5rem 1rem;
+	font-size: 1.5rem;
 }
 button {
 	background-color: green;
