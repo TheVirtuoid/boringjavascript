@@ -13,7 +13,7 @@ let animals = new Enum(
 	{name: "Dog", value: 4},
 	{name: "Horse", value: 6}
 );
-console.log(`My Cat is ${animals.Cat}`);
-console.log(`My Dog is ${animals.Dog}`);
-console.log(`My Horse is ${animals.Horse}`);
+console.log(`My cat is ${animals.Cat}`);
+console.log(`My dog is ${animals.Dog}`);
+console.log(`My horse is ${animals.Horse}`);
 

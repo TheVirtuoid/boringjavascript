@@ -1,26 +1,24 @@
-( () => {
-	const animalList = document.getElementById('animalList');
-	const goButton = document.getElementById('go');
-	const results = document.getElementById('results');
-	goButton.addEventListener('click', processList);
+const animalList = document.getElementById('animalList');
+const goButton = document.getElementById('go');
+const results = document.getElementById('results');
+goButton.addEventListener('click', processList);
 
-	function processList(event) {
-		let animalCount = 0;
-		let multiNameCount = 0;
-		const animalNodeList = animalList.querySelectorAll('li');
-		const numAnimals = animalNodeList.length;
-		for (let animalIndex = 0; animalIndex < numAnimals; animalIndex++) {
-			const animal = animalNodeList[animalIndex];
-			const animalType = animal.querySelector('span.type').textContent;
-			const animalName = animal.querySelector('span.name').textContent;
-			if (animalType.toLowerCase().startsWith('c')) {
-				animalCount++;
-			}
-			if (animalName.split(' ').length > 1) {
-				multiNameCount++;
-			}
+function processList(event) {
+	let animalCount = 0;
+	let multiNameCount = 0;
+	const animalNodeList = animalList.querySelectorAll('li');
+	const numAnimals = animalNodeList.length;
+	for (let animalIndex = 0; animalIndex < numAnimals; animalIndex++) {
+		const animal = animalNodeList[animalIndex];
+		const animalType = animal.querySelector('span.type').textContent;
+		const animalName = animal.querySelector('span.name').textContent;
+		if (animalType.toLowerCase().startsWith('c')) {
+			animalCount++;
 		}
-		results.innerHTML = `<p>Number animals starts with "c": ${animalCount}.</p><p>Number multi-word named: ${multiNameCount}.</p>`;
-		results.classList.remove('hide');
+		if (animalName.split(' ').length > 1) {
+			multiNameCount++;
+		}
 	}
-})()
+	results.innerHTML = `<p>Number animals starts with "c": ${animalCount}.</p><p>Number multi-word named: ${multiNameCount}.</p>`;
+	results.classList.remove('hide');
+}

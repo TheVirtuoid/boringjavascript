@@ -2,17 +2,34 @@ class Enum {
 	constructor(...expressions) {
 		let value = 0;
 		expressions.forEach( function (exp) {
+			let newValue = value;
 			Object.defineProperty(this, exp, {
 				enumerable: true,
-				get: function() { return value; }
+				get: function() { return newValue; }
 			});
 			value++;
 		}, this);
 	}
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let animals = new Enum("Cat", "Dog", "Horse");
-console.log(`My Cat is ${animals.Cat}`);
-console.log(`My Dog is ${animals.Dog}`);
-console.log(`My Horse is ${animals.Horse}`);
-console.log(animals);
+console.log(`My cat is ${animals.Cat}`);
+console.log(`My dog is ${animals.Dog}`);
+console.log(`My horse is ${animals.Horse}`);
