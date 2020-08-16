@@ -9,25 +9,9 @@ class Enum {
 			});
 			value++;
 		}, this);
+		Object.freeze(this);
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 let animals = new Enum("Cat", "Dog", "Horse");
 console.log(`My cat is ${animals.Cat}`);
