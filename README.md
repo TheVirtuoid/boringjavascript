@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J018: Enum](https://youtu.be/-AFf_pFaapY) - August 18, 2020
+
 [J017: String.startsWith(), String.endsWith()](https://youtu.be/kmAmaiI9vd0) - August 13, 2020
 
 [J016: Spread / Rest Operators](https://www.youtu.be/T-S0ItmlKcY) - August 11, 2020
