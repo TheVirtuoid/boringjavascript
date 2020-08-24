@@ -8,6 +8,23 @@ console.log(`My animal is a ${horse}.`);
 console.log(animals);
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 console.log(animals);
 let threeAnimals = animals.splice(3, 3);
