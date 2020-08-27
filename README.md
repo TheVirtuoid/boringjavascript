@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J020: Array.pop(), Array.shift(), Array.slice()](https://youtu.be/gANoYLsMi4Y) - August 27, 2020
+
 [J019: Nodelist Iteration](https://youtu.be/no_Q0p6z6k8) - August 20, 2020
 
 [J018: Enum](https://youtu.be/-AFf_pFaapY) - August 18, 2020
