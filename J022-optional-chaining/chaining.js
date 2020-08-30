@@ -26,7 +26,24 @@ const animals = [
 ]
 
 const coyoteFur = animals[0].fur;
-const catHabitat = animals[1].habitat?.location;
 console.log(`My coyote's fur is ${coyoteFur}`);
+const catHabitat = animals[1].habitat?.location;
 console.log(`My cat's habitat is ${catHabitat}`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -20,7 +20,7 @@ async function readAnimalFiles (params) {
 function printResults (params) {
 	console.log(`
 +-----------------------------------+
-| Low Elevation Reading for Zone 1A |
+| Low Elevation Reading for Zone A1 |
 +-----------------------------------|
 | Animal | Reading                  |
 +--------+--------------------------+`)
@@ -43,15 +43,26 @@ function whoopsies (err) {
 
 
 
-/*
 let reading = undefined;
 if (data  && data.habitat && data.habitat.zone && data.habitat.zone.A1 && data.habitat.zone.A1.elevations) {
 	reading = data.habitat.zone.A1.elevations.low;
 }
-*/
 
 
-/*
 let reading = data ? data.habitat ? data.habitat.zone ? data.habitat.zone.A1 ? data.habitat.zone.A1.elevations ? data.habitat.zone.A1.elevations.low : undefined : undefined : undefined : undefined : undefined;
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
