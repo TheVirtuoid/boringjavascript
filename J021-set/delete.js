@@ -7,6 +7,22 @@ const removedAnimal = animalSet.delete("Cat");
 console.log(`Did I remove the cat? ${removedAnimal ? "Yes!" : "No."}`);
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 let animalSet = new Set(animals);
 const removedAnimal = animalSet.delete("Salamander");

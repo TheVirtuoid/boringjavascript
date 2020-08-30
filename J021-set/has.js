@@ -8,12 +8,42 @@ const haveSalamander = animalSet.has("Salamander");
 console.log(`Do I have a cat? ${haveCat ? "Yes!" : "No."}`);
 console.log(`Do I have a salamander? ${haveSalamander ? "Yes!" : "No."}`);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 let animalSet = new Set(animals);
 animalSet.add({type: "Salamander", name: "Sammy"});
 const haveSalamander = animalSet.has({type: "Salamander", name: "Sammy"});
 console.log(`Do I have a salamander? ${haveSalamander ? "Yes!" : "No."}`);
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*

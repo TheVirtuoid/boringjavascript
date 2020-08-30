@@ -9,6 +9,21 @@ for(animal of animalSet) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 let animalSet = new Set(animals);
 animalSet.forEach( (animal, animalIndex, theSet) => {
