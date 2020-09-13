@@ -13,10 +13,10 @@
 		<h1>Boring JavaScript - The setInterval() Game</h1>
 		<p>GOAL: Click on a smaller box when the color of that box appears above it. You must click on as many as possible within 10 seconds.</p>
 		<section id="container">
-			<div id="score"></div>
+			<div id="score">0</div>
 			<div id="pitch">
-				<p id="directions"></p>
-				<div id="selection"></div>
+				<p id="status" class="startGame">Click to Start</p>
+				<div id="selection" class="black"></div>
 				<div id="boxes">
 					<div class="block blue"></div>
 					<div class="block red"></div>
@@ -24,7 +24,8 @@
 					<div class="block yellow"></div>
 				</div>
 			</div>
-			<div id="clock"></div>
+			<div id="clock">10.00</div>
 		</section>
+		<script src="game.js" type="module"></script>
 	</body>
 </html>

@@ -20,9 +20,12 @@ body {
 .yellow {
 	background-color: yellow;
 }
+.black {
+	background-color: black;
+}
 .block {
-	width: 100%;
-	height: 100%;
+	width: 40px;
+	height: 40px;
 }
 
 /* ---------------------- container ------------------------------ */
@@ -33,5 +36,47 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
+	color: white;
+	align-items: center;
+	width: fit-content;
 }
 
+#score {
+	border: 1px solid green;
+	background-color: white;
+	color: black;
+	width: 3rem;
+	font-size: 2rem;
+	text-align: center;
+	height: 2rem;
+}
+
+#clock {
+	font-family: monospace;
+	font-size: 3rem;
+	color: darkred;
+}
+
+#pitch {
+	margin: 0 2rem;
+}
+#selection {
+	width: 10rem;
+	height: 1rem;
+}
+#boxes {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 1rem;
+	cursor: pointer;
+}
+#status {
+	text-align: center;
+	font-size: 1.5rem;
+	padding: 0;
+	margin: 0;
+}
+#status.startGame {
+	cursor: pointer;
+}
