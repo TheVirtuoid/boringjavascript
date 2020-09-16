@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J023: setInterval()](https://youtu.be/YnhXwgFJB10) - September 16, 2020
+
 [J022: Optional Chaining](https://youtu.be/6zMC6COnlJ4) - September 8, 2020
 
 [J021: Set](https://youtu.be/eh6RRgjK3w8) - September 1, 2020
