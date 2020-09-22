@@ -1,0 +1,14 @@
+{
+  "name": "j024-date",
+  "version": "1.0.0",
+  "description": "",
+  "main": "temporal.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TheVirtuoid",
+  "license": "ISC",
+  "dependencies": {
+    "proposal-temporal": "^0.3.1"
+  }
+}
