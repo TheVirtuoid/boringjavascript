@@ -1,3 +1,6 @@
+const rightNow = Date.now();
+console.log(`Number of milliseconds since 1970 Jan 1: ${rightNow}`);
+
 const currentDateTime = new Date();
 console.log(`Current Date/Time: ${currentDateTime}\n`);
 
@@ -22,3 +25,6 @@ console.log(`getUTCMilliseconds()\t${currentDateTime.getUTCMilliseconds()}`);
 console.log(`getUTCMinutes()\t\t${currentDateTime.getUTCMinutes()}`);
 console.log(`getUTCMonth()\t\t${currentDateTime.getUTCMonth()}`);
 console.log(`getUTCSeconds()\t\t${currentDateTime.getUTCSeconds()}`);
+
+console.log(rightNow);
+console.log(currentDateTime.getTime());
