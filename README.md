@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J025: setTimeout()](https://youtu.be/Yeax146AZjI) - October 7, 2020
+
 [J024: Date()](https://youtu.be/EsZrFvUuJww) - September 23, 2020
 
 [J023: setInterval()](https://youtu.be/YnhXwgFJB10) - September 16, 2020
