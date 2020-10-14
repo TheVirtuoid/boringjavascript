@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta name="Description" content="">
+		<link rel="icon" href="">
+		<link rel="stylesheet" href="./dnd.css">
+		<title>Boring JavaScript - Rolling D&D dice</title>
+	</head>
+	<body>
+		<h1>Rolling D&D Dice</h1>
+		<div id="instructions">
+			<p>Instructions:</p>
+			<ul>
+				<li>1. Type in the number of dice to roll</li>
+				<li>2. Type in the letter 'd'</li>
+				<li>3. Type in the number of sides on a dice</li>
+				<li>4. Hit the Die!</li>
+			</ul>
+		</div>
+		<div id="dieRollContainer">
+			<label>Dice Equation: <input type="text" id="diceEquation" /></label>
+			<span id="die">
+				<span class="dot ul"></span>
+				<span class="dot ur"></span>
+				<span class="dot c"></span>
+				<span class="dot ll"></span>
+				<span class="dot lr"></span>
+		</span>
+		</div>
+		<p>You rolled <span id="result">???</span></p>
+		<script src="./dnd.js" type="module"></script>
+	</body>
+</html>

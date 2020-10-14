@@ -1,0 +1,70 @@
+body {
+	background-color: #1199ff;
+	color: black;
+	font-size: 2rem;
+}
+
+#instructions {
+	font-size: 1rem;
+}
+
+input {
+	font-size: 2rem;
+}
+
+#dieRollContainer {
+	display: flex;
+	flex-direction: row;
+	justify-items: flex-start;
+	align-items: center;
+}
+
+#die {
+	cursor: pointer;
+	display: inline-block;
+	margin: .5rem;
+	background-color: white;
+	border: 3px solid #aaaaaa;
+	border-radius: 1rem;
+	height: 4rem;
+	width: 4rem;
+	position: relative;
+}
+
+#die .dot {
+	position: absolute;
+	background-color: black;
+	height: .75rem;
+	width: .75rem;
+	border-radius: 50%;
+	border: 2px solid #aaaaaa;
+}
+
+#die .ul {
+	top: .25rem;
+	left: .25rem;
+}
+#die .ur {
+	top: .25rem;
+	left: 2.75rem;
+}
+#die .c {
+	top: 1.5rem;
+	left: 1.5rem;
+}
+#die .ll {
+	top: 2.75rem;
+	left: .25rem;
+}
+#die .lr {
+	top: 2.75rem;
+	left: 2.75rem;
+}
+
+.rotate {
+	animation:spin .4s linear infinite;
+}
+@keyframes spin { 100% { transform:rotate(360deg); } }
+
+
+
