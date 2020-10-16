@@ -1,28 +1,8 @@
-const number = Math.floor(Math.random() * 10);
-console.log(`\nA number between 0 and 9: ${number}\n`);
+const number = Math.ceil(Math.random() * 10) + 4;
+console.log(`\nA number between 1 and 10: ${number}\n`);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
 let numbers = [];
 for (let x = 0; x < 20; x++) {
-	numbers.push(Math.floor(Math.random() * 10));
+	numbers.push(Math.ceil(Math.random() * 10) + 4);
 }
 console.log(numbers);
-*/
