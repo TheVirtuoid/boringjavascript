@@ -7,8 +7,7 @@ const thirdToSixth = animals.slice(3, 6);
 const lastTwo = animals.slice(-2);
 const thirdToNextToLast = animals.slice(3, -1);
 const thirdFromLastToNextToLast = animals.slice(-3, -1);
-const thirdFromLasttoZ = animals.slice(-3, 2);
-
+const thirdFromLastToTwo = animals.slice(-3, 2);
 const all = animals.slice();
 
 console.log('\nIndex Legend:');
@@ -21,6 +20,6 @@ console.log(`(3, 6):   ${JSON.stringify(thirdToSixth)}`);
 console.log(`(-2):     ${JSON.stringify(lastTwo)}`);
 console.log(`(3, -1):  ${JSON.stringify(thirdToNextToLast)}`);
 console.log(`(-3, -1): ${JSON.stringify(thirdFromLastToNextToLast)}`);
-console.log(`(-3, 2):  ${JSON.stringify(thirdFromLasttoZ)}`);
+console.log(`(-3, 2):  ${JSON.stringify(thirdFromLastToTwo)}`);
 console.log(`():       ${JSON.stringify(all)}`);
 
