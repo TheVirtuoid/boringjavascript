@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J027: Array.slice(), String.slice()](https://youtu.be/BVr90rokBcQ) - October 22, 2020
+
 [J026: Math.random()](https://youtu.be/6izYPvGcJUQ) - October 15, 2020
 
 [J025: setTimeout()](https://youtu.be/Yeax146AZjI) - October 7, 2020

@@ -8,12 +8,12 @@ const fiveFromLastToNextToLast = myString.slice(-5, -1);
 const fiveFromLastToTwo = myString.slice(-5, 2);
 const all = myString.slice();
 
-console.log('\nIndex Legend:');
+console.log('\nString Index Legend:');
 console.log('                     1         1         2         2');
 console.log(' 0         5         0         5         0         5');
 console.log(` ${myString.split('').join(' ')}`);
-console.log('-2        -2        -1        -1                    ');
-console.log(' 5         0         5         0        -5         0\n');
+console.log('  -2        -2        -1        -1                   ');
+console.log('   5         0         5         0        -5      -1\n');
 
 console.log(`(13):       ${lastHalf}`);
 console.log(`(15, 20):   ${fifteenToTwenty}`);
