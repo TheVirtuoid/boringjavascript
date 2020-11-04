@@ -1,10 +1,7 @@
-const a = new Error('This is my error');
-
 try {
-	console.log('\nInside the Try')
-	throw a
+	console.log('\nInside the Try');
 } catch (err) {
 	console.log('We have an error!');
 	console.log(err);
 }
-console.log('Completed');
+console.log('Completed\n');
