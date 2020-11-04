@@ -5,7 +5,7 @@ try {
 	throw a;
 } catch (err) {
 	console.log('We have an error!');
-	console.log(err);
+	console.log(`The error message is: ${err.message}`);
 }
 console.log('Completed\n');
 
