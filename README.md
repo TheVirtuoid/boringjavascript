@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J028: Try/Catch](https://youtu.be/wTfghkGsI_A) - November 5, 2020
+
 [J027: Array.slice(), String.slice()](https://youtu.be/BVr90rokBcQ) - October 22, 2020
 
 [J026: Math.random()](https://youtu.be/6izYPvGcJUQ) - October 15, 2020
