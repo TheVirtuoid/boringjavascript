@@ -1,17 +1,33 @@
-function _animal() {
-	return class Animal {
-		constructor() {
-			this.animal = true;
-		}
+class Base {
+	constructor() {
+		this.base = true;
+	}
+}
+const extender = (allParts, part) => part(allParts);
+
+
+class Animal extends [_head, _leg, _tail].reduce(extender, Base) {
+	constructor() {
+		super();
+		this.animal = true;
 	}
 }
 
-const extender = (allParts, part) => {
-	console.log(allParts, part);
-	return allParts(part);
+
+class Human extends [_head, _leg, _tail, _arm].reduce(extender, Base) {
+	constructor() {
+		super();
+		this.human = true;
+		this.legs = 2;
+	}
 }
 
-const newAnimal = [_body, _head, _leg, _tail].reduce(extender, _animal);
+
+const newAnimal = new Animal();
+console.log(newAnimal);
+
+const newHuman = new Human();
+console.log(newHuman);
 console.log(newAnimal);
 
 
@@ -32,47 +48,51 @@ console.log(newAnimal);
 
 
 
-
 function _body(Base) {
-	return class Body extends Base {
+	class Body extends Base {
 		constructor() {
 			super();
 			this.body = true;
 		}
 	}
+	return Body;
 }
 
 function _leg(Base) {
-	return class Leg extends Base {
+	class Leg extends Base {
 		constructor(num = 4) {
 			super();
 			this.legs = num;
 		}
 	}
+	return Leg;
 }
 function _arm(Base) {
-	return class Arm extends Base {
+	class Arm extends Base {
 		constructor(num = 2) {
 			super();
 			this.arms = num;
 		}
 	}
+	return Arm;
 }
 
 function _head(Base) {
-	return class Head extends Base {
+	class Head extends Base {
 		constructor() {
 			super();
 			this.head = true;
 		}
 	}
+	return Head;
 }
 
 function _tail(Base) {
-	return class Tail extends Base {
+	class Tail extends Base {
 		constructor() {
 			super();
 			this.tail = true;
 		}
 	}
+	return Tail;
 }
