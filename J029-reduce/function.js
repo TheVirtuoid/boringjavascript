@@ -1,37 +1,34 @@
-class Base {
+class BaseAnimal {
 	constructor() {
 		this.base = true;
 	}
 }
-const extender = (allParts, part) => part(allParts);
+const creator = (allAnimalParts, animalPart) => animalPart(allAnimalParts);
+const extender = (...parts) => parts.reduce(creator, BaseAnimal);
 
-
-class Animal extends [_head, _leg, _tail].reduce(extender, Base) {
+class Cat extends extender(body, head, tail, legs) {
 	constructor() {
 		super();
-		this.animal = true;
+		this.legs = 4;
 	}
 }
 
-
-class Human extends [_head, _leg, _tail, _arm].reduce(extender, Base) {
+class RoadRunner extends extender(body, head, tail, legs, wings) {
 	constructor() {
 		super();
-		this.human = true;
 		this.legs = 2;
+		this.wings = 2;
 	}
 }
 
 
-const newAnimal = new Animal();
-console.log(newAnimal);
+const myCat = new Cat();
+console.log(myCat);
+const myRoadRunner = new RoadRunner();
+console.log(myRoadRunner);
 
-const newHuman = new Human();
-console.log(newHuman);
-console.log(newAnimal);
-
-
-
+const myArms = new (arms(BaseAnimal));
+console.log(myArms);
 
 
 
@@ -48,7 +45,9 @@ console.log(newAnimal);
 
 
 
-function _body(Base) {
+
+
+function body(Base) {
 	class Body extends Base {
 		constructor() {
 			super();
@@ -58,26 +57,26 @@ function _body(Base) {
 	return Body;
 }
 
-function _leg(Base) {
-	class Leg extends Base {
+function legs(Base) {
+	class Legs extends Base {
 		constructor(num = 4) {
 			super();
 			this.legs = num;
 		}
 	}
-	return Leg;
+	return Legs;
 }
-function _arm(Base) {
-	class Arm extends Base {
+function arms(Base) {
+	class Arms extends Base {
 		constructor(num = 2) {
 			super();
 			this.arms = num;
 		}
 	}
-	return Arm;
+	return Arms;
 }
 
-function _head(Base) {
+function head(Base) {
 	class Head extends Base {
 		constructor() {
 			super();
@@ -87,7 +86,7 @@ function _head(Base) {
 	return Head;
 }
 
-function _tail(Base) {
+function tail(Base) {
 	class Tail extends Base {
 		constructor() {
 			super();
@@ -95,4 +94,14 @@ function _tail(Base) {
 		}
 	}
 	return Tail;
+}
+
+function wings(Base) {
+	class Wings extends Base {
+		constructor() {
+			super();
+			this.wings = true;
+		}
+	}
+	return Wings;
 }
