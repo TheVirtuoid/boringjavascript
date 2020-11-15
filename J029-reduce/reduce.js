@@ -1,10 +1,11 @@
 const votes = [34, 19, 12, 99, 45, 33, 19];
+console.log(votes);
 const sum = (accumulator, currentValue) => accumulator + currentValue;
 
 
-const finalNumber = votes.reduce(sum, 10);
+const finalNumber = votes.reduce(sum);
 
-let numberCheck = 10;
+let numberCheck = 0;
 votes.forEach( number => numberCheck += number);
 
 console.log(`\nThe finalNumber is ${finalNumber}, and it should be ${numberCheck}.`);
