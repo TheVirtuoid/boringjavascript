@@ -6,5 +6,5 @@ const cAnimals = (accumulator, animal) => {
 	return animal.startsWith('C') ? accumulator + 1 : accumulator;
 }
 
-const allMyCAnimals = animals.reduce(cAnimals);
+const allMyCAnimals = animals.reduce(cAnimals, 0);
 console.log(`\nI have ${allMyCAnimals} animals that start with the letter "C".`);

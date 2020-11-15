@@ -3,6 +3,7 @@ class BaseAnimal {
 		this.base = true;
 	}
 }
+
 const creator = (allAnimalParts, animalPart) => animalPart(allAnimalParts);
 const extender = (...parts) => parts.reduce(creator, BaseAnimal);
 
