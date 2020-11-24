@@ -4,8 +4,6 @@ const submitDom = document.getElementById('submit');
 const errorMessageDom = document.getElementById('errorMessage');
 const successDom = document.getElementById('success');
 
-
-
 usernameDom.addEventListener('change', validateUsername);
 passwordDom.addEventListener('change', validatePassword);
 submitDom.addEventListener('click', submit);
@@ -45,21 +43,19 @@ function submit(event) {
 	// you don't really need to check the validates here again.
 	// Here is where you will actually send the login request to the
 	// server.
-	if (validateUsername && validatePassword) {
+	if (validateUsername() && validatePassword()) {
 		showSuccess();
-	} else {
-		displayError('WHOOPS! Something went wrong!')
 	}
 }
 
 function displayError(message) {
-	errorMessageDom.textContent = message;
+	errorMessageDom.insertAdjacentHTML('beforeend', `<span>${message}</span>`);
 	errorMessageDom.classList.add('show');
 }
 
 function clearError() {
 	errorMessageDom.classList.remove('show');
-	errorMessageDom.textContent = "";
+	errorMessageDom.innerHTML = "";
 }
 
 function showSuccess() {

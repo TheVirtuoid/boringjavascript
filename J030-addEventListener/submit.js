@@ -4,10 +4,9 @@ const errorMessageDom = document.getElementById('errorMessage');
 const successDom = document.getElementById('success');
 const formDom = document.getElementById('form');
 
-
 usernameDom.addEventListener('focusout', validateUsername);
 passwordDom.addEventListener('focusout', validatePassword);
-formDom.addEventListener('submit', submit);
+formDom.addEventListener('click', submit);
 
 usernameDom.focus();
 
@@ -52,7 +51,7 @@ function submit(event) {
 }
 
 function displayError(message) {
-	errorMessageDom.textContent = message;
+	errorMessageDom.insertAdjacentHTML('beforeend', `<span>${message}</span>`);
 	errorMessageDom.classList.add('show');
 }
 
