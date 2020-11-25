@@ -11,6 +11,10 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J030: addEventListener()](https://youtu.be/HqPXZUhXshc) - November 25, 2020
+
+[J029: Array.reduce()](https://youtu.be/vh41SnnAkFk) - November 16, 2020
+
 [J028: Try/Catch](https://youtu.be/wTfghkGsI_A) - November 5, 2020
 
 [J027: Array.slice(), String.slice()](https://youtu.be/BVr90rokBcQ) - October 22, 2020

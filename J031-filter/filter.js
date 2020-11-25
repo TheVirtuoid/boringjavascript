@@ -3,6 +3,7 @@ const animals = [
 ];
 
 const AnimalsThatStartWithC = animals.filter( animal => animal.startsWith("C") );
+
 console.log(`\nOriginal List:`);
 console.log(animals);
 console.log(`\nNew List:`);
