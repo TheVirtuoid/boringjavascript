@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J032: JavaScript Datatypes](https://youtu.be/gp2oMOEl3To) - December 8, 2020
+
 [J031: Array.filter()](https://youtu.be/_OOuvQZZQlo) - December 1, 2020
 
 [J030: addEventListener()](https://youtu.be/HqPXZUhXshc) - November 25, 2020
