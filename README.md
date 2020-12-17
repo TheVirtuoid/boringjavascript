@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[HG2020: Run Run Santa](https://youtu.be/vM2JG3t3czY) - December 16, 2020
+
 [J032: JavaScript Datatypes](https://youtu.be/gp2oMOEl3To) - December 8, 2020
 
 [J031: Array.filter()](https://youtu.be/_OOuvQZZQlo) - December 1, 2020
