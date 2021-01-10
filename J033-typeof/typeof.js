@@ -64,6 +64,7 @@ const myOtherString = new String("string");
 console.log(`myOtherBoolean:\t"${typeof myOtherBoolean}"`);
 console.log(`myOtherNumber:\t"${typeof myOtherNumber}"`);
 console.log(`myOtherString:\t"${typeof myOtherString}"`);
+const myBoolean = true;
 
 
 

@@ -19,6 +19,7 @@ const boredom = new BoringClass();
 console.log(`myArray = Array?\t${myArray instanceof Array}`);
 console.log(`myObject = Object?\t${myObject instanceof Object}`);
 console.log(`boredom = BoringClass?\t${boredom instanceof BoringClass}`);
+console.log(`myObject = Number?\t${myObject instanceof Number}`);
 
 /*
 class SuperBoring extends BoringClass {
