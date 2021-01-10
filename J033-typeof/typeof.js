@@ -31,6 +31,31 @@ console.log(`myArray:\t"${typeof myArray}"`);
 console.log(`myClass:\t"${typeof myClass}"`);
 */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 const myOtherBoolean = new Boolean(true);
 const myOtherNumber = new Number(1);
