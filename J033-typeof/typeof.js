@@ -1,5 +1,5 @@
 const myNumber = 1;
-const myBigNumber = 1n;
+const myBigInt = 1n;
 const myString = "string";
 const myBoolean = true;
 const myNull = null;
@@ -10,13 +10,17 @@ const myFunction = () => { console.log('hello world'); };
 
 console.log(`myBoolean:\t"${typeof myBoolean}"`);
 console.log(`myNumber:\t"${typeof myNumber}"`);
-console.log(`myBigNumber:\t"${typeof myBigNumber}"`);
+console.log(`myBigInt:\t"${typeof myBigInt}"`);
 console.log(`myString:\t"${typeof myString}"`);
 console.log(`myNull:\t\t"${typeof myNull}"`);
 console.log(`myUndefined:\t"${typeof myUndefined}"`);
 console.log(`myObject:\t"${typeof myObject}"`);
 console.log(`mySymbol:\t"${typeof mySymbol}"`);
 console.log(`myFunction:\t"${typeof myFunction}"`);
+
+
+
+
 
 
 
@@ -35,3 +39,19 @@ console.log(`myOtherBoolean:\t"${typeof myOtherBoolean}"`);
 console.log(`myOtherNumber:\t"${typeof myOtherNumber}"`);
 console.log(`myOtherString:\t"${typeof myOtherString}"`);
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
