@@ -1,3 +1,4 @@
+/*
 const myNumber = 1;
 const myBigInt = 1n;
 const myString = "string";
@@ -17,6 +18,7 @@ console.log(`myUndefined:\t"${typeof myUndefined}"`);
 console.log(`myObject:\t"${typeof myObject}"`);
 console.log(`mySymbol:\t"${typeof mySymbol}"`);
 console.log(`myFunction:\t"${typeof myFunction}"`);
+*/
 
 
 
@@ -56,14 +58,40 @@ console.log(`myClass:\t"${typeof myClass}"`);
 
 
 
-/*
 const myOtherBoolean = new Boolean(true);
 const myOtherNumber = new Number(1);
 const myOtherString = new String("string");
 console.log(`myOtherBoolean:\t"${typeof myOtherBoolean}"`);
 console.log(`myOtherNumber:\t"${typeof myOtherNumber}"`);
 console.log(`myOtherString:\t"${typeof myOtherString}"`);
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
