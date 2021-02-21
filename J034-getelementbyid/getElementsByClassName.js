@@ -9,7 +9,7 @@ function processForm(event) {
 		event.preventDefault();
 		printErrors(errors);
 		const allErrors = document.getElementsByClassName('error');
-		document.getElementById('numErrors').textContent = `${allErrors.length}`;
+		document.getElementById('numErrors').textContent = `${allErrors.length} className `;
 		document.getElementById('numErrorsPlural').textContent = `${allErrors.length === 1 ? '' : 's'}`;
 		setupForm(false);
 	} else {
