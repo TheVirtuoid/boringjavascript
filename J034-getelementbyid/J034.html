@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="Description" content="">
+        <link rel="icon" href="favicon.ico">
+        <link rel="stylesheet" href="J034.css">
+        <title>Boring JavaScript - Profile Information</title>
+    </head>
+    <body>
+        <h1>Boring JavaScript - Profile Information</h1>
+        <form method="POST" action="blank.html" id="profileForm">
+            <p>Enter the information below to set up your profile.</p>
+            <label><span>Name:</span><input type="text" id="name" /></label>
+            <label><span>Email:</span><input type="text" id="email" /></label>
+            <label><span>Phone:</span><input type="tel" id="phone" /></label>
+            <label><span></span><input type="submit" value="Submit" /></label>
+            <section id="errorMessages">
+                <p>You have <span id="numErrors">0</span> error<span id="numErrorsPlural">s</span></p>
+                <ul></ul>
+            </section>
+        </form>
+        <script src="querySelectorAll.js" type="module"></script>
+    </body>
+</html>

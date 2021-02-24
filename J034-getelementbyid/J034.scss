@@ -1,0 +1,36 @@
+body {
+  font-size: 2rem;
+}
+#errorMessages {
+  display: none;
+  margin: 1rem 0 0 0;
+  color: red;
+
+  &.show {
+    display: initial;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 1rem 0 0 0;
+    padding: 0;
+    li {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+form {
+  width: 25rem;
+  padding: 1rem 5rem;
+  label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+  }
+  input[type="submit"] {
+    font-size: 2rem;
+  }
+}
