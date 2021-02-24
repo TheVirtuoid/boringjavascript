@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J034: getElementById, querySelector](https://youtu.be/S0PDxhGNwNQ) - February 23, 2021
+
 [J033: typeof, instanceof](https://youtu.be/-txNRBNZMFc) - January 18, 2021
 
 [HG2020: Run Run Santa](https://youtu.be/vM2JG3t3czY) - December 16, 2020
