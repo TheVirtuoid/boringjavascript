@@ -1,13 +1,11 @@
-console.log(isNaN(true));		// false
-console.log(isNaN(null));		// false
-console.log(isNaN(NaN));
+console.log(isNaN(true));
+console.log(isNaN(false));
+console.log(isNaN(null));
+console.log(isNaN(undefined));
+
+console.log(1 + true);
+console.log(1 + false);
+console.log(1 + null);
 
 
-/*
-console.log(1 + true);		// prints 2
-console.log(1 + false);		// prints 1
-console.log(1 + null);		// prints 1
-*/
-
-
-console.log(isNaN(""));		// false
+console.log(isNaN(""));
