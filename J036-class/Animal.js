@@ -12,8 +12,4 @@ class Animal {
 	}
 }
 
-const myAnimal = new Animal();
-const myOtherAnimal = new Animal();
-myOtherAnimal.legs = 4;
-console.log(myAnimal);
-console.log(myOtherAnimal);
+export default Animal;
