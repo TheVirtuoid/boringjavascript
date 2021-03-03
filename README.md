@@ -11,7 +11,7 @@ uh...I don't have one yet.
 
 ## Episodes
 
-[J035: isNaN()](https://youtu.be/0ivx7E4LxPM) - February 23, 2021
+[J035: isNaN()](https://youtu.be/0ivx7E4LxPM) - March 2, 2021
 
 [J034: getElementById, querySelector](https://youtu.be/S0PDxhGNwNQ) - February 23, 2021
 
