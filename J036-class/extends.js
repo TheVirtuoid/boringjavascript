@@ -1,4 +1,5 @@
-import Animal from './Animal.js';
+// import Animal from './Animal.js');
+const Animal = require('./Animal.js');
 
 class Cat extends Animal {
 	constructor() {
@@ -8,6 +9,7 @@ class Cat extends Animal {
 
 	speak() {
 		// whatever JavaScript code plays an audio of a 'meow'
+		console.log('meow!');
 	}
 
 	born() {
@@ -17,4 +19,8 @@ class Cat extends Animal {
 }
 
 const myCat = new Cat();
+myCat.born();
 console.log(myCat);
+myCat.speak();
+
+

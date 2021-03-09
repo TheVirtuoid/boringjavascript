@@ -12,4 +12,5 @@ class Animal {
 	}
 }
 
-export default Animal;
+// export default Animal;
+module.exports = Animal;
