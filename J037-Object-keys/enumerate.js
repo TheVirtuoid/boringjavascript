@@ -13,6 +13,7 @@ class Animal {
 
 const myCat = new Animal();
 console.log(Object.keys(myCat));
+console.log(myCat.constructor);
 
 
 
