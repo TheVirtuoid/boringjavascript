@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J037: Object.keys()](https://youtu.be/akOgCqcCz5c) - March 16, 2021
+
 [J036: class](https://youtu.be/kb9w_pkCxIQ) - March 9, 2021
 
 [J035: isNaN()](https://youtu.be/0ivx7E4LxPM) - March 2, 2021
