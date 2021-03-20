@@ -1,38 +1,42 @@
 const animal = {
 	head: true,
-	tail: true,
-	alive: false,
-	moving: false,
 
 	born: function () {
-		console.log('born');
+		console.log('--------inside born');
 		console.log(this);
-		this.alive = true;
 	},
 
 	walk: () => {
-		console.log('walk');
+		console.log('--------inside walk');
 		console.log(this);
-		this.moving = true;
-	},
-
-	ambulate: function (callback) {
-		console.log('-----in ambulate');
-		console.log(this);
-		callback()
 	}
 
 }
 
 animal.born();
 animal.walk();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
-animal.ambulate( () => {
-	console.log('-----ambulate callback');
+const hasHead = () => {
+	console.log('-------- hasHead')
 	console.log(this);
-});
+	return animal.head;
+}
+
+console.log(hasHead());
 */
-animal.ambulate( function () {
-	console.log('-----ambulate callback');
-	console.log(this);
-});

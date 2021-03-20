@@ -1,3 +1,5 @@
+const isEven = number => !(number % 2);
+/*
 const isEven = (number) => {
 	if (number % 2 === 0) {
 		return true;
@@ -5,6 +7,7 @@ const isEven = (number) => {
 		return false;
 	}
 }
+*/
 
 const isElevenEven = isEven(11);
 const isTenEven = isEven(10);
@@ -19,5 +22,16 @@ console.log(`Is 10 even? ${isTenEven}`);
 
 
 
-// const isEven = number => !(number % 2);
+
+
+
+
+
+
+
+
+
+
+
+
 
