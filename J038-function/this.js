@@ -17,7 +17,7 @@ const animal = {
 	},
 
 	ambulate: function (callback) {
-		console.log('in ambulate');
+		console.log('-----in ambulate');
 		console.log(this);
 		callback()
 	}
@@ -26,7 +26,13 @@ const animal = {
 
 animal.born();
 animal.walk();
+/*
 animal.ambulate( () => {
-	console.log('ambulate');
+	console.log('-----ambulate callback');
+	console.log(this);
+});
+*/
+animal.ambulate( function () {
+	console.log('-----ambulate callback');
 	console.log(this);
 });
