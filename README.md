@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J039: indexOf](https://youtu.be/mTreB70U2As) - March 30, 2021
+
 [J038: function](https://youtu.be/ErmF-yiSZtM) - March 23, 2021
 
 [J037: Object.keys()](https://youtu.be/akOgCqcCz5c) - March 16, 2021
