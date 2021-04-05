@@ -4,7 +4,7 @@ const animals = [
 
 const myAnimalIndex = Math.floor(Math.random() * animals.length);
 
-if (myAnimalIndex) {
+if (myAnimalIndex === 0) {
 	console.log('\nMy animal is a Cat!');
 } else {
 	console.log(`\nMy animal is NOT a Cat! It's a ${animals[myAnimalIndex]}.`);
