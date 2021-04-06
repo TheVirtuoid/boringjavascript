@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J040: if](https://youtu.be/-s7c8IUljhw) - April 6, 2021
+
 [J039: indexOf](https://youtu.be/mTreB70U2As) - March 30, 2021
 
 [J038: function](https://youtu.be/ErmF-yiSZtM) - March 23, 2021
