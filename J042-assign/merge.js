@@ -6,10 +6,14 @@ const myAnimals = {
 };
 const yourAnimals = {
 	"Coyote": "Wile E.",
-	"Cat": "Mr. Jingles"
+	"Road Runner": "Beep Beep",
+	"Dolphin": "Flipper",
+	"Whale": "Moby Dick",
+	"Lizard": "Larry"
 };
 
-Object.assign(yourAnimals, myAnimals);
+const allAnimals = Object.assign(yourAnimals, myAnimals);
 
 console.log(myAnimals);
 console.log(yourAnimals);
+console.log(allAnimals);

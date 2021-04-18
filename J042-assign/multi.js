@@ -1,5 +1,9 @@
-const myAnimals =
-		{ "Cat": "Fluffy", "Dog": "Fido", "Horse": "Mr. Ed", "Cow": "Betsy" };
+const myAnimals = {
+	"Cat": "Fluffy",
+	"Dog": "Fido",
+	"Horse": "Mr. Ed",
+	"Cow": "Betsy"
+};
 const coyote = { "Coyote": "Wile E." };
 const roadRunner = { "Road Runner": "Beep Beep" };
 const dolphin = { "Dolphin": "Flipper" };
