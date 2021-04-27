@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J043: String.matchAll()](https://youtu.be/kEHI52TD3Jo) - April 27, 2021
+
 [J042: Object.assign()](https://youtu.be/AR_9GHeGuJI) - April 20, 2021
 
 [J041: JSON](https://youtu.be/CpxK2hdX8LE) - April 13, 2021
