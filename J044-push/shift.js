@@ -12,11 +12,6 @@ console.log('AFTER');
 console.log(animals);
 console.log(`Lost animal is: ${lostAnimal}`)
 
-lostAnimal = animals.shift();
-
-console.log('AFTER 2ND TIME');
-console.log(animals);
-console.log(`Lost animal is: ${lostAnimal}`)
 
 
 

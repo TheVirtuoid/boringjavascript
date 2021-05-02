@@ -3,6 +3,31 @@ const animals = [
 ];
 
 const dinosaur = "Dinosaur";
+
+console.log('BEFORE');
+console.log(animals);
+
+animals.push(dinosaur);
+
+console.log('AFTER');
+console.log(animals);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 const bird = {
 	name: "Tweety",
 	type: "Bird",
@@ -17,3 +42,4 @@ animals.push(bird);
 
 console.log('AFTER');
 console.log(animals);
+*/
