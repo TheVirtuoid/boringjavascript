@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J044: Array.push(), pop(), unshift(), shift()](https://youtu.be/x9ym9Ne7wjI) - May 4, 2021
+
 [J043: String.matchAll()](https://youtu.be/kEHI52TD3Jo) - April 27, 2021
 
 [J042: Object.assign()](https://youtu.be/AR_9GHeGuJI) - April 20, 2021
