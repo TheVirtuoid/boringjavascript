@@ -17,11 +17,18 @@
 		#results.show {
 			display: block;
 		}
+		button {
+			padding-right: 2rem;
+		}
 	</style>
 </head>
 <body>
 <h1>Boring JavaScript - localStorage looping</h1>
-<p><button id="generate">Generate random keys/values</button></p>
+<p>
+	<button id="generate">Generate random keys/values</button>
+	<input type="text" id="keyToRemove" /><button id="remove">Remove</button>
+	<button id="clear">Clear All!</button>
+</p>
 <ul id="results"></ul>
 <script src="./loop.js" type="module"></script>
 </body>
