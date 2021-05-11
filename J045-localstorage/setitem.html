@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta name="Description" content="Boring JavaScript - localStorage.setItem()">
+		<title>Boring JavaScript - localStorage.setItem()</title>
+		<style>
+			body {
+				background-color: #aabbff;
+				font-size: 1.75rem;
+			}
+			#results {
+				display: none;
+			}
+			#results.show {
+				display: block;
+			}
+			button, input {
+				font-size: 1.25rem;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Boring JavaScript - localStorage.setItem()</h1>
+		<div>
+			<label>Enter key: <input id="key" type="text" /></label>
+			<label>Enter value: <input id="value" type="text" /></label>
+			<label><button id="submit">Set Item</button></label>
+		</div>
+		<div>
+			<p id="results">You set the key &quot;<span id="keyValue"></span>&quot; to &quot;<span id="valueValue"></span>&quot;!</p>
+			<div>
+				<label><button id="check">Click here to check</button></label>
+			</div>
+		</div>
+	<script src="./setItem.js" type="module"></script>
+	</body>
+</html>
