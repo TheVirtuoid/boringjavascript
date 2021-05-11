@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J045: localStorage/sessionStorage](https://youtu.be/tU55kvEozcg) - May 11, 2021
+
 [J044: Array.push(), pop(), unshift(), shift()](https://youtu.be/x9ym9Ne7wjI) - May 4, 2021
 
 [J043: String.matchAll()](https://youtu.be/kEHI52TD3Jo) - April 27, 2021
