@@ -6,5 +6,5 @@ const cat = animals[0];
 const dog = animals[1];
 const randomAnimal = animals[Math.floor(Math.random() * animals.length)];
 
-const report = `I have a ${cat}, a ${dog}, and a ${randomAnimal == cat ? `duplicate ` : `unique `}${randomAnimal}`;
+const report = `I have a ${cat}, a ${dog}, and a ${randomAnimal === cat ? `duplicate ` : `unique (${dog}) `}${randomAnimal}`;
 console.log(report);

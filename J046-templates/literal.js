@@ -5,9 +5,23 @@ const animals = [
 const cat = animals[0];
 const dog = animals[1];
 const horse = animals[2];
+let myAnimals;
 
-let myAnimals = "\nMy animals are a " + cat + ", a " + dog + ", and a " + horse + ".";
+myAnimals = "\nMy animals are a " + cat + ", a " + dog + ", and a " + horse + ".";
+myAnimals = `\nMy animals are a ${cat}, a ${dog}, and a ${horse}.`;
 console.log(myAnimals);
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 

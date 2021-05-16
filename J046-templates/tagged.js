@@ -30,7 +30,7 @@ Comments:
 }
 
 const collectedAnimal = animals[Math.floor(Math.random() * animals.length)];
-let report = getReport`We collected this animal in an alley behind the hospital. ${collectedAnimal}`;
+let report = getReport`We collected this animal in an alley behind the hospital. ${collectedAnimal} Who was alive`;
 console.log(report);
 
 report = getReport`We found nothing.`;
