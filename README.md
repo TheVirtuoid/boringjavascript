@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J046: Template Literals](https://youtu.be/ksHB4_mlZF8) - May 18, 2021
+
 [J045: localStorage/sessionStorage](https://youtu.be/tU55kvEozcg) - May 11, 2021
 
 [J044: Array.push(), pop(), unshift(), shift()](https://youtu.be/x9ym9Ne7wjI) - May 4, 2021
