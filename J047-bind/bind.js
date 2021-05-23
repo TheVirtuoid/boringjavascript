@@ -16,6 +16,27 @@ function getAnimalName (animalType) {
 }
 
 const myAnimal = "Cat";
-const myAnimalName = getAnimalName(myAnimal);
+// const myAnimalName = getAnimalName(myAnimal);
+const myAnimalName = getAnimalName.bind(animals)(myAnimal);
 
 console.log(`\nThe name of my ${myAnimal} is ${myAnimalName}.`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const myAnimalName = getAnimalName.bind(animals)(myAnimal);

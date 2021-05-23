@@ -20,11 +20,11 @@ class Zoo {
 
 	showRandomAnimals() {
 		this.count = 10;
-		this.timer = setInterval(this.getRandomAnimal, 1000)
+		// this.timer = setInterval(this.getRandomAnimal, 1000)
+		this.timer = setInterval(this.getRandomAnimal.bind(this), 1000)
 	}
 
 	getRandomAnimal () {
-		console.log(this);
 		const animalNumber = Math.floor(Math.random() * this.animals.length);
 		const animal = this.animals[animalNumber];
 		console.log(`The name of the Zoo ${animal.type} is ${animal.name}.`);
@@ -38,3 +38,28 @@ class Zoo {
 const myZoo = new Zoo();
 console.log(`\nThe name of my Personal Cat is ${myZoo.getAnimalName('Cat')}.\n`);
 myZoo.showRandomAnimals();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 		this.timer = setInterval(this.getRandomAnimal.bind(this), 1000)

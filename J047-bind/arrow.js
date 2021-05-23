@@ -11,12 +11,14 @@ const animals = [
 ];
 
 const getAnimalName =  (animalType) => {
+	console.log('-----------here is my this');
 	console.log(this);
+	console.log('-----------there was my this');
 	const animal =  this.find( animal => animal.type === animalType);
 	return animal.name;
 }
 
 const myAnimal = "Cat";
-const myAnimalName = getAnimalName(myAnimal);
+const myAnimalName = getAnimalName.bind(animals)(myAnimal);
 
 console.log(`\nThe name of my ${myAnimal} is ${myAnimalName}.`);
