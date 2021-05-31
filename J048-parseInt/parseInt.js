@@ -12,3 +12,53 @@ console.log(`Number in Base 8:  ${number8}`);
 console.log(`Number in Base 2:  ${number2}`);
 
 console.log(parseInt("2345", 2));
+
+console.log(parseInt("1.2", 10));
+console.log(parseInt("1.6", 10));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+console.log(parseInt("2345", 2));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+console.log(parseInt("1.2", 10));
+console.log(parseInt("1.6", 10));
+
+ */
