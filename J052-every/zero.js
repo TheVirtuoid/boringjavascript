@@ -6,6 +6,7 @@ console.log(`\nAre all of my animals mammal? ${isMammalia ? "Yes" : "No"}.`);
 */
 
 
+
 let animalsAdded = 5;
 const animals = [
 	{ "type": "Cat", "name": "Fluffy", "class": "Mammalia" },
