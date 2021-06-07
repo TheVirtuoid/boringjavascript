@@ -21,5 +21,5 @@ name = "Rover";
 age = 0;
 const myDog = new Animal({ name, age });
 
-console.log(`My cat's stats: ${myCat.stats()}`);
+console.log(`\nMy cat's stats: ${myCat.stats()}`);
 console.log(`My dog's stats: ${myDog.stats()}`);

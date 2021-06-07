@@ -19,7 +19,7 @@ const myCat = new Animal({ name, age });
 
 name = "Rover";
 age = 0;
-const myDog = new Animal({ name, age });
+const myDog = new Animal({ name, age: null });
 
-console.log(`My cat's stats: ${myCat.stats()}`);
+console.log(`\nMy cat's stats: ${myCat.stats()}`);
 console.log(`My dog's stats: ${myDog.stats()}`);
