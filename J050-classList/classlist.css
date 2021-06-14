@@ -12,6 +12,14 @@ button {
     border: none;
 }
 
+h1.red {
+    color: red;
+}
+
+h1.green {
+    color: green;
+}
+
 input {
     font-size: 1.25rem;
 }
@@ -33,46 +41,41 @@ input {
     color: white;
 }
 
+#zoo.crab span[crab]:after {
+    content: "\1f980";
+}
+#zoo.lion span[lion]:after {
+    content: "\1f981";
+}
+#zoo.scorpion span[scorpion]:after {
+    content: "\1f982";
+}
+#zoo.unicorn span[unicorn]:after {
+    content: "\1f984";
+}
+#zoo.eagle span[eagle]:after {
+    content: "\1f985";
+}
+#zoo.duck span[duck]:after {
+    content: "\1f986";
+}
+#zoo.bat span[bat]:after {
+    content: "\1f987";
+}
+#zoo.shark span[shark]:after {
+    content: "\1f988";
+}
+#zoo.owl span[owl]:after {
+    content: "\1f989";
+}
+#zoo.fox span[fox]:after {
+    content: "\1f98a";
+}
+
 #zoo span.highlight {
     background-color: red;
     color: white;
 }
-
-
-#zoo span.crab:after {
-    content: "\1f980";
-}
-#zoo span.lion:after {
-    content: "\1f981";
-}
-#zoo span.lobster:after {
-    content: "\1f982";
-}
-#zoo span.unicorn:after {
-    content: "\1f984";
-}
-#zoo span.eagle:after {
-    content: "\1f985";
-}
-#zoo span.duck:after {
-    content: "\1f986";
-}
-#zoo span.bat:after {
-    content: "\1f987";
-}
-#zoo span.shark:after {
-    content: "\1f988";
-}
-#zoo span.owl:after {
-    content: "\1f989";
-}
-#zoo span.fox:after {
-    content: "\1f98a";
-}
-
-
-
-
 
 
 

@@ -6,7 +6,6 @@ routingTable.set('toggle', toggleClass);
 routingTable.set('contains', containsClass);
 const zoo = document.getElementById('zoo');
 const classes = document.getElementById('classes');
-const inputs = [...document.querySelectorAll('input')];
 
 function processButton(event) {
 	if (event.target.tagName === 'BUTTON') {
@@ -20,13 +19,17 @@ function processButton(event) {
 
 function printClasses(highlight = "") {
 	while (classes.firstChild) classes.removeChild(classes.firstChild);
-	while (zoo.firstChild) zoo.removeChild(zoo.firstChild);
 	for (const className of zoo.classList.values()) {
 		const addHighlight = highlight === className ? "highlight" : "";
 		classes.insertAdjacentHTML('beforeend', `<li class="${addHighlight}">${className}</li>`);
-		zoo.insertAdjacentHTML('beforeend', `<span class="${className} ${addHighlight}"></span>`);
 	}
-	// inputs.forEach( input => input.value = "");
+	document.querySelectorAll('#zoo span').forEach( animal => {
+		if (animal.hasAttribute(highlight)) {
+			animal.classList.add('highlight');
+		} else {
+			animal.classList.remove('highlight');
+		}
+	});
 }
 
 function addClass(label) {
