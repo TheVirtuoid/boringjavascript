@@ -1,0 +1,81 @@
+body {
+    background-color: #aabbff;
+    font-size: 1.75rem;
+}
+
+button {
+    padding-right: 2rem;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+h1.red {
+    color: red;
+}
+
+h1.green {
+    color: green;
+}
+
+input {
+    font-size: 1.25rem;
+}
+
+#playing-field {
+    display: grid;
+    grid-template-columns: 23rem auto;
+}
+
+#playing-field label {
+    display: grid;
+    column-gap: 1rem;
+    grid-template-columns: 8rem 8rem 3rem;
+    margin-bottom: .5rem;
+}
+
+#classes li.highlight {
+    background-color: red;
+    color: white;
+}
+
+#zoo.crab span[crab]:after {
+    content: "\1f980";
+}
+#zoo.lion span[lion]:after {
+    content: "\1f981";
+}
+#zoo.scorpion span[scorpion]:after {
+    content: "\1f982";
+}
+#zoo.unicorn span[unicorn]:after {
+    content: "\1f984";
+}
+#zoo.eagle span[eagle]:after {
+    content: "\1f985";
+}
+#zoo.duck span[duck]:after {
+    content: "\1f986";
+}
+#zoo.bat span[bat]:after {
+    content: "\1f987";
+}
+#zoo.shark span[shark]:after {
+    content: "\1f988";
+}
+#zoo.owl span[owl]:after {
+    content: "\1f989";
+}
+#zoo.fox span[fox]:after {
+    content: "\1f98a";
+}
+
+#zoo span.highlight {
+    background-color: red;
+    color: white;
+}
+
+
+
