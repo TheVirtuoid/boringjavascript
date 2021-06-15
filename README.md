@@ -11,7 +11,9 @@ uh...I don't have one yet.
 
 ## Episodes
 
-[J048: nullish](https://youtu.be/Z5JoVmuIKLU) - June 8, 2021
+[J050: classList](https://youtu.be/dDV5I8aX31M) - June 15, 2021
+
+[J049: nullish](https://youtu.be/Z5JoVmuIKLU) - June 8, 2021
 
 [J048: parseInt()](https://youtu.be/6hOxAosLxLk) - June 1, 2021
 
