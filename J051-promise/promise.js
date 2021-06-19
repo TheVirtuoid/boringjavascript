@@ -14,7 +14,7 @@ function doBuild() {
 			.then(buildBoondit)
 			.then(buildPlunkle)
 			.then(allDone)
-			.catch(mistake)
+			.catch(mistake);
 	buildCase(results);
 }
 
@@ -36,7 +36,7 @@ function buildSkrebert(results) {
 
 function buildBoondit(results) {
 	return new Promise( (resolve, reject) => {
-		const completed = true;
+		const completed = false;
 		setTimeout( () => {
 			results.boondit = completed;
 			if (completed) {
