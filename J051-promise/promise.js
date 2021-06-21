@@ -9,6 +9,8 @@ const go = document.getElementById('go');
 go.addEventListener('click', doBuild);
 
 function doBuild() {
+	go.classList.add('clicked');
+	go.setAttribute('disabled', '');
 	const results = { skrebert: false, boondit: false, plunkle: false, woodenCase: false };
 	buildSkrebert(results)
 			.then(buildBoondit)

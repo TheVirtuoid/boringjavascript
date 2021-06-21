@@ -163,4 +163,10 @@ img.hide {
     border-radius: 50%;
     font-size: 1.25rem;
     font-weight: bold;
+    cursor:pointer;
+}
+
+#go.clicked {
+    background-color: red;
+    cursor: auto;
 }
