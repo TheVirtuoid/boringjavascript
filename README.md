@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J051: promise](https://youtu.be/FvV0QuzhtBA) - June 22, 2021
+
 [J050: classList](https://youtu.be/dDV5I8aX31M) - June 15, 2021
 
 [J049: nullish](https://youtu.be/Z5JoVmuIKLU) - June 8, 2021
