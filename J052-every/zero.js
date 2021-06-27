@@ -1,9 +1,32 @@
+
 /*
 const animals = [];
 
 const isMammalia = animals.every( animal => animal.class === "Mammalia" );
 console.log(`\nAre all of my animals mammal? ${isMammalia ? "Yes" : "No"}.`);
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
