@@ -1,18 +1,26 @@
-const myMap = new Map();
-const myCat = { name: 'Fluffy', size: 'small', breed: { type: 'cat' }};
-let myBreed = myCat.breed;
+import Animal from "./Animal.js";
 
-myMap.set(myBreed, { location: 'home' });
-console.log(myMap.get(myBreed));
+const zoo = {};
+for (let i = 0; i < 200; i++) {
+	const name = `fluffy${i}`;
+	const age = Math.floor(Math.random() * 5);
+	zoo[name] = new Animal(name, age);
+}
 
-myBreed = null;
+console.log(`Animal size before: ${Animal.mapSize}`);
+for (let i = 5; i < 200; i++) {
+	const name = `fluffy${i}`;
+	delete zoo[name];
+}
 
-console.log(myCat);
-console.log(myMap.size);
 setTimeout( () => {
-	console.log(myMap.has(myBreed));
-	console.log(myMap.size);
-}, 2000);
+	console.log(`Animal size after: ${Animal.mapSize}`);
+	for (const animal in zoo) {
+		console.log(zoo[animal]);
+	}
+}, 5000);
+
+
 
 
 
