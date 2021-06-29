@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J052: Array.every()](https://youtu.be/gufqWrKTdvs) - June 29, 2021
+
 [J051: promise](https://youtu.be/FvV0QuzhtBA) - June 22, 2021
 
 [J050: classList](https://youtu.be/dDV5I8aX31M) - June 15, 2021
