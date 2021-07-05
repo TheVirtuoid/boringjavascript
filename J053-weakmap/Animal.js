@@ -1,4 +1,4 @@
-const privateMap = new Map()
+const privateMap = new WeakMap()
 
 export default class Animal {
 	name;

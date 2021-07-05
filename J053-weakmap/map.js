@@ -16,7 +16,7 @@ for (let i = 5; i < 200; i++) {
 setTimeout( () => {
 	console.log(`Animal size after: ${Animal.mapSize}`);
 	for (const animal in zoo) {
-		console.log(zoo[animal]);
+		console.log(`Name: ${zoo[animal].name}, age: ${zoo[animal].age}, newAge: ${zoo[animal].getNewAge()}`);
 	}
 }, 5000);
 
