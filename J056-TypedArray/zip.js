@@ -1,5 +1,5 @@
 const fs = require('fs');
-const FileEntry = require('./FileEntry-original.js');
+const FileEntry = require('./FileEntry.js');
 
 const zipFileContents = fs.readFileSync('./J050-classList.zip');
 const files = [];

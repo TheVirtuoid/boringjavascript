@@ -1,12 +1,8 @@
-const binaryArrayBuffer = new ArrayBuffer(256);
-const binaryArray = new Uint8ClampedArray(binaryArrayBuffer);
-for(let i = 0; i < 256; i++) {
-	binaryArray[i] = Math.floor(Math.random() * 256);
-}
+const binaryArrayBuffer = buildBuffer();
 
 const int8Array = new Int8Array(binaryArrayBuffer, 0, 10);
 const uint8Array = new Uint8Array(binaryArrayBuffer, 0, 10);
-const uint8ClampedArray = new Uint8Array(binaryArrayBuffer, 0, 10);
+const uint8ClampedArray = new Uint8ClampedArray(binaryArrayBuffer, 0, 10);
 const int16Array = new Int16Array(binaryArrayBuffer, 0, 10);
 const uint16Array = new Uint16Array(binaryArrayBuffer, 0, 10);
 const int32Array = new Int32Array(binaryArrayBuffer, 0, 10);
@@ -27,3 +23,15 @@ console.log(`float32Array:\n${float32Array}\n`);
 console.log(`float64Array:\n${float64Array}\n`);
 console.log(`bigInt64Array:\n${bigInt64Array}\n`);
 console.log(`bigUint64Array:\n${bigUint64Array}\n`);
+
+
+
+
+function buildBuffer() {
+	const binaryArrayBuffer = new ArrayBuffer(256);
+	const binaryArray = new Uint8ClampedArray(binaryArrayBuffer);
+	for(let i = 0; i < 256; i++) {
+		binaryArray[i] = Math.floor(Math.random() * 256);
+	}
+	return binaryArray.buffer;
+}

@@ -1,3 +1,23 @@
+/*
+   4.3.7  Local file header:
+
+      local file header signature     4 bytes  (0x04034b50)
+      version needed to extract       2 bytes
+      general purpose bit flag        2 bytes
+      compression method              2 bytes
+      last mod file time              2 bytes
+      last mod file date              2 bytes
+      crc-32                          4 bytes
+      compressed size                 4 bytes
+      uncompressed size               4 bytes
+      file name length                2 bytes
+      extra field length              2 bytes
+
+      file name (variable size)
+      extra field (variable size)
+
+ */
+
 module.exports = class FileEntry {
 	header;
 	filename;
