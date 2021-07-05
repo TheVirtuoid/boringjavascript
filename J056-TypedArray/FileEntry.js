@@ -59,24 +59,6 @@ module.exports = class FileEntry {
 
 /*
 
-		this.header = {
-			signature: new Uint32Array(buffer, start, 1),
-			version: new Uint16Array(buffer, start + 4, 1),
-			bitFlag: new Uint16Array(buffer, start + 6, 1),
-			compressionMethod: new Uint16Array(buffer, start + 8, 1),
-			lastModFileTime: new Uint16Array(buffer, start + 10, 1),
-			lastModFileDate: new Uint16Array(buffer, start + 12, 1),
-			crc32: new Uint32Array(buffer, start + 14, 1),
-			compressedSize: new Uint32Array(buffer, start + 18, 1),
-			uncompressedSize: new Uint32Array(buffer, start + 22, 1),
-			fileNameLength: new Uint16Array(buffer, start + 26, 1),
-			extraFieldLength: new Uint16Array(buffer, start + 28, 1)
-		}
-
- */
-
-/*
-
 00000000   50 4B 03 04 14 00 00 00 08 00 48 96 DD 52 B9 1C  PK........H?YR1.
 00000010   3D 93 44 01 00 00 1D 02 00 00 0A 00 00 00 62 6C  =?D...........bl
 00000020   61 6E 6B 2E 68 74 6D 6C
