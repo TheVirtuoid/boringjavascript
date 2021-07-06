@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J053: WeakMap()](https://youtu.be/ajmdlQd1jSQ) - July 7, 2021
+
 [J052: Array.every()](https://youtu.be/gufqWrKTdvs) - June 29, 2021
 
 [J051: promise](https://youtu.be/FvV0QuzhtBA) - June 22, 2021
