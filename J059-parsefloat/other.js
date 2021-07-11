@@ -17,4 +17,4 @@ console.log(`Boolean: ${parseFloat(true)}`);
 console.log(`NaN: ${parseFloat(NaN)}`);
 console.log(`null: ${parseFloat(null)}`);
 console.log(`undefined: ${parseFloat(undefined)}`);
-console.log(`Object: ${parseFloat({ cat: 'Fluufy' })}`);
+console.log(`Object: ${parseFloat({ cat: 'Fluffy' })}`);
