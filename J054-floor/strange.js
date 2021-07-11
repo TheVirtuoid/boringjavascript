@@ -1,30 +1,71 @@
+console.log('\n------------strings----------');
 console.log(Math.floor("1.2"));
 console.log(Math.floor("TheVirtuoid"));
+console.log(Math.floor("1.2TheVirtuoid"));
 
-/* output
-1
-NaN
-*/
-
+console.log('\n------------objects, NaN, undefined----------');
 console.log(Math.floor({ myCat: 3 }));
 console.log(Math.floor(undefined));
 console.log(Math.floor(NaN));
 
-/* output
-NaN
-NaN
-NaN
-*/
-
+console.log('\n------------boolean, null, empty string----------');
 console.log(Math.floor(false));
 console.log(Math.floor(true));
 console.log(Math.floor(null));
 console.log(Math.floor(""));
 
-/* output
-0
-1
-0
-0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+console.log('\n------------objects, NaN, undefined----------');
+console.log(Math.floor({ myCat: 3 }));
+console.log(Math.floor(undefined));
+console.log(Math.floor(NaN));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+console.log('\n------------boolean, null, empty string----------');
+console.log(Math.floor(false));
+console.log(Math.floor(true));
+console.log(Math.floor(null));
+console.log(Math.floor(""));
 */
 
