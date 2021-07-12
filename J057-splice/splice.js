@@ -17,7 +17,16 @@ const cow = animals.findIndex( animal => animal.type === "Cow" );
 animals.splice(cow, 1);
 console.log('\nAFTER');
 console.log(animals);
+
 */
+
+
+
+
+
+
+
+
 
 
 const animals = [
