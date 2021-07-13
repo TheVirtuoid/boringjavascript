@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J054: Math.floor()](https://youtu.be/0H37FKYsljY) - July 13, 2021
+
 [J053: WeakMap()](https://youtu.be/ajmdlQd1jSQ) - July 7, 2021
 
 [J052: Array.every()](https://youtu.be/gufqWrKTdvs) - June 29, 2021
