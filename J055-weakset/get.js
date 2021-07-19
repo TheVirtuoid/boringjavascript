@@ -15,3 +15,4 @@ console.log(`Is there a lizard in my house?\t${myHouse.has(lizard) ? 'Yes' : 'No
 myHouse.delete(dog);
 console.log('\n-------- The Dog Was Adopted ---------');
 console.log(`Is there a dog in my house?\t${myHouse.has(dog) ? 'Yes' : 'No'}`);
+
