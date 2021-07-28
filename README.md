@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J056: TypedArray()](https://youtu.be/L5AuuCttleE) - July 27, 2021
+
 [J055: WeakSet()](https://youtu.be/w55XRs0Kduw) - July 20, 2021
 
 [J054: Math.floor()](https://youtu.be/0H37FKYsljY) - July 13, 2021
