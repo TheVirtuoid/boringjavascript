@@ -10,6 +10,6 @@ export default class Animal {
 	}
 
 	toSuperString () {
-		return `The animal's name is "${this.name}", its type is a "${this.type}, and its age is ${this.age} years old."`;
+		return `The animal's name is "${this.name}", it's type is a "${this.type}", and it's age is ${this.age} years old.`;
 	}
 }

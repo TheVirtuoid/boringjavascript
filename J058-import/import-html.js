@@ -1,4 +1,4 @@
-import Animal from './ImportAnimal.js';
+import Animal from './Animal.js';
 
 const myCat = new Animal({ name: "Fluffy", type: "cat" });
 
