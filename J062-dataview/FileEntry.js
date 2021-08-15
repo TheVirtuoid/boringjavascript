@@ -25,55 +25,57 @@ module.exports = class FileEntry {
 	dataOffset;
 	fileOffset;
 	fileData;
+	view;
 
 	constructor(incomingBuffer, start = 0) {
-		const newBuffer = new ArrayBuffer(incomingBuffer.length);
-		const arrayBuffer = new Uint8Array(newBuffer);
-		arrayBuffer.set(new Uint8Array(incomingBuffer));
-		const { buffer } = arrayBuffer;
+		const view = new DataView(incomingBuffer.buffer);
 
 		this.header = {
-			signature: FileEntry.toUint32Array(new Uint8Array(buffer, start, 4))[0],
-			version: FileEntry.toUint16Array(new Uint8Array(buffer, start + 4, 2))[0],
-			bitFlag: FileEntry.toUint16Array(new Uint8Array(buffer, start + 6, 2))[0],
-			compressionMethod: FileEntry.toUint16Array(new Uint8Array(buffer, start + 8, 2))[0],
-			lastModFileTime: FileEntry.toUint16Array(new Uint8Array(buffer, start + 10, 2))[0],
-			lastModFileDate: FileEntry.toUint16Array(new Uint8Array(buffer, start + 12, 2))[0],
-			crc32: FileEntry.toUint32Array(new Uint8Array(buffer, start + 14, 4))[0],
-			compressedSize: FileEntry.toUint32Array(new Uint8Array(buffer, start + 18, 4))[0],
-			uncompressedSize: FileEntry.toUint32Array(new Uint8Array(buffer, start + 22, 4))[0],
-			fileNameLength: FileEntry.toUint16Array(new Uint8Array(buffer, start + 26, 2))[0],
-			extraFieldLength: FileEntry.toUint16Array(new Uint8Array(buffer, start + 28, 2))[0]
+			signature: view.getUint32(start),
+			version: view.getUint16(start + 4),
+			bitFlag: view.getUint16(start + 6),
+			compressionMethod: view.getUint16(start + 8),
+			lastModFileTime: view.getUint16(start + 10),
+			lastModFileDate: view.getUint16(start + 12),
+			crc32: view.getUint32(start + 14),
+			compressedSize: view.getUint32(start + 18),
+			uncompressedSize: view.getUint32(start + 22),
+			fileNameLength: view.getUint16(start + 26),
+			extraFieldLength: view.getUint16(start + 28)
 		}
-		this.filename = this.header.fileNameLength ? String.fromCharCode.apply(null, new Uint8Array(buffer, start + 30, this.header.fileNameLength)) : '';
-		this.extraField = this.header.extraFieldLength ? new Uint8Array(buffer, start + 30 + this.header.fileNameLength, this.header.extraFieldLength) : null;
+		console.log(this.header);
+		this.filename = this.header.fileNameLength ? String.fromCharCode.apply(null, new Uint8Array(view.buffer, start + 30, this.header.fileNameLength)) : '';
+		this.extraField = this.header.extraFieldLength ? new Uint8Array(view.buffer, start + 30 + this.header.fileNameLength, this.header.extraFieldLength) : null;
 		this.dataOffset = start + 30 + this.header.fileNameLength + this.header.extraFieldLength;
-		this.fileData = new Uint8Array(buffer, this.dataOffset, this.header.compressedSize);
+		this.fileData = new Uint8Array(view.buffer, this.dataOffset, this.header.compressedSize);
 		this.fileOffset = this.dataOffset + this.header.compressedSize;
+		this.view = view;
 	}
 
 	static isFileHeader = function (buffer, start = 0) {
-		const signature = FileEntry.toUint32Array(new Uint8Array(buffer.slice(start, start + 4), start, 4))[0];
-		return signature === parseInt('0x04034b50');
+		return FileEntry.getUint32FromBuffer(buffer, start) === parseInt('0x04034b50');
 	}
 
 	static isCentralDirectoryStructure = function (buffer, start = 0) {
-		const signature = FileEntry.toUint32Array(new Uint8Array(buffer.slice(start, start + 4), start, 4))[0];
-		return signature === parseInt('0x02014b50');
+		return FileEntry.getUint32FromBuffer(buffer, start) === parseInt('0x02014b50');
 	}
 
-	static toUint32Array  = function (uint8array) {
-		const newBuffer = new ArrayBuffer(4);
-		const arrayBuffer = new Uint8Array(newBuffer);
-		arrayBuffer.set(uint8array);
-		return new Uint32Array(arrayBuffer.buffer, 0, 1);
-	}
+	static getUint32FromBuffer = function (buffer, start = 0) {
+		const data = Uint8Array.from(buffer.slice(start, start + 4)).buffer;
+		const view = new DataView(data);
+		console.log(view.getUint32(0));
 
-	static toUint16Array  = function (uint8array) {
-		const newBuffer = new ArrayBuffer(2);
-		const arrayBuffer = new Uint8Array(newBuffer);
-		arrayBuffer.set(uint8array);
-		return new Uint16Array(arrayBuffer.buffer, 0, 1);
+		return view.getUint32(0);
+
+/*
+		const numberBuffer = new ArrayBuffer(4);
+		const arrayBuffer = new Uint8Array(numberBuffer);
+		console.log(new Uint8Array(buffer, start, 4));
+		arrayBuffer.set(new Uint8Array(buffer, start, 4), 0);
+		console.log(arrayBuffer);
+		const number = new DataView(new Uint8Array(arrayBuffer.buffer)).getUint32(0);
+		return number;
+*/
 	}
 }
 
