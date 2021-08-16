@@ -57,10 +57,15 @@ module.exports = class FileEntry {
 	}
 
 	static isCentralDirectoryStructure = function (buffer, start = 0) {
+		const dataBuffer = new Uint8Array(buffer.buffer, buffer.byteOffset, buffer.length);
+		console.log(dataBuffer.buffer);
+		console.log(new DataView(dataBuffer.buffer).getUint32(start));
 		return FileEntry.getUint32FromBuffer(buffer, start) === parseInt('0x02014b50');
 	}
 
 	static getUint32FromBuffer = function (buffer, start = 0) {
+		const newBuffer = buffer.buffer;
+		console.log(newBuffer);
 		const data = Uint8Array.from(buffer.slice(start, start + 4)).buffer;
 		const view = new DataView(data);
 		console.log(view.getUint32(0));
