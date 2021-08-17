@@ -5,7 +5,6 @@ const zipFileContents = fs.readFileSync('./J050-classList.zip');
 const files = [];
 let allDone = false;
 let start = 0;
-console.log(zipFileContents);
 while (!allDone) {
 	if (FileEntry.isCentralDirectoryStructure(zipFileContents, start)) {
 		allDone = true;
