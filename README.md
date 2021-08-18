@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J059: parseFloat()](https://youtu.be/uZ3EJOMKCMs) - August 17, 2021
+
 [J058: import](https://youtu.be/TzqrGDp1soU) - August 10, 2021
 
 [J057: Array.splice()](https://youtu.be/uLFvzUUXfUg) - August 3, 2021
