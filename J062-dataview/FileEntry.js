@@ -18,7 +18,7 @@
 
  */
 
-module.exports = class FileEntry {
+export default class FileEntry {
 	header;
 	filename;
 	extraField;
@@ -29,6 +29,7 @@ module.exports = class FileEntry {
 
 	constructor(incomingBuffer, start = 0) {
 		const view = new DataView(incomingBuffer.buffer, incomingBuffer.byteOffset, incomingBuffer.length);
+		let fileOffset = start;
 
 		this.header = {
 			signature: view.getUint32(start, true),
@@ -43,22 +44,21 @@ module.exports = class FileEntry {
 			fileNameLength: view.getUint16(start + 26, true),
 			extraFieldLength: view.getUint16(start + 28, true)
 		}
-		// console.log(view.buffer.slice(view.byteOffset + start + 30, view.byteOffset + start + 30 + this.header.fileNameLength));
-		const offset = view.byteOffset + start + 30;
-		console.log(view.buffer.slice(offset, offset + this.header.fileNameLength));
+		let offset = view.byteOffset + start + 30;
 		this.filename = this.header.fileNameLength ?
 				String.fromCharCode.apply(
 						null,
-						view.buffer.slice(offset, offset + this.header.fileNameLength).buffer
+						new Uint8Array(view.buffer.slice(offset, offset + this.header.fileNameLength))
 				)
 				: '';
+		offset += this.header.fileNameLength;
 		this.extraField = this.header.extraFieldLength ?
-				view.buffer.slice(offset + this.header.fileNameLength, offset + this.header.fileNameLength + this.header.extraFieldLength)
+				new Uint8Array(view.buffer.slice(offset, offset + this.header.extraFieldLength))
 				: null;
-		this.dataOffset = offset + start + 30 + this.header.fileNameLength + this.header.extraFieldLength;
-		this.fileData = new Uint8Array(view.buffer, this.dataOffset, this.header.compressedSize);
-		this.fileOffset = this.dataOffset + this.header.compressedSize;
-		console.log(this);
+		offset += this.header.extraFieldLength;
+		this.dataOffset = offset;
+		this.fileData = new Uint8Array(view.buffer.slice(offset, offset + this.header.compressedSize));
+		this.fileOffset = fileOffset + 30 + this.header.fileNameLength + this.header.extraFieldLength + this.header.compressedSize;
 		this.view = view;
 	}
 
@@ -72,7 +72,7 @@ module.exports = class FileEntry {
 
 	static getUint32FromBuffer = function (buffer, start = 0) {
 		const dataView = new DataView(buffer.buffer, buffer.byteOffset, buffer.length);
-		return dataView.getUint32(start);
+		return dataView.getUint32(start, true);
 	}
 }
 

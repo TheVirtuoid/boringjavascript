@@ -1,10 +1,11 @@
-const fs = require('fs');
-const FileEntry = require('./FileEntry.js');
+import fs from 'fs';
+import FileEntry from './FileEntry.js';
 
 const zipFileContents = fs.readFileSync('./J050-classList.zip');
 const files = [];
 let allDone = false;
 let start = 0;
+
 while (!allDone) {
 	if (FileEntry.isCentralDirectoryStructure(zipFileContents, start)) {
 		allDone = true;
