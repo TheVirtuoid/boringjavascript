@@ -1,7 +1,18 @@
 const getYouTubeVideo = (event) => {
 	const videoUrl = 'https://youtu.be/L5AuuCttleE';
-	fetch(videoUrl)
+	fetch(videoUrl, { mode: 'no-cors' })
 			.then(processStream)
+			.then(allDone)
+			.catch(whoops);
+}
+
+const allDone = () => {
+	console.log('All done!');
+}
+
+const whoops = (err) => {
+	console.log('I do believe that there has been an error');
+	console.log(err);
 }
 
 const processStream = (response) => {
@@ -14,6 +25,8 @@ const processStream = (response) => {
 			return streamReader.read()
 					.then(processChunk)
 					.catch(gotError);
+		} else {
+			return Promise.resolve(true);
 		}
 	}
 
