@@ -1,13 +1,14 @@
 const getYouTubeVideo = (event) => {
-	const videoUrl = 'https://youtu.be/L5AuuCttleE';
-	fetch(videoUrl, { mode: 'no-cors' })
+	const videoUrl = 'J011-await.mp4';
+	fetch(videoUrl)
 			.then(processStream)
 			.then(allDone)
 			.catch(whoops);
 }
 
-const allDone = () => {
+const allDone = (stats) => {
 	console.log('All done!');
+	console.log(`Chunk: ${stats.chunkCount}, Size: ${stats.fileSize}`);
 }
 
 const whoops = (err) => {
@@ -16,29 +17,23 @@ const whoops = (err) => {
 }
 
 const processStream = (response) => {
-	const streamReader = response.body.getReader();
-
-	const processChunk = (chunk) => {
-		console.log('got chunk');
-		console.log(chunk);
-		if (!chunk.done) {
-			return streamReader.read()
-					.then(processChunk)
-					.catch(gotError);
-		} else {
-			return Promise.resolve(true);
+	const videoLength = response.headers.get('content-length');
+	return new Promise( async (resolve, reject) => {
+		try {
+			const streamReader = response.body.getReader();
+			let chunkCount = 0;
+			let fileSize = 0;
+			let chunk = await streamReader.read();
+			while (!chunk.done) {
+				chunkCount++;
+				fileSize += chunk.value.length;
+				chunk = await streamReader.read();
+			}
+			resolve({ chunkCount, fileSize });
+		} catch (err) {
+			reject(err);
 		}
-	}
-
-	const gotError = (error) => {
-		console.log('GOT ERROR');
-		console.log(error);
-	}
-
-	streamReader.read()
-			.then(processChunk)
-			.catch(gotError);
-
+	});
 }
 
 
