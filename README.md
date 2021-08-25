@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J060: String.charAt()](https://youtu.be/cDY43puuPTc) - August 24, 2021
+
 [J059: parseFloat()](https://youtu.be/uZ3EJOMKCMs) - August 17, 2021
 
 [J058: import](https://youtu.be/TzqrGDp1soU) - August 10, 2021
