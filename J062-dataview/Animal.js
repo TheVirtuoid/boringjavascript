@@ -1,3 +1,13 @@
+/* data structure
+
+		type			uint8			1 = cat, 2 = dog, 3 = coyote, 0 = no more;
+		namesize	uint8			size of name string
+		name			char(x)		the name
+		weight		float32		weight of the animal
+		age				int16			age of the animal
+
+ */
+
 export default class Animal {
 	static TYPES = ['', 'Cat', 'Dog', 'Coyote'];
 

@@ -4,7 +4,7 @@
 		namesize	uint8			size of name string
 		name			char(x)		the name
 		weight		float32		weight of the animal
-		age				uint16		age of the animal
+		age				int16			age of the animal
 
  */
 
