@@ -9,34 +9,15 @@
  */
 
 import fs from 'fs';
-const animals = ['', 'Cat', 'Dog', 'Coyote'];
-
+import Animal from "./Animal.js";
 const fileContents = fs.readFileSync('./zoo.data');
+console.log(`\nName\tType\tWeight\t\t\tAge`);
+console.log(`----\t----\t------\t\t\t---`);
 const dataView = new DataView(fileContents.buffer, fileContents.byteOffset, fileContents.length);
 let offset = 0;
-let animal = getAnimal(dataView, offset);
+let animal = new Animal(dataView, offset);
 while (animal.type !== "") {
-	console.log(animal);
-	offset += 8 + animal.name.length;
-	animal = getAnimal(dataView, offset);
-}
-
-
-
-function getAnimal(view, offset) {
-	const type = animals[view.getUint8(offset)];
-	const nameLength = view.getUint8(offset + 1);
-	const name = getName(view, offset + 2, nameLength);
-	const weight = view.getFloat32(offset + 2 + nameLength, true);
-	const age = view.getInt16(offset + 6 + nameLength, true);
-	return { type, name, weight, age };
-}
-
-function getName(view, offset, size) {
-	if (size === 0) {
-		return "";
-	} else {
-		offset += view.byteOffset;
-		return String.fromCharCode.apply(null, new Uint8Array(view.buffer.slice(offset, offset + size)));
-	}
+	console.log(`${animal.name}\t${animal.type}\t${animal.weight}\t${animal.age}`);
+	offset += animal.size;
+	animal = new Animal(dataView, offset);
 }
