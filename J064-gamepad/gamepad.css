@@ -76,3 +76,7 @@ main {
     padding-bottom: 2rem;
     padding-left: 2rem;
 }
+
+table tbody tr td p {
+    margin: 0;
+}
