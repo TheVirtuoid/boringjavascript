@@ -104,3 +104,13 @@ main {
 #results table tbody tr td {
     text-align: right;
 }
+
+#video-controls {
+    display: flex;
+    flex-direction: row;
+}
+
+#video {
+    background-color: black;
+    margin-left: 2rem;
+}

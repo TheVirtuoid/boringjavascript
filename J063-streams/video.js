@@ -1,9 +1,12 @@
 const getVideo = (event) => {
-	const videoUrl = 'J062-dataview.mp4';
-	fetch(videoUrl)
-			.then(processStream)
-			.then(allDone)
-			.catch(whoops);
+	video.src = URL.createObjectURL(mediaSource);
+	mediaSource.addEventListener('sourceopen', () => {
+		sourceBuffer = mediaSource.addSourceBuffer(codec);
+		fetch(videoUrl)
+				.then(processStream)
+				.then(allDone)
+				.catch(whoops);
+	});
 }
 
 const allDone = (stats) => {
@@ -27,16 +30,29 @@ const processStream = (response) => {
 			while (!chunk.done) {
 				chunkCount++;
 				fileSize += chunk.value.length;
+				await appendBuffer(chunk.value.buffer);
+				console.log(chunkCount);
 				if (chunkCount % 100 === 0) {
 					output(resultsData, chunkCount, fileSize);
 				}
 				chunk = await streamReader.read();
 			}
 			output(resultsData, chunkCount, fileSize);
+			mediaSource.endOfStream();
+			video.play();
 			resolve({ chunkCount, fileSize });
 		} catch (err) {
 			reject(err);
 		}
+	});
+}
+
+const appendBuffer = (buffer) => {
+	return new Promise( async (resolve, reject) => {
+		sourceBuffer.addEventListener('updateend', () => {
+			resolve(true);
+		}, { once: true });
+		sourceBuffer.appendBuffer(buffer);
 	});
 }
 
@@ -53,4 +69,9 @@ const output = (resultsData, chunkNumber, fileSize) => {
 
 const resultsData = document.querySelector('#results table tbody');
 const readStream = document.getElementById('read-stream');
+const video = document.getElementById('video');
+const codec = `video/mp4; codecs="avc1.42E01E, mp4a.40.2"`;
+const mediaSource = new MediaSource();
+const videoUrl = 'J062-dataview.mp4';
+let sourceBuffer = null;
 readStream.addEventListener('click', getVideo);
