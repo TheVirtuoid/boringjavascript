@@ -1,3 +1,4 @@
+
 html {
     font-size: 18px;
     font-family: Roboto, Verdana, sans-serif;
@@ -72,101 +73,34 @@ h1 {
 }
 
 main {
-    padding-top: 64px;
-    padding-bottom: 2rem;
+    padding: 64px 1rem 2rem 1rem;
 }
 
-main > div {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-main > div > section:last-of-type {
-    align-self: flex-end;
-    border: 2px solid black;
-    margin-left: .5rem;
-}
-
-
-main > div > section:last-of-type img {
-    width: 500px;
-    height: auto;
-}
-
-table {
-    border-collapse: collapse;
-    margin-left: 3rem;
-    border: 2px solid black;
-}
-
-table caption {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: .5rem;
-}
-
-table caption span {
-    display: inline-block;
-    margin-right: 1rem;
-}
-
-table img {
-    width: 100px;
-    height: auto;
-}
-
-table tbody tr td {
-    background-color: #e7d6cc;
-}
-
-table thead tr th {
-    background-color: #47362c;
-    color: #e7d6cc;
-    padding: .25rem .5rem;
-}
-
-table tbody tr td:last-of-type {
-    font-size: 2rem;
-    text-align: center;
-}
-
-table tbody tr td.good:last-of-type {
-    color: green;
-}
-
-table tbody tr td.good:last-of-type::before {
-    content: '\2714';
-    font-weight: bold;
-}
-
-
-table tbody tr td.bad:last-of-type {
-    color: red;
-}
-
-table tbody tr td.bad:last-of-type::before {
-    content: '\2718';
-    font-weight: bold;
-}
-
-img.hide {
-    display: none;
-}
-
-#go {
-    border: 2px inset yellow;
+#read-stream {
     background-color: green;
+    border: none;
+    border-radius: 1rem;
     padding: .25rem .5rem;
+    display: inline-block;
     color: white;
-    border-radius: 50%;
-    font-size: 1.25rem;
-    font-weight: bold;
-    cursor:pointer;
 }
 
-#go.clicked {
-    background-color: red;
-    cursor: auto;
+#results {
+    padding-left: 1rem;
+}
+#results table {
+    border: 1px solid black;
+    margin-top: .5rem;
+}
+#results table thead {
+    background-color: #1333ad;
+    color: white;
+}
+
+#results table thead tr th, #results table tbody tr td {
+    padding: .25rem .5rem;
+}
+
+#results table tbody tr td {
+    text-align: right;
 }

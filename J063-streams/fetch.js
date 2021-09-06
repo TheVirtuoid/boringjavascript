@@ -1,5 +1,5 @@
-const getYouTubeVideo = (event) => {
-	const videoUrl = 'J011-await.mp4';
+const getVideo = (event) => {
+	const videoUrl = 'J062-dataview.mp4';
 	fetch(videoUrl)
 			.then(processStream)
 			.then(allDone)
@@ -27,8 +27,12 @@ const processStream = (response) => {
 			while (!chunk.done) {
 				chunkCount++;
 				fileSize += chunk.value.length;
+				if (chunkCount % 100 === 0) {
+					output(resultsData, chunkCount, fileSize);
+				}
 				chunk = await streamReader.read();
 			}
+			output(resultsData, chunkCount, fileSize);
 			resolve({ chunkCount, fileSize });
 		} catch (err) {
 			reject(err);
@@ -36,6 +40,17 @@ const processStream = (response) => {
 	});
 }
 
+const output = (resultsData, chunkNumber, fileSize) => {
+	const tr = document.createElement('tr');
+	let td = document.createElement('td');
+	td.textContent = chunkNumber;
+	tr.appendChild(td);
+	td = document.createElement('td');
+	td.textContent = fileSize;
+	tr.appendChild(td);
+	resultsData.appendChild(tr);
+}
 
+const resultsData = document.querySelector('#results table tbody');
 const readStream = document.getElementById('read-stream');
-readStream.addEventListener('click', getYouTubeVideo);
+readStream.addEventListener('click', getVideo);
