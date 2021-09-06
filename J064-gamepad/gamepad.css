@@ -80,3 +80,13 @@ main {
 table tbody tr td p {
     margin: 0;
 }
+
+td.on {
+    background-color: green;
+    color: white;
+}
+
+td.off {
+    background-color: red;
+    color: white;
+}
