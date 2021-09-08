@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J062: DataView](https://youtu.be/X1iZME9zyX8) - September 7, 2021
+
 [J061: export](https://youtu.be/ykxiPKRtOgM) - August 31, 2021
 
 [J060: String.charAt()](https://youtu.be/cDY43puuPTc) - August 24, 2021
