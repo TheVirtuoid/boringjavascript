@@ -1,5 +1,4 @@
 console.log('------------------- string ----------------')
-
 const myCharacters = Array.from('Fluffy');
 console.log(myCharacters);
 
@@ -19,9 +18,9 @@ console.log(Array.from(myMap.values()));
 
 console.log('------------------- set -------------------')
 const mySet = new Set();
-mySet.set('Fluffy');
-mySet.set('Rover');
-mySet.set('Larry');
+mySet.add('Fluffy');
+mySet.add('Rover');
+mySet.add('Larry');
 const myArraySet = Array.from(mySet);
 console.log(myArraySet);
 
