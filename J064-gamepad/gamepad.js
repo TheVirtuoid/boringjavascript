@@ -1,8 +1,15 @@
 let gamepadIndex = -1;
 const domConnected = document.getElementById('connected');
 const domId = document.getElementById('id');
+const domMapping = document.getElementById('mapping');
 const domIds = new Map();
 const mapping = new Map();
+const axesMapping = [
+	document.getElementById('axes-left-x'),
+	document.getElementById('axes-left-y'),
+	document.getElementById('axes-right-x'),
+	document.getElementById('axes-right-y')
+];
 
 mapping.set('standard', [
 		'A', 'B', 'X', 'Y', 'Left-Top', 'Right-Top', 'Left-Trigger', 'Right-Trigger',
@@ -37,6 +44,7 @@ const updateTable = () => {
 	const gamepad = navigator.getGamepads()[gamepadIndex];
 	domConnected.textContent = gamepad.connected ? "Yes" : "No";
 	domId.textContent = gamepad.id;
+	domMapping.textContent = gamepad.mapping;
 	const buttonMapping = mapping.get(gamepad.mapping);
 	gamepad.buttons.forEach( (button, index) => {
 		const { dom, display } = domIds.get(buttonMapping[index]);
@@ -47,7 +55,9 @@ const updateTable = () => {
 		} else if (display === "number") {
 			dom.textContent = button.value.toFixed(2);
 		}
-		// domIds.get(buttonList[index]).textContent = `${button.pressed},${button.touched},${button.value}`;
+	});
+	axesMapping.forEach( (dom, index) => {
+		dom.textContent = gamepad.axes[index].toFixed(2);
 	});
 	requestAnimationFrame(updateTable);
 }

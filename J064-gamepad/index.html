@@ -23,13 +23,15 @@
 </header>
 <main>
     <h2>Gamepad</h2>
-    <table>
-        <thead><tr><th>Button/Stick</th><th>Data</th></tr></thead>
+    <table id="general">
+        <thead><tr><th>Data</th><th>Value</th></tr></thead>
         <tbody>
             <tr><td>Connected?</td><td id="connected"></td></tr>
             <tr><td>Id</td><td id="id"></td></tr>
+            <tr><td>Mapping</td><td id="mapping"></td></tr>
         </tbody>
     </table>
+    <h2>Buttons</h2>
     <section id="buttons">
         <table>
             <tbody>
@@ -62,6 +64,21 @@
             <tr><td>DPad Left</td><td id="DPad-Left"></td></tr>
             <tr><td>DPad Right</td><td id="DPad-Right"></td></tr>
             <tr><td>Unknown</td><td id="Unknown"></td></tr>
+            </tbody>
+        </table>
+    </section>
+    <h2>Axes</h2>
+    <section id="axes">
+        <table>
+            <tbody>
+            <tr><td>Left X</td><td id="axes-left-x"></td></tr>
+            <tr><td>Left y</td><td id="axes-left-y"></td></tr>
+            </tbody>
+        </table>
+        <table>
+            <tbody>
+            <tr><td>Right X</td><td id="axes-right-x"></td></tr>
+            <tr><td>Right y</td><td id="axes-right-y"></td></tr>
             </tbody>
         </table>
     </section>

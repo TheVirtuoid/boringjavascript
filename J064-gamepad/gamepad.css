@@ -75,6 +75,7 @@ main {
     padding-top: 64px;
     padding-bottom: 2rem;
     padding-left: 2rem;
+    font-size: .8rem;
 }
 
 table tbody tr td p {
@@ -95,17 +96,22 @@ td.off {
     color: white;
 }
 
-#buttons {
+#general tbody td {
+    padding-bottom: .1rem;
+    padding-top: .1rem;
+}
+
+#buttons, #axes {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     font-size: .8rem;
 }
 
-#buttons table {
+#buttons table, #axes table {
     margin-left: 2rem;
 }
 
-#buttons table tbody tr td {
+#buttons table tbody tr td, #axes table tbody tr td {
     padding: .25rem .5rem;
 }
