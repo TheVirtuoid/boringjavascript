@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="Description" content="J058-import">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="gamepad.css">
+    <title>Boring JavaScript J064: Gamepad</title>
+</head>
+<body>
+<header>
+    <div class="mdc-top-app-bar mdc-top-app-bar--fixed" id="top-app-bar">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <div class="mdc-top-app-bar__title">
+                    <h1>boring javascript</h1>
+                </div>
+            </section>
+        </div>
+    </div>
+</header>
+<main>
+    <h2>Gamepad</h2>
+    <table id="general">
+        <thead><tr><th>Data</th><th>Value</th></tr></thead>
+        <tbody>
+            <tr><td>Connected?</td><td id="connected"></td></tr>
+            <tr><td>Id</td><td id="id"></td></tr>
+            <tr><td>Mapping</td><td id="mapping"></td></tr>
+        </tbody>
+    </table>
+    <h2>Buttons</h2>
+    <section id="buttons">
+        <table>
+            <tbody>
+            <tr><td>A</td><td id="A"></td></tr>
+            <tr><td>B</td><td id="B"></td></tr>
+            <tr><td>X</td><td id="X"></td></tr>
+            <tr><td>Y</td><td id="Y"></td></tr>
+            </tbody>
+        </table>
+        <table>
+            <tbody>
+            <tr><td>Left Top</td><td id="Left-Top"></td></tr>
+            <tr><td>Right Top</td><td id="Right-Top"></td></tr>
+            <tr><td>Left Trigger</td><td id="Left-Trigger"></td></tr>
+            <tr><td>Right Trigger</td><td id="Right-Trigger"></td></tr>
+            </tbody>
+        </table>
+        <table>
+            <tbody>
+            <tr><td>Home/Select</td><td id="Home-Select"></td></tr>
+            <tr><td>Start</td><td id="Start"></td></tr>
+            <tr><td>Left Stick</td><td id="Left-Stick"></td></tr>
+            <tr><td>Right Stick</td><td id="Right-Stick"></td></tr>
+            </tbody>
+        </table>
+        <table>
+            <tbody>
+            <tr><td>DPad Up</td><td id="DPad-Up"></td></tr>
+            <tr><td>DPad Down</td><td id="DPad-Down"></td></tr>
+            <tr><td>DPad Left</td><td id="DPad-Left"></td></tr>
+            <tr><td>DPad Right</td><td id="DPad-Right"></td></tr>
+            <tr><td>Unknown</td><td id="Unknown"></td></tr>
+            </tbody>
+        </table>
+    </section>
+    <h2>Axes</h2>
+    <section id="axes">
+        <table>
+            <tbody>
+            <tr><td>Left X</td><td id="axes-left-x"></td></tr>
+            <tr><td>Left y</td><td id="axes-left-y"></td></tr>
+            </tbody>
+        </table>
+        <table>
+            <tbody>
+            <tr><td>Right X</td><td id="axes-right-x"></td></tr>
+            <tr><td>Right y</td><td id="axes-right-y"></td></tr>
+            </tbody>
+        </table>
+    </section>
+
+</main>
+<footer></footer>
+<script src="gamepad.js" type="module"></script>
+</body>
+</html>
