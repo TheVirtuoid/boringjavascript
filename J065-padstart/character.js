@@ -21,16 +21,17 @@ const printAnimal = (animal) => {
 }
 
 const rightJustify = (text, fullLength) => {
-	return `${' '.repeat(fullLength - text.length)}${text}`;
+	return text.padStart(fullLength);
 }
 
 const leftJustify = (text, fullLength) => {
-	return `${text}${' '.repeat(fullLength - text.length)}`;
+	return text.padEnd(fullLength);
 }
 
 const rightJustifyNumber = (text, fullLength) => {
 	return `${'*'.repeat(fullLength - text.length)}${text}`;
 }
+
 
 console.log(`\n${rightJustify("Name", nameLength)}  ${leftJustify("Type", typeLength)}  ${rightJustify("Classification", classificationLength)}`);
 console.log(`${"-".repeat(nameLength)}  ${"-".repeat(typeLength)}  ${"-".repeat(classificationLength)}`);
