@@ -4,17 +4,15 @@ And thus the native hue of resolution
 Is sicklied o'er with the pale cast of thought,
 And enterprises of great pith and moment
 With this regard their currents turn awry
-And lose the name of action.`
+And lose the name of action.`;
 
 const searchText = /[Aa]nd/g;
 const replaceText = "therefore";
 
 const returnStringWithCase = (match, parameter1, offset, string) => {
-	const [firstMatchCharacter] = match;
 	let capitalizedString = replaceText;
-	if (match && match[0].toUpperCase() === match[0]) {
-		const [firstCharacter, ...restOfCharacters] = replaceText;
-		capitalizedString = [firstCharacter.toUpperCase(), ...restOfCharacters].join('');
+	if (match[0].toUpperCase() === match[0]) {
+		capitalizedString = `${capitalizedString[0].toUpperCase()}${capitalizedString.slice(1)}`;
 	}
 	return capitalizedString;
 }
