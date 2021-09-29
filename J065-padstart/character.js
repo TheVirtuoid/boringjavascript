@@ -29,7 +29,7 @@ const leftJustify = (text, fullLength) => {
 }
 
 const rightJustifyNumber = (text, fullLength) => {
-	return `${'*'.repeat(fullLength - text.length)}${text}`;
+	return text.padStart(fullLength, 'LOL! ');
 }
 
 
