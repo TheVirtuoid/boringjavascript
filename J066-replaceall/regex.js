@@ -6,7 +6,7 @@ And enterprises of great pith and moment
 With this regard their currents turn awry
 And lose the name of action.`;
 
-const newText = text.replaceAll(/[Aa]nd/g, 'therefore');
+const newText = text.replaceAll(/and/gi, 'therefore');
 
 console.log(newText);
 
