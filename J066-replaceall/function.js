@@ -9,7 +9,7 @@ And lose the name of action.`;
 const searchText = /[Aa]nd/g;
 const replaceText = "therefore";
 
-const returnStringWithCase = (match, parameter1, offset, string) => {
+const returnStringWithCase = (match, offset, string) => {
 	let capitalizedString = replaceText;
 	if (match[0].toUpperCase() === match[0]) {
 		capitalizedString = `${capitalizedString[0].toUpperCase()}${capitalizedString.slice(1)}`;
