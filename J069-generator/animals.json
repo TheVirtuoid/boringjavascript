@@ -1,0 +1,5 @@
+[
+  { "type":  "cat", "name": "Fluffy",
+    "weight": 1.5, "height": 0.7, "class": "mammal"
+  },
+]
