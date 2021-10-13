@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J067: BroadcastChannel()](https://youtu.be/P8ibXpQa428) - October 12, 2021
+
 [J066: String.replaceAll](https://youtu.be/Y-46qHE196Y) - October 5, 2021
 
 [J065: String.padStart(), String.padEnd()](https://youtu.be/xvgKD0eGJZY) - September 28, 2021
