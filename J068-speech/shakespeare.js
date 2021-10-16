@@ -35,11 +35,47 @@ And lose the name of action.--Soft you now!
 The fair Ophelia! Nymph, in thy orisons
 Be all my sins remember'd.
 `
+const playIcon = '&#9205;'
+const pauseIcon = '&#9208;';
+const stop = document.getElementById('stop');
+const play = document.getElementById('play');
+play.innerHTML = playIcon;
+const hamletSpeech = new SpeechSynthesisUtterance(speech);
+speechSynthesis.cancel();
 
-const speakTheText = (event) => {
-	const utterance = new SpeechSynthesisUtterance(speech);
-	speechSynthesis.speak(utterance);
-};
+const processPlayOrPause = (event) => {
+	if (!speechSynthesis.paused && !speechSynthesis.speaking) {
+		startSpeech();
+	} else if (speechSynthesis.paused) {
+		resumeSpeech();
+	} else if (speechSynthesis.speaking) {
+		pauseSpeech();
+	}
+}
 
-const sayIt = document.getElementById('say-it');
-sayIt.addEventListener('click', speakTheText);
+const processStop = (event) => {
+	stopSpeech();
+}
+
+const pauseSpeech = () => {
+	speechSynthesis.pause();
+	play.innerHTML = playIcon;
+}
+
+const resumeSpeech = () => {
+	speechSynthesis.resume();
+	play.innerHTML = pauseIcon;
+}
+
+const startSpeech = () => {
+	speechSynthesis.speak(hamletSpeech);
+	play.innerHTML = pauseIcon;
+}
+
+const stopSpeech = () => {
+	speechSynthesis.cancel();
+	play.innerHTML = playIcon;
+}
+
+play.addEventListener('click', processPlayOrPause);
+stop.addEventListener('click', stopSpeech);
