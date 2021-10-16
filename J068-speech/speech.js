@@ -9,3 +9,4 @@ const speakTheText = (event) => {
 console.log(speechSynthesis.getVoices());
 sayIt.addEventListener('click', speakTheText);
 
+

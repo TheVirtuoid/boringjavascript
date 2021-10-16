@@ -93,7 +93,7 @@ main {
 }
 
 #text {
-    width: 300px;
+    width: 380px;
     height: 300px;
     border: 1px solid black;
     border-left: 0px;
@@ -114,3 +114,12 @@ main {
     cursor: pointer;
 }
 
+#text {
+    overflow-y: hidden;
+}
+#speech-text {
+    visibility: hidden;
+    margin-top: 15rem;
+    white-space: pre-wrap;
+    font-size: .8rem;
+}
