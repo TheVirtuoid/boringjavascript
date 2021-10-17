@@ -1,20 +1,9 @@
-const processMessage = (event) => {
-	currentAnimal.textContent = event.data;
-}
+const loadingDockInterface = document.querySelector('#loading-dock iframe');
 
-const broadcastNewAnimal = (event) => {
-	const newAnimal = newAnimalInput.value;
-	if (newAnimal) {
-		pageMain.postMessage(newAnimal);
-	}
-	currentAnimal.textContent = newAnimal;
-}
+const loadingDockChannel = new MessageChannel();
+const loadingDockChannelPort = loadingDockChannel.port1;
 
-const submitButton = document.getElementById('change-animal');
-const newAnimalInput = document.getElementById('new-animal');
-const currentAnimal = document.getElementById('current-animal');
-const channelName = "BoringJavaScript";
-
-const pageMain = new BroadcastChannel(channelName);
-pageMain.addEventListener('message', processMessage);
-submitButton.addEventListener('click', broadcastNewAnimal);
+const initializeLoadingDock = (event) => {
+	loadingDockInterface.contentWindow.postMessage('init', '*', [loadingDockChannel.port2]);
+};
+loadingDockInterface.addEventListener('load', initializeLoadingDock);
