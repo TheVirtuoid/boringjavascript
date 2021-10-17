@@ -6,7 +6,6 @@ const speakTheText = (event) => {
 	speechSynthesis.speak(utterance);
 };
 
-console.log(speechSynthesis.getVoices());
 sayIt.addEventListener('click', speakTheText);
 
 

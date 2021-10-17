@@ -78,3 +78,7 @@ main {
     font-size: 1rem;
 }
 
+main label, main label input, main label button {
+    font-size: 1.25rem;
+}
+

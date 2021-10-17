@@ -90,4 +90,4 @@ const moveUp = () => {
 }
 
 play.addEventListener('click', processPlayOrPause);
-stop.addEventListener('click', stopSpeech);
+stop.addEventListener('click', processStop);
