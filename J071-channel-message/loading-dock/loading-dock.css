@@ -87,3 +87,43 @@ body.iframe main {
     margin: 0;
     font-size: .8rem;
 }
+
+main label {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: .5rem;
+}
+
+main label span {
+    min-width: 10rem;
+}
+
+main label button {
+    margin-left: 1rem;
+}
+
+main label input[readonly] {
+    background-color: #dddddd;
+}
+
+main table {
+    background-color: white;
+}
+
+main table thead {
+    background-color: #1333ad;
+    color: white;
+}
+
+main table td, main table th {
+    padding: .25rem 1rem;
+}
+
+main table tbody tr:nth-child(odd) {
+    background-color: #eeeeee;
+}
+
+main table tbody tr:hover {
+    background-color: #1199ff;
+    cursor: pointer;
+}
