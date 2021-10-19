@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J068: SpeechSynthesis()](https://youtu.be/dgroOPDDMX0) - October 19, 2021
+
 [J067: BroadcastChannel()](https://youtu.be/P8ibXpQa428) - October 12, 2021
 
 [J066: String.replaceAll](https://youtu.be/Y-46qHE196Y) - October 5, 2021
