@@ -4,7 +4,7 @@ export default class Reader {
 
 	getData() {
 		return new Promise( (resolve, reject) => {
-			fetch('./animals.json')
+			fetch('./animals-other.json')
 					.then(response => response.json())
 					.then(data => this.saveData(data))
 					.then(resolve)

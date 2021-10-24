@@ -35,15 +35,19 @@ const processData = function* () {
 				break;
 		}
 		yield { type, name, classification };
-	};
+	}
+}
+
+const doTheThing = () => {
+	const animalList = processData();
+	let animal = animalList.next();
+	while (!animal.done) {
+		const { type, name, classification } = animal.value;
+		ul.insertAdjacentHTML('beforeend', `<li>${type}, ${name}, ${classification}</li>`);
+		animal = animalList.next();
+	}
 }
 
 const ul = document.getElementById('animal-list-one');
-const animalList = processData();
-let animal = animalList.next();
-while (!animal.done) {
-	const { type, name, classification } = animal.value;
-	ul.insertAdjacentHTML('beforeend', `<li>${type}, ${name}, ${classification}</li>`);
-	animal = animalList.next();
-}
-
+const go = document.getElementById('go');
+go.addEventListener('click', doTheThing);

@@ -30,17 +30,6 @@ export default class Reader {
 
 /*
 
-	* animals() {
-		while (this.data.length) {
-			const animal = this.data.shift();
-			yield animal;
-		}
-	}
-
-
-
-
-
 
 	* animals() {
 		while (this.data.length) {
@@ -48,7 +37,6 @@ export default class Reader {
 			yield { type, name, classification };
 		}
 	}
-
 
 
 	* animals() {
