@@ -77,3 +77,12 @@ main {
     padding-left: 2rem;
     font-size: 1rem;
 }
+
+main section {
+    display: flex;
+    flex-direction: row;
+}
+
+main section ul {
+    margin-right: 2rem;
+}
