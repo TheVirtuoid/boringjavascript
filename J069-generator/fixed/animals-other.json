@@ -1,11 +1,11 @@
 [
-	{ "cat": { "type": "Cat", "name": "Fluffy", "class": "Mammalia" }},
-	{ "dog": { "type": "Dog", "name": "Fido", "class": "Mammalia" }},
-	{ "horse": { "type": "Horse", "name": "Mr. Ed", "class": "Mammalia" }},
-	{ "cow": { "type": "Cow", "name": "Betsy", "class": "Mammalia" }},
-	{ "coyote": { "type": "Coyote", "name": "Wile E.", "class": "Mammalia" }},
-	{ "road-runner": { "type": "Road Runner", "name": "Beep Beep", "class": "Aves" }},
-	{ "dolphin": { "type": "Dolphin", "name": "Flipper",  "class": "Mammalia" }},
-	{ "whale": { "type": "Whale", "name": "Moby Dick", "class": "Mammalia" }},
-	{ "lizard": { "type": "Lizard", "name": "Larry", "class": "Reptilia" }}
+	{ "cat": { "type": "Cat", "name": "Fluffy", "classification": "Mammalia" }},
+	{ "dog": { "type": "Dog", "name": "Fido", "classification": "Mammalia" }},
+	{ "horse": { "type": "Horse", "name": "Mr. Ed", "classification": "Mammalia" }},
+	{ "cow": { "type": "Cow", "name": "Betsy", "classification": "Mammalia" }},
+	{ "coyote": { "type": "Coyote", "name": "Wile E.", "classification": "Mammalia" }},
+	{ "road-runner": { "type": "Road Runner", "name": "Beep Beep", "classification": "Aves" }},
+	{ "dolphin": { "type": "Dolphin", "name": "Flipper",  "classification": "Mammalia" }},
+	{ "whale": { "type": "Whale", "name": "Moby Dick", "classification": "Mammalia" }},
+	{ "lizard": { "type": "Lizard", "name": "Larry", "classification": "Reptilia" }}
 ]

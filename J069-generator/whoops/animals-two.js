@@ -1,19 +1,16 @@
 import Reader from "./reader.js";
 const animals = new Reader();
 const ul = document.getElementById('animal-list-two');
-const printData = (animals) => {
-	let animal = animals.next();
-	while (!animal.done) {
-		ul.insertAdjacentHTML('beforeend', `<li>${animal.value.name}</li>`);
-		animal = animals.next();
-	};
+const printData = (data) => {
+	data.forEach( (animal) => {
+		ul.insertAdjacentHTML('beforeend', `<li>${animal.name}</li>`);
+	});
 };
 const printError = (err) => {
 	ul.insertAdjacentHTML('beforeend', `<li>ERROR: ${err.message}</li>`);
 }
 
 animals.getData()
-		.then(data => printData(animals.animals()))
+		.then(data => printData(data))
 		.catch(err => printError(err));
-
 

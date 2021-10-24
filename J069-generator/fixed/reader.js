@@ -18,4 +18,47 @@ export default class Reader {
 		return this.data;
 	}
 
+	* animals() {
+		while (this.data.length) {
+			const animal = this.data.shift();
+			const { type, name, classification } = Object.values(animal)[0];
+			yield { type, name, classification };
+		}
+	}
+
 }
+
+/*
+
+	* animals() {
+		while (this.data.length) {
+			const animal = this.data.shift();
+			yield animal;
+		}
+	}
+
+
+
+
+
+
+	* animals() {
+		while (this.data.length) {
+			const { type, name, classification } = this.data.shift();
+			yield { type, name, classification };
+		}
+	}
+
+
+
+	* animals() {
+		while (this.data.length) {
+			const animal = this.data.shift();
+			const { type, name, classification } = Object.values(animal)[0];
+			yield { type, name, classification };
+		}
+	}
+
+
+
+*/

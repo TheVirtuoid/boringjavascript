@@ -1,9 +1,9 @@
 import Reader from "./reader.js";
 const animals = new Reader();
-const ul = document.getElementById('animal-list-three');
+const ul = document.getElementById('animal-list-one');
 const printData = (data) => {
 	data.forEach( (animal) => {
-		ul.insertAdjacentHTML('beforeend', `<li>${animal.classification}</li>`);
+		ul.insertAdjacentHTML('beforeend', `<li>${animal.type}</li>`);
 	});
 };
 const printError = (err) => {
