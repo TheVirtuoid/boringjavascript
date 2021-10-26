@@ -1,0 +1,11 @@
+[
+	{ "type": "Cat", "name": "Fluffy", "classification": "Mammalia" },
+	{ "type": "Dog", "name": "Fido", "classification": "Mammalia" },
+	{ "type": "Horse", "name": "Mr. Ed", "classification": "Mammalia" },
+	{ "type": "Cow", "name": "Betsy", "classification": "Mammalia" },
+	{ "type": "Coyote", "name": "Wile E.", "classification": "Mammalia" },
+	{ "type": "Road Runner", "name": "Beep Beep", "classification": "Aves" },
+	{ "type": "Dolphin", "name": "Flipper",  "classification": "Mammalia" },
+	{ "type": "Whale", "name": "Moby Dick", "classification": "Mammalia" },
+	{ "type": "Lizard", "name": "Larry", "classification": "Reptilia" }
+]
