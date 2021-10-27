@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J069: Generator Function](https://youtu.be/CD3QNGi5Sbc0) - October 26, 2021
+
 [J068: SpeechSynthesis()](https://youtu.be/dgroOPDDMX0) - October 19, 2021
 
 [J067: BroadcastChannel()](https://youtu.be/P8ibXpQa428) - October 12, 2021
