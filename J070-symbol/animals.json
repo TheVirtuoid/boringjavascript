@@ -7,5 +7,6 @@
 	{ "type": "Road Runner", "name": "Beep Beep", "class": "Aves"},
 	{ "type": "Dolphin", "name": "Flipper",  "class": "Mammalia"},
 	{ "type": "Whale", "name": "Moby Dick", "class": "Mammalia"},
+	{ "type": "Cat", "name": "Mr. Tinkles", "class": "Mammalia"},
 	{ "type": "Lizard", "name": "Larry", "class": "Reptilia"}
 ]
