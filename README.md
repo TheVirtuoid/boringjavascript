@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J070: Symbol()](https://youtu.be/ICCH_d0nPgA) - November 2, 2021
+
 [J069: Generator Function](https://youtu.be/CD3QNGi5Sbc0) - October 26, 2021
 
 [J068: SpeechSynthesis()](https://youtu.be/dgroOPDDMX0) - October 19, 2021
