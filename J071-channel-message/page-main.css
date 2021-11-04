@@ -77,3 +77,34 @@ main {
     padding-left: 2rem;
     font-size: 1rem;
 }
+
+main table {
+    background-color: white;
+}
+
+#zoo {
+    margin-left: 1rem;
+    font-size: .75rem;
+}
+
+#zoo table thead {
+    background-color: #1333ad;
+    color: white;
+}
+
+#zoo table td, main table th {
+    padding: .25rem 1rem;
+}
+
+#zoo table tbody tr:nth-child(odd) {
+    background-color: #eeeeee;
+}
+
+#zoo table tbody button {
+    cursor: pointer;
+}
+
+#display-board {
+    display: flex;
+    justify-content: flex-start;
+}

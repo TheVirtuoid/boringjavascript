@@ -11,34 +11,32 @@ const setDisplayForIFrame = (event) => {
 	switch (event.data) {
 		case 'init':
 			iFramePort = event.ports[0];
-			iFramePort.addEventListener('message', receivedMessageFromParent);
+			iFramePort.addEventListener('message', receiveAnAnimal);
 			document.body.classList.add('iframe');
+			iFramePort.start();
 			break;
 		default:
 			break;
 	}
 }
 
-const receivedMessageFromParent = (event) => {
-	console.log(event);
-}
-
 const addTheAnimal = (event) => {
 	const [type, name] = animalToAdd.value.split(',');
 	zooListing.insertAdjacentHTML('beforeend', `<tr><td>${type}</td><td>${name}</td></tr>`);
+	animalToAdd.value = '';
 }
 
 const transferTheAnimal = (event) => {
-	//
-	// here it is written to a database somewhere.
-	//
-	if (transferAnimalTableElement) {
+	if (animalToTransfer.value) {
+		iFramePort.postMessage(animalToTransfer.value);
 		transferAnimalTableElement.remove();
 		transferAnimalTableElement = null;
 		animalToTransfer.value = "";
 	}
+}
 
-	console.log(event);
+const receiveAnAnimal = (event) => {
+	animalToAdd.value = event.data;
 }
 
 const addAnimalToTransferInput = (event) => {
