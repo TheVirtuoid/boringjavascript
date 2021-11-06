@@ -1,7 +1,8 @@
-class AnimalError extends Error {
+class CannotAddAnimalError extends Error {
 	constructor(animal) {
 		super();
 		this.message = `Animal type "${animal.type}" is not accepted at the zoo.`;
+		this.name = 'CannotAddAnimalError';
 	}
 }
 
@@ -17,9 +18,32 @@ const animals = [
 	{ "type": "Lizard", "name": "Larry", "class": "Reptilia"}
 ];
 
+const processError = (err, animal) => {
+	let errorMessage = '';
+	switch(err.name) {
+		case 'CannotAddAnimalError':
+			errorMessage = `**WARNING: There is a ${animal.type} in the transfer vehicle!`;
+			break;
+		default:
+			errorMessage = `**WHOOPS! We have a STRANGE animal (${animal.type}) on the transfer vehicle.`;
+			break;
+	}
+	return errorMessage;
+}
+
+const processAnimal = (animal) => {
+	let status = '';
+	try {
+		if (animal.type === 'Coyote') {
+			throw new CannotAddAnimalError(animal);
+		};
+		status = `Welcome ${animal.name} the ${animal.type} to the zoo.`;
+	} catch (err) {
+		status = processError(err, animal);
+	}
+	return status;
+}
+
 animals.forEach((animal) => {
-	if (animal.type === 'Coyote') {
-		throw new AnimalError(animal);
-	};
-	console.log(`Welcome ${animal.name} the ${animal.type} to the zoo.`);
+	console.log(processAnimal(animal));
 });
