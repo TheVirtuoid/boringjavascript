@@ -1,4 +1,4 @@
-let iFramePort = null;
+let loadingDockPort = null;
 const animalToAdd = document.getElementById('animal-to-add');
 const addAnimal = document.getElementById('add-animal');
 const animalToTransfer = document.getElementById('animal-to-transfer');
@@ -10,10 +10,10 @@ let transferAnimalTableElement = null;
 const setDisplayForIFrame = (event) => {
 	switch (event.data) {
 		case 'init':
-			iFramePort = event.ports[0];
-			iFramePort.addEventListener('message', receiveAnAnimal);
+			loadingDockPort = event.ports[0];
+			loadingDockPort.addEventListener('message', receiveAnAnimal);
 			document.body.classList.add('iframe');
-			iFramePort.start();
+			loadingDockPort.start();
 			break;
 		default:
 			break;
@@ -28,7 +28,7 @@ const addTheAnimal = (event) => {
 
 const transferTheAnimal = (event) => {
 	if (animalToTransfer.value) {
-		iFramePort.postMessage(animalToTransfer.value);
+		loadingDockPort.postMessage(animalToTransfer.value);
 		transferAnimalTableElement.remove();
 		transferAnimalTableElement = null;
 		animalToTransfer.value = "";

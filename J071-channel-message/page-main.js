@@ -1,8 +1,8 @@
 const loadingDockInterface = document.querySelector('#loading-dock iframe');
 const zoo = document.querySelector('#zoo table tbody');
 
-const loadingDockChannel = new MessageChannel();
-const loadingDockChannelPort = loadingDockChannel.port1;
+const messageChannel = new MessageChannel();
+const zooPort = messageChannel.port1;
 
 const transferAnimalToZoo = (event) => {
 	const [ type, name ] = event.data.split(',');
@@ -18,15 +18,15 @@ const transferAnimalToLoadingDock = (event) => {
 		const tdName = event.target.parentElement.previousElementSibling;
 		const tdType = tdName.previousElementSibling;
 		const animalToTransfer = `${tdType.textContent},${tdName.textContent}`;
-		loadingDockChannelPort.postMessage(animalToTransfer);
+		zooPort.postMessage(animalToTransfer);
 		tdName.parentElement.remove();
 	}
 }
 
 const initializeLoadingDock = (event) => {
-	loadingDockChannelPort.addEventListener('message', transferAnimalToZoo);
-	loadingDockChannelPort.start();
-	loadingDockInterface.contentWindow.postMessage('init', '*', [loadingDockChannel.port2]);
+	zooPort.addEventListener('message', transferAnimalToZoo);
+	zooPort.start();
+	loadingDockInterface.contentWindow.postMessage('init', '*', [messageChannel.port2]);
 };
 loadingDockInterface.addEventListener('load', initializeLoadingDock);
 zoo.addEventListener('click', transferAnimalToLoadingDock);
