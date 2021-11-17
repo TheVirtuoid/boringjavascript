@@ -13,10 +13,30 @@ const zoo = [
 const myCat = zoo.find((animal) => animal.type === 'Cat');
 console.log(`The zoo's cat is named ${myCat.name}.`);
 
-
 const myZebra = zoo.find((animal) => animal.type === 'Zebra');
-if (!myZebra) {
+if (myZebra === undefined) {
 	console.log('Sorry, but we have no Zebras in the zoo.');
 } else {
 	console.log(`The zoo's zebra is named ${myZebra.name}.`);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+const myZebra = zoo.find((animal) => animal.type === 'Zebra');
+if (myZebra === undefined) {
+	console.log('Sorry, but we have no Zebras in the zoo.');
+} else {
+	console.log(`The zoo's zebra is named ${myZebra.name}.`);
+}
+*/
