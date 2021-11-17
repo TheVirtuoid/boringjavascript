@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J072: Array.find()](https://youtu.be/quR8ztOMoDk) - November 16, 2021
+
 [J071: MessageChannel()](https://youtu.be/P0n611PtMB0) - November 9, 2021
 
 [J070: Symbol()](https://youtu.be/ICCH_d0nPgA) - November 2, 2021
