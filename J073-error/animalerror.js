@@ -22,7 +22,7 @@ const processError = (err, animal) => {
 	let errorMessage = '';
 	switch(err.name) {
 		case 'CannotAddAnimalError':
-			errorMessage = `**WARNING: There is a ${animal.type} in the transfer vehicle!`;
+			errorMessage = `\n****WARNING: There is a ${animal.type} in the transfer vehicle!\n****${err.message}\n`;
 			break;
 		default:
 			errorMessage = `**WHOOPS! We have a STRANGE animal (${animal.type}) on the transfer vehicle.`;
