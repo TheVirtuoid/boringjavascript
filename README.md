@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J073: Error()](https://youtu.be/vFMlpajDCO4) - November 23, 2021
+
 [J072: Array.find()](https://youtu.be/quR8ztOMoDk) - November 16, 2021
 
 [J071: MessageChannel()](https://youtu.be/P0n611PtMB0) - November 9, 2021
