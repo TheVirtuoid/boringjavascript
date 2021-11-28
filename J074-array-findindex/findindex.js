@@ -28,3 +28,26 @@ if (myZebraIndex === -1) {
 
 
 
+
+
+
+
+
+/*
+
+const myZebraIndex = zoo.findIndex((animal) => animal.type === 'Zebra');
+if (myZebraIndex === -1) {
+	console.log('Sorry, but we have no Zebras in the zoo.');
+} else {
+	console.log(`The zoo's zebra is named ${zoo[myZebraIndex].name}.`);
+}
+*/
+
+
+
+
+
+
+
+
+
