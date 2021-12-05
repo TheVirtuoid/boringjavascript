@@ -1,17 +1,32 @@
 class Animal {
+
 	name = '';
-	changeName (newName) {
-		this.name = newName;
+	tempF = 0;
+
+	get tempC () {
+		return (this.tempF - 32) * 5 / 9;
 	}
 
-	get nameLength () {
-		return this.name.length;
-	}
 }
 
 const myCat = new Animal();
-console.log(`Before we name the cat: ${myCat.nameLength}`);
+myCat.name = "Fluffy";
+myCat.tempF = 101.7;
+console.log(`Cat ${myCat.name}'s temperature: ${myCat.tempF} F (${myCat.tempC} C)`);
 
-myCat.changeName('Fluffy');
-console.log(`After we name the cat: ${myCat.nameLength}`);
 
+
+
+
+
+
+
+
+
+
+
+
+/*
+myCat.tempC = 40;
+console.log(`Cat ${myCat.name}'s temperature: ${myCat.tempF} F (${myCat.tempC} C)`);
+*/
