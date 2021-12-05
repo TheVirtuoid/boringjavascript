@@ -14,19 +14,6 @@ myCat.name = "Fluffy";
 myCat.tempF = 101.7;
 console.log(`Cat ${myCat.name}'s temperature: ${myCat.tempF} F (${myCat.tempC} C)`);
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*
 myCat.tempC = 40;
 console.log(`Cat ${myCat.name}'s temperature: ${myCat.tempF} F (${myCat.tempC} C)`);
-*/
+
