@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J075: get, set](https://youtu.be/GJLWvzeTLm8) - December 7, 2021
+
 [J074: Array.findIndex()](https://youtu.be/UgWSNjLD2KY) - November 30, 2021
 
 [J073: Error()](https://youtu.be/vFMlpajDCO4) - November 23, 2021
