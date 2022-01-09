@@ -16,12 +16,30 @@ function addAnimal () {
 	}
 }
 
-/*
-function addAnimal (name) {
-	animals.push({ type: 'Unknown', name, 'class': 'Unknown' });
-}
-*/
+arguments.forEach( (name) => {});
 
-addAnimal('Tigger', 'Carl', 'Waldo', 'Samantha', 'Una');
+// addAnimal('Killer');
+addAnimal('Killer', 'Carl', 'Waldo', 'Samantha', 'Una');
 
 console.log(animals);
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+addAnimal('Killer', 'Carl', 'Waldo', 'Samantha', 'Una');
+
+function addAnimal () {
+	for(let i = 0, l = arguments.length; i < l; i++) {
+		animals.push({ type: 'Unknown', 'name': arguments[i], 'class': 'Unknown' });
+	}
+}
+*/

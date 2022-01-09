@@ -14,6 +14,6 @@ function addAnimal (...names) {
 	names.forEach((name) => animals.push({ type: 'Unknown', 'name': name, 'class': 'Unknown' }));
 }
 
-addAnimal('Tigger', 'Carl', 'Waldo', 'Samantha', 'Una');
+addAnimal('Killer', 'Carl', 'Waldo', 'Samantha', 'Una');
 
 console.log(animals);
