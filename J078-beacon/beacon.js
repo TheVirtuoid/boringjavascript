@@ -1,19 +1,20 @@
-const sendFetchTag = () => {
-	const { appCodeName, cookieEnabled, language } = navigator;
-	const sendData = `acn=${appCodeName}&ce=${cookieEnabled}&lang=${language}`;
-	fetch(`./analytics.json?${sendData}`)
-			.then(response => response.json())
-			.then(data => console.log(data));
-}
-
 const sendBeacon = () => {
 	const { appCodeName, cookieEnabled, language } = navigator;
-	const sendData = `acn=${appCodeName}&ce=${cookieEnabled}&lang=${language}`;
-	navigator.sendBeacon(`./analytics.json?${sendData}`);
+	const data = new FormData();
+	data.append('appCodeName', appCodeName);
+	data.append('cookieEnabled', `${cookieEnabled}`);
+	data.append('language', language);
+	navigator.sendBeacon(`./analytics.json`, data);
 }
 
+let visible = false;
+
 document.addEventListener('visibilitychange', () => {
-	if (document.visibilityState === 'hidden') {
+	console.log(document.visibilityState);
+	if (document.visibilityState === 'hidden' && visible) {
 		sendBeacon();
+	} else if (document.visibilityState === 'visible') {
+		visible = true;
 	}
 });
+
