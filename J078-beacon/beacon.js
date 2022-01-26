@@ -7,14 +7,15 @@ const sendBeacon = () => {
 	navigator.sendBeacon(`./analytics.json`, data);
 }
 
-let visible = false;
+const setupAnalyticsListener = () => {
+	document.addEventListener('visibilitychange', () => {
+		if (document.visibilityState === 'hidden') {
+			sendBeacon();
+		};
+	}, { once: true});
 
-document.addEventListener('visibilitychange', () => {
-	console.log(document.visibilityState);
-	if (document.visibilityState === 'hidden' && visible) {
-		sendBeacon();
-	} else if (document.visibilityState === 'visible') {
-		visible = true;
-	}
-});
+}
+
+window.addEventListener('load', setupAnalyticsListener);
+
 
