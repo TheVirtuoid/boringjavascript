@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J078: Beacon](https://youtu.be/bIBrLX3nFlg) - January 25, 2022
+
 [J077: Webanimation](https://youtu.be/wCfL0VlGGwo) - January 18, 2022
 
 [J076: arguments](https://youtu.be/GRXJxgIbtT8) - January 11, 2022
