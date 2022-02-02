@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J079: Assignment Operators](https://youtu.be/_GH9IvYGn9k) - February 1, 2022
+
 [J078: Beacon](https://youtu.be/bIBrLX3nFlg) - January 25, 2022
 
 [J077: Webanimation](https://youtu.be/wCfL0VlGGwo) - January 18, 2022
