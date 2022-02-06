@@ -82,3 +82,17 @@ main label, main label input, main label button {
     font-size: 1.25rem;
 }
 
+#voice-selected {
+    font-weight: bold;
+}
+
+#voices-available, #languages-available {
+    margin: 0 0 0 2rem;
+    list-style-type: none;
+}
+
+#voices-available li, #languages-available li {
+    display: inline-block;
+    padding-right: 2rem;
+}
+

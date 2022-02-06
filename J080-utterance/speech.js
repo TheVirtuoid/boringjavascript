@@ -8,6 +8,9 @@ const rateValue = document.getElementById('rate-value');
 const voice = document.getElementById('voice');
 const volume = document.getElementById('volume');
 const volumeValue = document.getElementById('volume-value');
+const voicesAvailable = document.getElementById('voices-available');
+const voiceSelected = document.getElementById('voice-selected');
+const languagesAvailable = document.getElementById('languages-available');
 
 const initialLanguage = document.getElementsByTagName('html')[0].getAttribute('lang');
 
@@ -33,12 +36,10 @@ const populateVoicesAndLanguage = () => {
 		}
 		const languagesFromMap = languages.get(lang);
 		languages.set(lang, languagesFromMap.concat([voice]));
-		// console.log(voice);
 	});
-	// console.log(languages);
 	while(language.firstChild) language.removeChild(language.firstChild);
+	while(languagesAvailable.firstChild) languagesAvailable.removeChild(languagesAvailable.firstChild);
 	languages.forEach((entry, entryIndex) => {
-		// console.log(entry, entryIndex);
 		const option = document.createElement('option');
 		option.setAttribute('value', `${entryIndex}`);
 		if (entryIndex === initialLanguage) {
@@ -46,12 +47,17 @@ const populateVoicesAndLanguage = () => {
 		}
 		option.textContent = entryIndex;
 		language.appendChild(option);
+		const li = document.createElement('li');
+		li.textContent = entryIndex;
+		languagesAvailable.appendChild(li);
 	});
 	selectLanguage(initialLanguage);
 }
 
 const selectLanguage = (language) => {
+	voiceSelected.textContent = language;
 	while(voice.firstChild) voice.removeChild(voice.firstChild);
+	while(voicesAvailable.firstChild) voicesAvailable.removeChild(voicesAvailable.firstChild);
 	languages.get(language).forEach((entry, entryIndex) => {
 		const option = document.createElement('option');
 		option.setAttribute('value', `${language},${entryIndex}`);
@@ -60,6 +66,9 @@ const selectLanguage = (language) => {
 		}
 		option.textContent = entry.name;
 		voice.appendChild(option);
+		const li = document.createElement('li');
+		li.textContent = entry.name;
+		voicesAvailable.appendChild(li);
 	});
 }
 
