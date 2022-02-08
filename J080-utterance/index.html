@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="Description" content="J068-speech">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="speech.css">
+    <title>Boring JavaScript J068: Speech</title>
+</head>
+<body>
+<header>
+    <div class="mdc-top-app-bar mdc-top-app-bar--fixed" id="top-app-bar">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <div class="mdc-top-app-bar__title">
+                    <h1>boring javascript</h1>
+                </div>
+            </section>
+        </div>
+    </div>
+</header>
+<main>
+    <h2>Speech Synthesis</h2>
+    <label>What do you want me to say? <input id="text-to-speech" type="text" /></label>
+    <label><button type="button" id="say-it">Say it!</button></label>
+    <table>
+        <thead>
+            <tr><th>Setting</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Language</td><td>
+                <select id="language"></select>
+            </td></tr>
+            <tr><td>Pitch</td><td>
+                <input type="range" min="0" max="2" step=".1" id="pitch" value="1"/><span id="pitch-value">1</span>
+            </td></tr>
+            <tr><td>Rate</td><td>
+                <input type="range" min="0" max="10" step=".1" id="rate" value="1"/><span id="rate-value">1</span>
+            </td></tr>
+            <tr><td>Voice</td><td>
+                <select id="voice"></select>
+            </td></tr>
+            <tr><td>Volume</td><td>
+                <input type="range" min="0" max="1" step=".1" id="volume" value="1"/><span id="volume-value">1</span>
+            </td></tr>
+        </tbody>
+    </table>
+    <h3>Languages Available</h3>
+    <ul id="languages-available"></ul>
+    <h3>Voices available for &quot;<span id="voice-selected"></span>&quot;</h3>
+    <ul id="voices-available"></ul>
+</main>
+<footer></footer>
+<script src="speech.js" type="module"></script>
+</body>
+</html>
