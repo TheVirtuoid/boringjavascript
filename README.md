@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J080: SpeechSynthesisUtterance()](https://youtu.be/-sfbmAQ0BRA) - February 8, 2022
+
 [J079: Assignment Operators](https://youtu.be/_GH9IvYGn9k) - February 1, 2022
 
 [J078: Beacon](https://youtu.be/bIBrLX3nFlg) - January 25, 2022
