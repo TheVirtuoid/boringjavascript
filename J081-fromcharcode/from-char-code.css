@@ -91,6 +91,7 @@ main {
 
 .input input {
     font-size: var(--font-size);
+    width: 30rem;
 }
 
 .print-it {
@@ -106,11 +107,12 @@ main {
 }
 
 #output-from-char-code, #output-from-char-point {
-    font-size: var(--font-size);
+    font-size: 2rem;
     border: 2px solid black;
     background-color: #eeeeee;
     color: #222222;
     padding: .5rem 1rem;
     margin: 0 10rem 1rem 3rem;
     font-weight: 800;
+    height: 2.5rem;
 }
