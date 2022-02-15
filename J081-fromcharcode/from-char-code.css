@@ -1,0 +1,118 @@
+html {
+    font-size: 18px;
+    font-family: Roboto, Verdana, sans-serif;
+}
+
+body {
+    font-size: 1rem;
+    background-color: #c2c6ed;
+    margin: 0;
+    padding: 0;
+}
+
+#top-app-bar {
+    background-color: #6200ee;
+    color: white;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 4;
+    box-shadow: 0px 2px 10px 0px black;
+    background-color: #1333ad;
+    top: 0;
+}
+
+.mdc-top-app-bar__row {
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 64px;
+}
+
+.mdc-top-app-bar__section {
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    min-width: 0;
+    padding: 8px 12px;
+    z-index: 1;
+}
+.mdc-top-app-bar__section--align-start {
+    justify-content: flex-start;
+    order: -1;
+}
+
+.mdc-top-app-bar__title {
+    font-family: Roboto, sans-serif;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.0125em;
+    text-decoration: inherit;
+    text-transform: inherit;
+    padding-left: 20px;
+    padding-right: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: 1;
+    margin-left: 0;
+    display: flex;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    color: #d7b614;
+    font-family: Consolas, "Courier New", monospace;
+}
+
+main {
+    padding-top: 64px;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    font-size: 1rem;
+}
+
+:root {
+    --font-size: 1.25rem;
+}
+.input {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: var(--font-size);
+}
+
+.input input {
+    font-size: var(--font-size);
+    width: 30rem;
+}
+
+.print-it {
+    font-size: var(--font-size);
+    display: inline-block;
+    margin-left: 2rem;
+    color: yellow;
+    background-color: green;
+    padding: .5rem 1rem;
+    font-weight: 800;
+    border: none;
+    border-radius: 1rem;
+}
+
+#output-from-char-code, #output-from-char-point {
+    font-size: 2rem;
+    border: 2px solid black;
+    background-color: #eeeeee;
+    color: #222222;
+    padding: .5rem 1rem;
+    margin: 0 10rem 1rem 3rem;
+    font-weight: 800;
+    height: 2.5rem;
+}
