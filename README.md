@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J081: String.fromCharCode(), String.fromCodePoint()](https://youtu.be/Ua96drqlxHQ) - February 15, 2022
+
 [J080: SpeechSynthesisUtterance()](https://youtu.be/-sfbmAQ0BRA) - February 8, 2022
 
 [J079: Assignment Operators](https://youtu.be/_GH9IvYGn9k) - February 1, 2022
