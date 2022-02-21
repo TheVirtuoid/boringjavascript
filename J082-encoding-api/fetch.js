@@ -2,7 +2,6 @@ const buttonFetch = document.getElementById('button-fetch');
 const fetchedText = document.getElementById('fetched-text');
 
 const fetchTheFile = () => {
-	const decoder = new TextDecoder();
 	fetch("http://localhost:8080/utf8-sampler.utf8")
 			.then(response => response.text())
 			.then(data => {
@@ -10,7 +9,18 @@ const fetchTheFile = () => {
 			});
 }
 
-
+const fetchTheFile = () => {
+	const decoder = new TextDecoder();
+	fetch("http://localhost:8080/utf8-sampler.utf8")
+			.then(async response => {
+				const reader = response.body.getReader();
+				let { value: chunk, done: readerDone } = await reader.read();
+				return decoder.decode(chunk);
+			})
+			.then(data => {
+				fetchedText.textContent = data;
+			});
+}
 
 buttonFetch.addEventListener('click', fetchTheFile);
 
@@ -21,6 +31,15 @@ buttonFetch.addEventListener('click', fetchTheFile);
 
 
 
+
+
+
+
+
+
+
+
+// https://kermitproject.org/utf8.html
 
 /*
 
@@ -62,11 +81,10 @@ const fetchTheFile = () => {
 /*
 
 const fetchTheFile = () => {
-	const decoder = new TextDecoder();
 	fetch("http://localhost:8080/utf8-sampler.utf8")
-			.then(response => response.text()
+			.then(response => response.text())
 			.then(data => {
-				fetchedText.textContent = data;
+					fetchedText.textContent = data;
 			});
 }
 

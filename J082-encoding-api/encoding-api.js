@@ -12,46 +12,30 @@ const processCharacterCodes = () => {
 	const characterCodes = inputCharacterCodes.value;
 	if (characterCodes) {
 		const values = new Uint8Array(
-				characterCodes.split(',').map((code) => parseInt(code, 16))
+				characterCodes.split(',').map((code) => parseInt(code, 10))
 		);
-		outputTextEncoder.textContent = textDecoder.decode(values);
+		outputTextDecoder.textContent = textDecoder.decode(values);
 	}
 }
 
 const processCharacters = () => {
-	console.log('noting');
+	const characters = inputCharacters.value;
+	if (characters) {
+		outputTextEncoder.textContent = textEncoder.encode(characters).join(',');
+	}
 }
 
-buttonTextEncoder.addEventListener('click', processCharacterCodes);
-buttonTextDecoder.addEventListener('click', processCharacters);
+buttonTextDecoder.addEventListener('click', processCharacterCodes);
+buttonTextEncoder.addEventListener('click', processCharacters);
 
 
 
 
-document.getElementById('doit').addEventListener('click', () => {
-	const decoder = new TextDecoder();
-	fetch("http://localhost:8080/utf8-sampler.utf8")
-			.then(async response => {
-				const reader = response.body.getReader();
-				let { value: chunk, done: readerDone } = await reader.read();
-				return Promise.resolve(String.fromCodePoint(...chunk));
-				// return decoder.decode(chunk);
-			})
-			.then(data => console.log(data));
-})
 
 
-
-
-// https://kermitproject.org/utf8.html
-
-// a2+b2+c2 BAD:  61,B2,2B,62,B2,3D,63,B2
-// a2+b2=c2 GOOD: 61,C2,B2,2B,62,C2,B2,3D,63,C2,B2
-
-
-
-
-// a2+b2=c2: 97,178,43,98,178,61,99,178
+// a2+b2=c2:
+// BAD: 97,178,43,98,178,61,99,178
+// GOOD: 97,194,178,43,98,194,178,61,99,194,178
 
 
 
@@ -59,6 +43,9 @@ document.getElementById('doit').addEventListener('click', () => {
 
 
 
+// kon;nichiwa:
+// BAD: 12371,12435,12395,12385,12399
+// GOOD: 227,129,147,227,130,147,227,129,171,227,129,161,227,129,175
 
 
 
@@ -66,29 +53,5 @@ document.getElementById('doit').addEventListener('click', () => {
 
 
 
-
-// kon;nichiwa: 12371,12435,12395,12385,12399
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// zombie eat brain turn into clown? 129503,129504,61,129313,63
-
-
-
-
-
+// 🧟🧠=🤡?
 
