@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J082: TextDecoder, TextEncoder](https://youtu.be/-IZqEy0mMRY) - February 22, 2022
+
 [J081: String.fromCharCode(), String.fromCodePoint()](https://youtu.be/Ua96drqlxHQ) - February 15, 2022
 
 [J080: SpeechSynthesisUtterance()](https://youtu.be/-sfbmAQ0BRA) - February 8, 2022
