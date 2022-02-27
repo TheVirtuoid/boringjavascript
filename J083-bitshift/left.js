@@ -19,6 +19,12 @@ console.log(`leftShiftNumber ${leftShiftNumber}\n${printBinary(leftShiftNumber)}
 
 
 
+
+
+
+
+
+
 // const myNumber = 1073741824
 // const myNumber = 2147483648;
 
