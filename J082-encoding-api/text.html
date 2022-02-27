@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="Description" content="Boring JavaScript - J082-encoding-api">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="encoding-api.css">
+    <title>Boring JavaScript J082: Encoding API</title>
+</head>
+<body>
+<header>
+    <div class="mdc-top-app-bar mdc-top-app-bar--fixed" id="top-app-bar">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <div class="mdc-top-app-bar__title">
+                    <h1>boring javascript</h1>
+                </div>
+            </section>
+        </div>
+    </div>
+</header>
+<main>
+    <h2>Encoding API</h2>
+    <h3>TextDecoder()</h3>
+    <div class="input">
+        <label>Characters Codes: <input id="character-codes" value=""/></label>
+        <button id="button-text-decoder" class="print-it" type="button">Print it!</button>
+    </div>
+    <div id="output-text-decoder" class="output"><span></span></div>
+    <h3>TextEncoder()</h3>
+    <div class="input">
+        <label>Character: <input id="characters" /></label>
+        <button id="button-text-encoder" class="print-it" type="button">Print it!</button>
+    </div>
+    <div id="output-text-encoder" class="output"><span></span></div>
+</main>
+<footer></footer>
+<script src="encoding-api.js" type="module"></script>
+</body>
+</html>

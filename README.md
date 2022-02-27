@@ -11,6 +11,32 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J082: TextDecoder, TextEncoder](https://youtu.be/-IZqEy0mMRY) - February 22, 2022
+
+[J081: String.fromCharCode(), String.fromCodePoint()](https://youtu.be/Ua96drqlxHQ) - February 15, 2022
+
+[J080: SpeechSynthesisUtterance()](https://youtu.be/-sfbmAQ0BRA) - February 8, 2022
+
+[J079: Assignment Operators](https://youtu.be/_GH9IvYGn9k) - February 1, 2022
+
+[J078: Beacon](https://youtu.be/bIBrLX3nFlg) - January 25, 2022
+
+[J077: Webanimation](https://youtu.be/wCfL0VlGGwo) - January 18, 2022
+
+[J076: arguments](https://youtu.be/GRXJxgIbtT8) - January 11, 2022
+
+[J075: get, set](https://youtu.be/GJLWvzeTLm8) - December 7, 2021
+
+[J074: Array.findIndex()](https://youtu.be/UgWSNjLD2KY) - November 30, 2021
+
+[J073: Error()](https://youtu.be/vFMlpajDCO4) - November 23, 2021
+
+[J072: Array.find()](https://youtu.be/quR8ztOMoDk) - November 16, 2021
+
+[J071: MessageChannel()](https://youtu.be/P0n611PtMB0) - November 9, 2021
+
+[J070: Symbol()](https://youtu.be/ICCH_d0nPgA) - November 2, 2021
+
 [J069: Generator Function](https://youtu.be/CD3QNGi5Sbc0) - October 26, 2021
 
 [J068: SpeechSynthesis()](https://youtu.be/dgroOPDDMX0) - October 19, 2021
