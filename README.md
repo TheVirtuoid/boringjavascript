@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J083: Bit Shift Left, Bit Shift Right](https://youtu.be/QDej5reEvUA) - March 1, 2022
+
 [J082: TextDecoder, TextEncoder](https://youtu.be/-IZqEy0mMRY) - February 22, 2022
 
 [J081: String.fromCharCode(), String.fromCodePoint()](https://youtu.be/Ua96drqlxHQ) - February 15, 2022
