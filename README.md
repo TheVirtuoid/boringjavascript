@@ -11,6 +11,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J084: Bitwise Operators](https://youtu.be/6WW4T0n8w6g) - March 8, 2022
+
 [J083: Bit Shift Left, Bit Shift Right](https://youtu.be/QDej5reEvUA) - March 1, 2022
 
 [J082: TextDecoder, TextEncoder](https://youtu.be/-IZqEy0mMRY) - February 22, 2022
