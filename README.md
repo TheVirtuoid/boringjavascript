@@ -1,3 +1,4 @@
+
 # BoringJavascript
 The Repository for BoringJavascript.com
 
