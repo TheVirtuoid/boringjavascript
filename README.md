@@ -12,6 +12,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J086: while / do...while](https://youtu.be/52qRpccsCfg) - March 22, 2022
+
 [J085: Increment, Decrement Operators](https://youtu.be/imcPj_l6TCM) - March 15, 2022
 
 [J084: Bitwise Operators](https://youtu.be/6WW4T0n8w6g) - March 8, 2022
