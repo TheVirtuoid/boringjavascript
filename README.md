@@ -12,6 +12,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J087: Array.copyWithin()](https://youtu.be/g2aWE9IHSzg) - March 30, 2022
+
 [J086: while / do...while](https://youtu.be/52qRpccsCfg) - March 22, 2022
 
 [J085: Increment, Decrement Operators](https://youtu.be/imcPj_l6TCM) - March 15, 2022
