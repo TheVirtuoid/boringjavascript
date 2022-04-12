@@ -12,6 +12,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J089: Array.at()](https://youtu.be/_eTtKFkaqII) - April 12, 2022
+
 [J088: Private properties and methods](https://youtu.be/LHYWE5bLbfM) - April 5, 2022
 
 [J087: Array.copyWithin()](https://youtu.be/g2aWE9IHSzg) - March 30, 2022
