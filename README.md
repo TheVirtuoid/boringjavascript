@@ -12,6 +12,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J091: For...in, For...of](https://youtu.be/CZBlxH9G1rc) - April 26, 2022
+
 [J090: BigInt](https://youtu.be/OC_QzofCmT4) - April 19, 2022
 
 [J089: Array.at()](https://youtu.be/_eTtKFkaqII) - April 12, 2022
