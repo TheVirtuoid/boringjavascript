@@ -12,6 +12,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J092: Proxy()](https://youtu.be/a7o3yiyxPgc) - May 3, 2022
+
 [J091: For...in, For...of](https://youtu.be/CZBlxH9G1rc) - April 26, 2022
 
 [J090: BigInt](https://youtu.be/OC_QzofCmT4) - April 19, 2022
