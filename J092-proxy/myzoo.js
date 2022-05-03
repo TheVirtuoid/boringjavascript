@@ -1,35 +1,78 @@
 import { zoo } from './zoo.js';
 
-const myCat = zoo.createAnimal('Fluffy');
-console.log(`Prefix: ${zoo.nameWithPrefix(myCat)}`);
-console.log(`Suffix: ${zoo.nameWithSuffix(myCat)}`);
-console.log(`Both  : ${zoo.nameWithPrefixAndSuffix(myCat)}`);
-console.log('And my keys are:');
-console.log(Object.getOwnPropertyNames(myCat));
-
-
-/*
-const nameGetProxy = {
-	get(target, property, receiver) {
-		const value = Reflect.get(...arguments);
-		return property === 'name' ? target.name.split('').reverse().join('') : value;
-	},
-	ownKeys(target) {
-		return [name];
+const reverseNameGetProxy = {
+	apply: function(target, thisArg, args) {
+		const [ name, type ] = args;
+		return target(name.split('').reverse().join(''), type);
 	}
 }
 
-const zooProxy = new Proxy(zoo, nameGetProxy);
+const createAnimalReverse = new Proxy(zoo.createAnimal, reverseNameGetProxy);
 
-const myCat = zooProxy.createAnimal('Fluffy');
-console.log(`Prefix: ${zooProxy.nameWithPrefix(myCat)}`);
-console.log(`Suffix: ${zooProxy.nameWithSuffix(myCat)}`);
-console.log(`Both  : ${zooProxy.nameWithPrefixAndSuffix(myCat)}`);
+const myCat = createAnimalReverse('Fluffy');
+console.log(`Prefix: ${zoo.nameWithPrefix(myCat)}`);
+console.log(`Suffix: ${zoo.nameWithSuffix(myCat)}`);
+console.log(`Both  : ${zoo.nameWithPrefixAndSuffix(myCat)}`);
 
 const myDog = zoo.createAnimal('Fido');
 console.log(`Prefix: ${zoo.nameWithPrefix(myDog)}`);
 console.log(`Suffix: ${zoo.nameWithSuffix(myDog)}`);
 console.log(`Both  : ${zoo.nameWithPrefixAndSuffix(myDog)}`);
-console.log('And my keys are:');
-console.log(Object.getOwnPropertyNames(myCat));
+
+/*
+zoo.createAnimal = function(name, type = '') {
+	return { name: name.split('').reverse().join(''), type };
+}
+
+const myCat = zoo.createAnimal('Fluffy');
+
+console.log(`Prefix: ${zoo.nameWithPrefix(myCat)}`);
+console.log(`Suffix: ${zoo.nameWithSuffix(myCat)}`);
+console.log(`Both  : ${zoo.nameWithPrefixAndSuffix(myCat)}`);
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+zoo.createAnimal = function(name, type = '') {
+	return { name: name.split('').reverse().join(''), type };
+}
+
+
+
+
+const reverseNameGetProxy = {
+	apply: function(target, thisArg, args) {
+		const [ name, type ] = args;
+		return target(name.split('').reverse().join(''), type);
+	}
+}
+
+const createAnimalReverse = new Proxy(zoo.createAnimal, reverseNameGetProxy);
+
+const myCat = createAnimalReverse('Fluffy');
+console.log(`Prefix: ${zoo.nameWithPrefix(myCat)}`);
+console.log(`Suffix: ${zoo.nameWithSuffix(myCat)}`);
+console.log(`Both  : ${zoo.nameWithPrefixAndSuffix(myCat)}`);
+
+const myDog = zoo.createAnimal('Fido');
+console.log(`Prefix: ${zoo.nameWithPrefix(myDog)}`);
+console.log(`Suffix: ${zoo.nameWithSuffix(myDog)}`);
+console.log(`Both  : ${zoo.nameWithPrefixAndSuffix(myDog)}`);
+
  */
