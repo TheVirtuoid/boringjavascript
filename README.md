@@ -12,6 +12,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J093: Reflect](https://youtu.be/r6aYUCxIIr8) - May 10, 2022
+
 [J092: Proxy()](https://youtu.be/a7o3yiyxPgc) - May 3, 2022
 
 [J091: For...in, For...of](https://youtu.be/CZBlxH9G1rc) - April 26, 2022
