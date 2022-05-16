@@ -1,21 +1,23 @@
-const sendBeacon = () => {
-	const { appCodeName, cookieEnabled, language } = navigator;
-	const data = new FormData();
-	data.append('appCodeName', appCodeName);
-	data.append('cookieEnabled', `${cookieEnabled}`);
-	data.append('language', language);
-	navigator.sendBeacon(`./analytics.json`, data);
+class CatButton {
+	#talking;
+	constructor() {
+		this.#talking = document.getElementById('talking');
+		const button = document.createElement('button');
+		button.innerText = "Make Me Talk!"
+		this.prepareToTalk();
+		button.addEventListener('click', this.processClick.bind(this));
+		document.getElementById('button-here').appendChild(button);
+	}
+
+	processClick() {
+		document.getElementById('talking').innerText = this.toString();
+		this.#talking.innerText = 'My Cat Talks!';
+	}
+
+	prepareToTalk() {
+		this.#talking.innerText = 'Preparing to talk...';
+	}
 }
 
-const setupAnalyticsListener = () => {
-	document.addEventListener('visibilitychange', () => {
-		if (document.visibilityState === 'hidden') {
-			sendBeacon();
-		};
-	}, { once: true});
-
-}
-
-window.addEventListener('load', setupAnalyticsListener);
-
+new CatButton();
 

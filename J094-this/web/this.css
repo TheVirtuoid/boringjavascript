@@ -77,3 +77,15 @@ main {
     padding-left: 2rem;
     font-size: 1rem;
 }
+
+main div {
+    margin-top: 2rem;
+}
+
+#talking {
+    border: 2px solid blue;
+    border-radius: 1rem;
+    background-color: aqua;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+}
