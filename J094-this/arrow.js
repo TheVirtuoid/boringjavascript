@@ -1,10 +1,46 @@
-const myCatWalk = (name) => {
-	console.log(`\n\nMy cat ${name} is walking.`);
-	console.log(this);
+const myCat = {
+	name: 'Mr. Tinkles',
+	type: 'Cat',
+	walk: () => {
+		console.log(`\n\nMy cat '${this.name}' is walking.`);
+		console.log(this);
+	}
 }
 
-myCatWalk('Fluffy');
+// myCat.walk();
+// myCat.walk.apply(myCat);
+// const walkies = myCat.walk.bind(myCat);
+// walkies();
 
+const myOtherCat = {
+	name: 'Tom',
+	type: 'Cat',
+	tail: true,
+	walk: function() {
+		console.log(`My cat ${this.name} is walking!`);
+		const doIHaveATail = () => {
+			return this.tail ? 'And I have a tail!' : 'I do not have a tail. :( ';
+		}
+		return doIHaveATail();
+	}
+}
+
+console.log(myOtherCat.walk());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 const myCat = {
 	name: 'Mr. Tinkles',
 	type: 'Cat',
@@ -16,21 +52,22 @@ const myCat = {
 
 // myCat.walk();
 
+// myCat.walk.apply(myCat);
+// const walkies = myCat.walk.bind(myCat);
+// walkies();
+
 const myOtherCat = {
 	name: 'Tom',
 	type: 'Cat',
-	legs: [
-			'rightFront', 'leftFront', 'rightRear', 'leftRear'
-	],
-	getLeg: function(legName) {
-		console.log('-----inside isLeg: ');
-		console.log(this);
-		return this.legs.find((leg) => {
-			console.log(`---------getting leg ${leg}:`);
-			console.log(this);
-			return leg === legName;
-		});
+	tail: true,
+	walk: function() {
+		console.log(`My cat ${this.name} is walking!`);
+		const doIHaveATail = () => {
+			return this.tail ? 'And I have a tail!' : 'I do not have a tail. :( ';
+		}
+		return doIHaveATail();
 	}
-};
+}
 
-console.log(`My other cat's leg is ${myOtherCat.getLeg('rightFront')}`);
+console.log(myOtherCat.walk());
+*/

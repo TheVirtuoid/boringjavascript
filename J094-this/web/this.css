@@ -77,3 +77,17 @@ main {
     padding-left: 2rem;
     font-size: 1rem;
 }
+
+#output {
+    width: 80%;
+    border: 1px solid black;
+    background-color: white;
+    font-size: 1rem;
+    font-family: monospace;
+    color: black;
+    min-height: 5rem;
+}
+
+#output p {
+    margin: 0;
+}
