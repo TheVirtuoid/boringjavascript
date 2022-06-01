@@ -12,6 +12,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J095: globalThis](https://youtu.be/1DhXZ29soow) - May 31, 2022
+
 [J094: this](https://youtu.be/dOTAxTuSnTY) - May 24, 2022
 
 [J093: Reflect](https://youtu.be/r6aYUCxIIr8) - May 10, 2022
