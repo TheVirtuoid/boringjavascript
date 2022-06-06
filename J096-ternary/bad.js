@@ -14,6 +14,15 @@ const myHorse = {
 	classification: 'Mammalia'
 }
 
-const threeAnimals = myCat.type === 'Cat' ? myDog.type === 'Dog' ? myHorse.type === 'Horse' ? 3 : 2 : myHorse.type === 'Horse' ? 2 : 1 : 0;
+const threeAnimals =
+		myCat.type === 'Cat'
+				? myDog.type === 'Dog'
+						? myHorse.type === 'Horse'
+								? 3
+								: 2
+						: myHorse.type === 'Horse'
+								? 2
+								: 1
+				: 0;
 
 console.log(`I don't know what this number is: ${threeAnimals}`);
