@@ -34,10 +34,57 @@ class Ranks {
 	}
 }
 
+console.log([...Ranks]);
+
+for(const rank of Ranks) {
+	console.log(`name: ${rank.name} \t abbreviation: ${rank.abbreviation}`);
+}
+
 console.log(`\nThe Ace is represented by: name = ${Ranks.ACE.name}, abbreviation = ${Ranks.ACE.abbreviation}`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+
+
+
+	static [Symbol.iterator] = function * () {
+		yield Ranks.ACE;
+		yield Ranks.TWO;
+		yield Ranks.THREE;
+		yield Ranks.FOUR;
+		yield Ranks.FIVE;
+		yield Ranks.SIX;
+		yield Ranks.SEVEN;
+		yield Ranks.EIGHT;
+		yield Ranks.NINE;
+		yield Ranks.TEN;
+		yield Ranks.JACK;
+		yield Ranks.QUEEN;
+		yield Ranks.KING;
+	};
+
+
+
+
 
 console.log([...Ranks]);
 
 for(const rank of Ranks) {
 	console.log(`name: ${rank.name} \t abbreviation: ${rank.abbreviation}`);
 }
+*/
