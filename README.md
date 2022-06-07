@@ -12,6 +12,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J096: ternary](https://youtu.be/BqUPLdfchFk) - June 7, 2022
+
 [J095: globalThis](https://youtu.be/1DhXZ29soow) - May 31, 2022
 
 [J094: this](https://youtu.be/dOTAxTuSnTY) - May 24, 2022
