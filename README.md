@@ -12,6 +12,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J097: iterator protocol](https://youtu.be/YBJPGN6jKp8) - June 14, 2022
+
 [J096: ternary](https://youtu.be/BqUPLdfchFk) - June 7, 2022
 
 [J095: globalThis](https://youtu.be/1DhXZ29soow) - May 31, 2022
