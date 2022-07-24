@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="Description" content="J101-websocket">
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" href="websocket-json.css">
+	<title>Boring JavaScript J101: websocket</title>
+</head>
+<body>
+<header>
+	<div class="mdc-top-app-bar mdc-top-app-bar--fixed" id="top-app-bar">
+		<div class="mdc-top-app-bar__row">
+			<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+				<div class="mdc-top-app-bar__title">
+					<h1>boring javascript</h1>
+				</div>
+			</section>
+		</div>
+	</div>
+</header>
+<main>
+	<h2>TheVirtuoid Zoo</h2>
+	<main>
+		<section id="actions">
+			<button type="button" data-tag="load">Open the Zoo</button>
+			<button type="button" data-tag="get">Get New Animals</button>
+			<button type="button" data-tag="remove">Remove Selected Animals</button>
+			<button type="button" data-tag="close">Close the Zoo</button>
+		</section>
+		<section id="zoo">
+			<table>
+				<thead>
+					<tr>
+						<th></th>
+						<th>Type</th>
+						<th>Name</th>
+						<th>Classification</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</section>
+	</main>
+</main>
+<footer></footer>
+<script src="websocket-json.js" type="module"></script>
+</body>
+</html>
