@@ -131,6 +131,23 @@ main {
     background-color: darkgray;
 }
 
+#actions .action-list button div {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#actions .action-list #count {
+    display: inline-block;
+    background-color: green;
+    padding: .25rem .5rem;
+    font-size: .8rem;
+    border-radius: 1rem;
+    color: white;
+    margin-left: 1.5rem;
+}
+
 /* ----------------------------------------- zoo ---------------------------------------- */
 #zoo {
     flex-grow: 2;
@@ -186,6 +203,10 @@ main {
     white-space: nowrap;
 }
 
+#zoo table.hidden {
+    display: none;
+}
+
 /* ----------------------------------------- main --------------------------------------- */
 main {
     display: flex;
@@ -194,4 +215,12 @@ main {
     gap: 1rem;
 }
 
+#closed {
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+}
 
+#closed.hidden {
+    display: none;
+}

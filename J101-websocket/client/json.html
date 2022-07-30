@@ -27,13 +27,14 @@
 		<h3>Actions</h3>
 		<div class="action-list">
 			<button type="button" data-tag="open">Open the Zoo</button>
-			<button type="button" data-tag="get">Get New Animals</button>
+			<button type="button" data-tag="get"><div><span>Get New Animals</span><span id="count">0</span></div></button>
 			<button type="button" data-tag="remove">Remove Selected Animals</button>
 			<button type="button" data-tag="close">Close the Zoo</button>
 		</div>
 	</section>
 	<section id="zoo">
-		<table>
+		<div id="closed">Zoo is Closed</div>
+		<table class="hidden">
 			<thead>
 				<tr>
 					<th></th>
@@ -44,27 +45,6 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<td><input type="checkbox" /></td>
-					<td>Cat</td>
-					<td>Fluffy</td>
-					<td>Mammalia</td>
-					<td>This cat thinks he's the Ruler of the World. He will smite you.</td>
-				</tr>
-				<tr>
-					<td><input type="checkbox" /></td>
-					<td>Dog</td>
-					<td>Fido</td>
-					<td>Mammalia</td>
-					<td>Man's Best Friend my Aunt Fannie. The dog can shape-shift and look like the floor. Only interacts when it's time to eat or do his business.</td>
-				</tr>
-				<tr>
-					<td><input type="checkbox" /></td>
-					<td>Horse</td>
-					<td>Mr. Ed</td>
-					<td>Mammalia</td>
-					<td>Talks back too much.</td>
-				</tr>
 			</tbody>
 		</table>
 	</section>

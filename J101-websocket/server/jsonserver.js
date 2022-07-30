@@ -18,18 +18,44 @@ const zooAnimals = JSON.parse(readFileSync('./animals.json').toString());
 
 const openZoo = () => {
 	isZooOpen = true;
-	const outputAnimals = zooAnimals.slice(0, 10);
+	const outputAnimals = zooAnimals.splice(0, 10);
 	send({ command: 'open', data: outputAnimals });
 }
 
+const closeZoo = () => {
+	isZooOpen = false;
+}
+
 const send = (data) => {
+	console.log(`Sending msg: ${JSON.stringify(data)}`);
 	wsConnection.send(JSON.stringify(data));
+}
+
+const removeAnimals = (data) => {
+	data.forEach((animal) => {
+		zooAnimals.push(animal);
+	});
+	const response = { command: 'remove', data: {} };
+	send(response);
+}
+
+const sendAnimal = (animal) => {
+	if (isZooOpen && zooAnimals.length) {
+		const animalIndex = Math.floor(Math.random() * zooAnimals.length);
+		const animal = zooAnimals.splice(animalIndex, 1);
+		const response = { command: 'get', data: animal };
+		send(response);
+	}
+	setTimeout(sendAnimal, (Math.floor(Math.random() * 5) + 5) * 1000)
 }
 
 const commands = new Map();
 commands.set('open', openZoo);
+commands.set('remove', removeAnimals);
+commands.set('close', closeZoo);
 
 const onMessage = (message) => {
+	console.log(`Received msg: ${message}`);
 	const { command, data } = JSON.parse(message.toString());
 	const router = commands.get(command);
 	if (router) router(data);
@@ -53,7 +79,6 @@ const onClose = (event) => {
 
 const onHeaders = (event) => {
 	console.log('onHeaders');
-	console.log(event);
 }
 
 const onListening = (event) => {
@@ -76,3 +101,5 @@ wss.on('listening', onListening);
 wss.on('wsClientError', onWsClientError);
 
 console.log('Server has started!');
+
+setTimeout(sendAnimal, (Math.floor(Math.random() * 5) + 5) * 1000)
