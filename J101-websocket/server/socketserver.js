@@ -10,16 +10,18 @@
  */
 
 import { WebSocketServer } from 'ws';
-
+let wsConnection;
 
 const onMessage = (message) => {
 	console.log(message.toString());
+	wsConnection.send(`You sent: ${message}`);
 };
 
-const onConnection = (wsConnection) => {
+const onConnection = (connection) => {
 	console.log('----connection made to client.');
-	wsConnection.on('message', onMessage);
-	wsConnection.send('Connected');
+	connection.on('message', onMessage);
+	connection.send('Connected');
+	wsConnection = connection;
 };
 
 const onError = (event) => {
@@ -37,9 +39,8 @@ const onHeaders = (event) => {
 	console.log(event);
 }
 
-const onListening = (event) => {
+const onListening = () => {
 	console.log('onListening');
-	console.log(event);
 }
 
 const onWsClientError = (event) => {

@@ -79,13 +79,13 @@ main {
 }
 
 #output {
-    width: 80%;
+    width: 50rem;
     border: 1px solid black;
     background-color: white;
-    font-size: 1rem;
+    font-size: .8rem;
     font-family: monospace;
     color: black;
-    min-height: 5rem;
+    min-height: 15rem;
 }
 
 #output p {

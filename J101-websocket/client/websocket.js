@@ -1,10 +1,10 @@
 const onOpen = (event) => {
-	log('websocket opened');
-	webSocket.send('thank you!');
+	log('---websocket opened');
 }
 
 const onMessage = (event) => {
-	log('websocket messages received');
+	log('---websocket messages received');
+	log(event.data);
 }
 
 const onClose = (event) => {
