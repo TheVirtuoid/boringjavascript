@@ -12,6 +12,14 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J101: WebSocket](https://youtu.be/NO2gtycZJpc) - August 2, 2022
+
+J100: Viewer Comments - No Video
+
+[J099: Array.join()](https://youtu.be/eptxT2an-to) - June 28, 2022
+
+[J098: Array.flat(), flatMap()](https://youtu.be/QrA-aJfBMNs) - June 21, 2022
+
 [J097: iterator protocol](https://youtu.be/YBJPGN6jKp8) - June 14, 2022
 
 [J096: ternary](https://youtu.be/BqUPLdfchFk) - June 7, 2022
