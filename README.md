@@ -12,6 +12,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J102: Factory Pattern](https://youtu.be/wEbZCoZbn4I) - August 9, 2022
+
 [J101: WebSocket](https://youtu.be/NO2gtycZJpc) - August 2, 2022
 
 J100: Viewer Comments - No Video
