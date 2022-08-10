@@ -1,6 +1,6 @@
-import Cat from "./Cat";
-import Dog from "./Dog";
-import Horse from "./Horse";
+import Cat from "./Cat.js";
+import Dog from "./Dog.js";
+import Horse from "./Horse.js";
 
 let animalClearingHouse = null;
 

@@ -5,12 +5,7 @@ export default class Horse {
 	#height;
 	#weight;
 
-	constructor(name, age, height, weight) {
-		this.#name = name;
-		this.#age = age;
-		this.#height = height;
-		this.#weight = weight;
-	}
+	constructor() {}
 
 	set name(name) {
 		this.#name = name;
