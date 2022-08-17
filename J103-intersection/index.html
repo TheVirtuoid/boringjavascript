@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="Description" content="J103-intersection-observer">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="intersection-observer.css">
+    <title>Boring JavaScript J103: IntersectionObserver</title>
+</head>
+<body>
+<header>
+    <div class="mdc-top-app-bar mdc-top-app-bar--fixed" id="top-app-bar">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <div class="mdc-top-app-bar__title">
+                    <h1>boring javascript</h1>
+                </div>
+            </section>
+        </div>
+    </div>
+</header>
+<main>
+    <h2>IntersectionObserver</h2>
+
+    <h3>MacBeth - Act I, Scene II</h3>
+    <section>
+        <div id="story">
+            <p><aside>A camp near Forres. Alarum within. Enter DUNCAN, MALCOLM, DONALBAIN, LENNOX, with Attendants, meeting a bleeding Sergeant</aside></p>
+            <p><span>DUNCAN</span>
+                What bloody man is that? He can report,
+                As seemeth by his plight, of the revolt
+                The newest state.</p>
+            <p>
+                <span>MALCOLM</span>
+                This is the sergeant
+                Who like a good and hardy soldier fought
+                'Gainst my captivity. Hail, brave friend!
+                Say to the king the knowledge of the broil
+                As thou didst leave it.</p>
+            <p><span>Sergeant</span>
+                Doubtful it stood;
+                As two spent swimmers, that do cling together
+                And choke their art. The merciless Macdonwald--
+                Worthy to be a rebel, for to that
+                The multiplying villanies of nature
+                Do swarm upon him--from the western isles
+                Of kerns and gallowglasses is supplied;
+                And fortune, on his damned quarrel smiling,
+                Show'd like a rebel's whore: but all's too weak:
+                For brave Macbeth--well he deserves that name--
+                Disdaining fortune, with his brandish'd steel,
+                Which smoked with bloody execution,
+                Like valour's minion carved out his passage
+                Till he faced the slave;
+                Which ne'er shook hands, nor bade farewell to him,
+                Till he unseam'd him from the nave to the chaps,
+                And fix'd his head upon our battlements.</p>
+
+            <p><span>DUNCAN</span>
+                O valiant cousin! worthy gentleman!</p>
+            <p><span>Sergeant</span>
+                As whence the sun 'gins his reflection
+                Shipwrecking storms and direful thunders break,
+                So from that spring whence comfort seem'd to come
+                Discomfort swells. Mark, king of Scotland, mark:
+                No sooner justice had with valour arm'd
+                Compell'd these skipping kerns to trust their heels,
+                But the Norweyan lord surveying vantage,
+                With furbish'd arms and new supplies of men
+                Began a fresh assault.</p>
+            <p><span>DUNCAN</span>
+                Dismay'd not this
+                Our captains, Macbeth and Banquo?</p>
+            <p><span>Sergeant</span>
+                Yes;
+                As sparrows eagles, or the hare the lion.
+                If I say sooth, I must report they were
+                As cannons overcharged with double cracks, so they
+                Doubly redoubled strokes upon the foe:
+                Except they meant to bathe in reeking wounds,
+                Or memorise another Golgotha,
+                I cannot tell.
+                But I am faint, my gashes cry for help.</p>
+
+            <p><span>DUNCAN</span>
+                So well thy words become thee as thy wounds;
+                They smack of honour both. Go get him surgeons.
+            <aside> Exit Sergeant, attended</aside>
+
+            Who comes here?
+            <aside>Enter ROSS</aside></p>
+
+            <p><span>MALCOLM</span>
+                The worthy thane of Ross.</p>
+
+            <p id="lennox"><span>LENNOX</span>
+                What a haste looks through his eyes! So should he look
+                That seems to speak things strange.</p>
+
+            <p><span>ROSS</span>
+                God save the king!</p>
+
+            <p><span>DUNCAN</span>
+                Whence camest thou, worthy thane?</p>
+            <p><span>ROSS</span>
+                From Fife, great king;
+                Where the Norweyan banners flout the sky
+                And fan our people cold. Norway himself,
+                With terrible numbers,
+                Assisted by that most disloyal traitor
+                The thane of Cawdor, began a dismal conflict;
+                Till that Bellona's bridegroom, lapp'd in proof,
+                Confronted him with self-comparisons,
+                Point against point rebellious, arm 'gainst arm.
+                Curbing his lavish spirit: and, to conclude,
+                The victory fell on us.</p>
+
+            <p><span>DUNCAN</span>
+                Great happiness!</p>
+            <p><span>ROSS</span>
+                That now
+                Sweno, the Norways' king, craves composition:
+                Nor would we deign him burial of his men
+                Till he disbursed at Saint Colme's inch
+                Ten thousand dollars to our general use.</p>
+
+            <p><span>DUNCAN</span>
+                No more that thane of Cawdor shall deceive
+                Our bosom interest: go pronounce his present death,
+                And with his former title greet Macbeth.</p>
+
+            <p><span>ROSS</span>
+                I'll see it done.</p>
+
+            <p><span>DUNCAN</span>
+                What he hath lost noble Macbeth hath won.</p>
+            <p><aside>Exeunt</aside></p>
+        </div>
+        <div>
+            <span id="see-lennox" class="no">I CANNOT SEE LENNOX</span>
+        </div>
+    </section>
+
+</main>
+<footer></footer>
+<script src="intersection-observer.js" type="module"></script>
+</body>
+</html>
