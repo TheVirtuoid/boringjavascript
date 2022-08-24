@@ -12,6 +12,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J104: Interfaces](https://youtu.be/Y9q4UXkAsQ4) - August 23, 2022
+
 [J103: IntersectionObserver](https://youtu.be/CeDTcUGB4Zw) - August 16, 2022
 
 [J102: Factory Pattern](https://youtu.be/wEbZCoZbn4I) - August 9, 2022
