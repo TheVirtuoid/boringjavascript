@@ -1,4 +1,4 @@
-import MyZoo from "./YourZoo.js";
+import Zoo from "./YourZoo.js";
 
 const animalDatabase = [
 	{ "type": "Cat", "name": "Fluffy", "id": 1},
@@ -10,9 +10,9 @@ const animalDatabase = [
 	{ "type": "Dolphin", "name": "Flipper",  "id": 7},
 	{ "type": "Whale", "name": "Moby Dick", "id": 8},
 	{ "type": "Lizard", "name": "Larry", "id": 9}
-]
+];
 
-const myZoo = new MyZoo();
+const myZoo = new Zoo();
 animalDatabase.forEach((animal) => myZoo.addAnimal({
 	name: animal.name,
 	type: animal.type,

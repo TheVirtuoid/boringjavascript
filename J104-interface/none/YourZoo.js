@@ -10,7 +10,7 @@ export default class YourZoo {
 		return Object.values(this.#animals);
 	}
 
-	placeANewAnimalsIntoTheZoo(animal) {
+	placeANewAnimalIntoTheZoo(animal) {
 		this.#animals[animal.id] = animal;
 	}
 
