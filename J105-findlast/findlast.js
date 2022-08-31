@@ -21,7 +21,7 @@ const animals = [
 
 const animalFinder = (args) => {
 	const { animals, type } = args;
-	return { type: type, critter: animals.findLast( (animal) => animal.type === type ) };
+	return { type: type, critterIndex: animals.findLastIndex( (animal) => animal.type === type ) };
 }
 
 
@@ -30,13 +30,28 @@ const lastDog = animalFinder({ animals, type: 'Dog' });
 const lastAntelope = animalFinder({ animals, type: 'Antelope' });
 
 [lastCat, lastDog, lastAntelope].forEach((animal) => {
-	const { type, critter } = animal;
+	const { type, critterIndex } = animal;
+	const critter = animals[critterIndex];
 	if (critter) {
 		console.log(`My last ${type} in the list is named "${critter.name}"`);
 	} else {
 		console.log(`It seems like I do not have an ${type} in my list!`);
 	}
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 const animalFinder = (args) => {
