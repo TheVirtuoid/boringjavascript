@@ -111,11 +111,17 @@ const animalsCollection = [
 	{ "type": "Alligator", "name": "Allie" }
 ];
 
+let animalDeliveryInstance = null;
+
 export default class AnimalDelivery {
 	#deliveryServiceId;
 
 	constructor() {
-		this.#deliveryServiceId = Math.floor(Math.random() * 10000);
+		if (!animalDeliveryInstance) {
+			this.#deliveryServiceId = Math.floor(Math.random() * 10000);
+			animalDeliveryInstance = this;
+		}
+		return animalDeliveryInstance;
 	}
 
 	getAnimal() {
@@ -127,6 +133,7 @@ export default class AnimalDelivery {
 		return this.#deliveryServiceId;
 	}
 }
+
 
 
 
