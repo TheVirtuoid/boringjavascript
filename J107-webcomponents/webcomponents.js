@@ -1,5 +1,3 @@
-
-
 const animals = [
 	{ "type": "Cat", "name": "Fluffy", "class": "Mammalia",
 		"description": "a small domesticated carnivorous mammal with soft fur, a short snout, and retractable claws."
