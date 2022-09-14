@@ -12,6 +12,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J107: Web Components](https://youtu.be/aJjbnp-XWGY) - September 13, 2022
+
 [J106: Singleton Pattern](https://youtu.be/S6jZEj8W8FQ) - September 6, 2022
 
 [J105: Array.findLast(), Array.findLastIndex()](https://youtu.be/FvrfYGo75qo) - August 30, 2022
