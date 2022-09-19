@@ -17,8 +17,7 @@ export default class Zoo {
 	transferAnimal() {
 		const animal = Math.floor(Math.random() * this.#animals.length);
 		if (this.#animals[animal].available) {
-			const animalToTransfer = this.#animals.splice(animal, 1)[0];
-			return animalToTransfer;
+			return this.#animals.splice(animal, 1)[0];
 		} else if (this.#nextZoo) {
 			return this.#nextZoo.transferAnimal();
 		} else {
