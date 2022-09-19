@@ -9,19 +9,20 @@ export default class Zoo {
 		this.#nextZoo = nextZoo;
 		this.#name = name;
 		this.#animals.forEach((animal) => {
-			animal.available = Math.random() < .5;
+			animal.available = Math.random() < .25;
+			animal.zooName = name;
 		});
 	}
 
 	transferAnimal() {
 		const animal = Math.floor(Math.random() * this.#animals.length);
-		if (this.#animals[animal.available]) {
+		if (this.#animals[animal].available) {
 			const animalToTransfer = this.#animals.splice(animal, 1)[0];
 			return animalToTransfer;
 		} else if (this.#nextZoo) {
 			return this.#nextZoo.transferAnimal();
 		} else {
-			return null;
+			return {};
 		}
 	}
 
