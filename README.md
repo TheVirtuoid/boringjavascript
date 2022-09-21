@@ -12,6 +12,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J108: Chain of Responsibility Pattern](https://youtu.be/YmP6DglIjMo) - September 20, 2022
+
 [J107: Web Components](https://youtu.be/aJjbnp-XWGY) - September 13, 2022
 
 [J106: Singleton Pattern](https://youtu.be/S6jZEj8W8FQ) - September 6, 2022
