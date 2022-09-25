@@ -7,33 +7,17 @@ const animals = [
 	{ "type": "Road Runner", "name": "Beep Beep", "class": "Aves"},
 	{ "type": "Dolphin", "name": "Flipper",  "class": "Mammalia"},
 	{ "type": "Whale", "name": "Moby Dick", "class": "Mammalia"},
-	{ "type": "Lizard", "name": "Larry", "class": "Reptilia"},
-	{ "type": "Cat", "name": "Mr. Tinkles", "class": "Mammalia"},
-	{ "type": "Horse", "name": "Trigger", "class": "Mammalia"},
-	{ "type": "Cat", "name": "Hairball", "class": "Mammalia"},
-	{ "type": "Dog", "name": "Rover", "class": "Mammalia"},
-	{ "type": "Coyote", "name": "Clarkston", "class": "Mammalia"},
-	{ "type": "Cat", "name": "Cool", "class": "Mammalia"},
-	{ "type": "Horse", "name": "Secretariat", "class": "Mammalia"},
-	{ "type": "Coyote", "name": "Waldo", "class": "Mammalia"},
-	{ "type": "Cat", "name": "Tom", "class": "Mammalia"}
+	{ "type": "Lizard", "name": "Larry", "class": "Reptilia"}
 ];
 
-const animalFinder = (args) => {
-	const { animals, type } = args;
-	const reversedAnimals = [...animals].reverse();
-	return { type: type, critter: reversedAnimals.find( (animal) => animal.type === type ) };
-}
+const reversedAnimals = [...animals].reverse();
 
-const lastCat = animalFinder({ animals, type: 'Cat' });
-const lastDog = animalFinder({ animals, type: 'Dog' });
-const lastAntelope = animalFinder({ animals, type: 'Antelope' });
+console.log('\nRegular Animals:')
+animals.forEach((animal, index) => {
+	console.log(`${index.toString().padStart(2)} - ${animal.type}`);
+});
 
-[lastCat, lastDog, lastAntelope].forEach((animal) => {
-	const { type, critter } = animal;
-	if (critter) {
-		console.log(`My last ${type} in the list is named "${critter.name}"`);
-	} else {
-		console.log(`It seems like I do not have an ${type} in my list!`);
-	}
+console.log('\nReversed Animals:')
+reversedAnimals.forEach((animal, index) => {
+	console.log(`${index.toString().padStart(2)} - ${animal.type}`);
 });
