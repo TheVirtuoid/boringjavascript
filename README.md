@@ -12,6 +12,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J109: Array.reverse()](https://youtu.be/DFNTBrslhDk) - September 27, 2022
+
 [J108: Chain of Responsibility Pattern](https://youtu.be/YmP6DglIjMo) - September 20, 2022
 
 [J107: Web Components](https://youtu.be/aJjbnp-XWGY) - September 13, 2022
