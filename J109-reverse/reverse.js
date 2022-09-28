@@ -21,3 +21,22 @@ console.log('\nReversed Animals:')
 reversedAnimals.forEach((animal, index) => {
 	console.log(`${index.toString().padStart(2)} - ${animal.type}`);
 });
+
+
+
+
+
+
+
+
+
+
+/*
+
+const reversedAnimals = [...animals].reverse();
+
+console.log('\nReversed Animals:')
+reversedAnimals.forEach((animal, index) => {
+	console.log(`${index.toString().padStart(2)} - ${animal.type}`);
+});
+*/
