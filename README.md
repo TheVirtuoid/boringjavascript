@@ -12,6 +12,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J110: Builder Pattern](https://youtu.be/L0NnFtbXiys) - October 4, 2022
+
 [J109: Array.reverse()](https://youtu.be/DFNTBrslhDk) - September 27, 2022
 
 [J108: Chain of Responsibility Pattern](https://youtu.be/YmP6DglIjMo) - September 20, 2022
