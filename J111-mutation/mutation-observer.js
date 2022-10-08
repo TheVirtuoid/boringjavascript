@@ -37,7 +37,27 @@ fetch('./animals-noclass.json')
 			addButton.removeAttribute('disabled');
 		});
 
+
 addButton.addEventListener('click', addAnimal);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 const addAnimal = (event) => {
 	const animalToAddIndex = Math.floor(Math.random() * animals.length);
