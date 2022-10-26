@@ -12,6 +12,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J113: Array.of()](https://youtu.be/2o24Lgue6aM) - October 25, 2022
+
 [J112: Adapter Pattern](https://youtu.be/lhLQyKBTCZQ) - October 18, 2022
 
 [J111: MutationObserver](https://youtu.be/YTktSrLA9IA) - October 11, 2022
