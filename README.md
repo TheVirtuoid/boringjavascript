@@ -12,6 +12,8 @@ uh...I don't have one yet.
 
 ## Episodes
 
+[J114: Decorator Pattern](https://youtu.be/66rGIoSvE2s) - November 15, 2022
+
 [J113: Array.of()](https://youtu.be/2o24Lgue6aM) - October 25, 2022
 
 [J112: Adapter Pattern](https://youtu.be/lhLQyKBTCZQ) - October 18, 2022
